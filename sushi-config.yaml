@@ -48,8 +48,6 @@ pages:
     title: Home
   search-operation.md:
     title: Search and Operation
-  data-privacy.md:
-    title: Data Privacy
 
 
 # dependancies.md:

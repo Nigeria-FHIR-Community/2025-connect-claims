@@ -1,7 +1,7 @@
 Profile: NgClaimProcedure
 Parent: Procedure
 Id: ng-claim-procedure
-Title: "NG-Claim Procedure"
+Title: "NG Procedure"
 Description: "A profile for clinical procedures tied to a submitted claim."
 
 * status 1..1 MS

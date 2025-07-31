@@ -1,13 +1,13 @@
 
 ### Supported Search Parameters for 2025 Connectathon Claims Profile
 
-This page outlines the supported FHIR Search Parameters for the [**NgImmPatient**](StructureDefinition-NgImmPatient.html), [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html), and [**NgImmBundle**](StructureDefinition-NgImmBundle.html) profiles in the Nigeria Immunization Implementation Guide. These parameters enable efficient querying of patient records in systems that implement this guide.
+This page outlines the supported FHIR Search Parameters for the [**NgPatient**](StructureDefinition-NgPatient.html) and [**NGClaimsBundle**](StructureDefinition-ng-bundle-hmo-to-hospital.html) profiles in the Nigeria  Implementation Guide. These parameters enable efficient querying of patient records in systems that implement this guide.
 
-The listed search parameters are derived from standard FHIR-defined parameters, with custom additions where relevant to local immunization use cases in Nigeria.
+
 
 ---
 
-#### List of Supported Search Parameters for [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile
+#### List of Supported Search Parameters for [**NgPatient**](StructureDefinition-NgPatient.html) profile
 
 | **Name**        | **Type** | **FHIR Path**            | **Description**                                                                 |
 |----------------|----------|--------------------------|---------------------------------------------------------------------------------|
@@ -60,27 +60,15 @@ GET [base]/Patient?address-state=Benue&_sort=-createddate
 GET [base]/Patient?createddate=ge2024-01-01&createddate=le2024-12-31
 ```
 
-
-
-#### List of supported search for [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) Profile:
-
-| **Name**        | **Type** | **FHIR Path**                 | **Description**                                                                 |
-|----------------|----------|-------------------------------|---------------------------------------------------------------------------------|
-| `patient`      | `reference` | `Immunization.patient`      | Search immunizations by the referenced patient.                                |
-| `status`       | `token`  | `Immunization.status`         | Filter by immunization status (e.g., completed, not-done).                     |
-| `vaccine-code` | `token`  | `Immunization.vaccineCode`    | Search by the administered vaccine code.                                       |
-| `date`         | `date`   | `Immunization.occurrenceDateTime` | Filter by date of immunization event.                                     |
-
 ---
 
 
 
-#### Supported Search Parameters on [**NgImmBundle**](StructureDefinition-NgImmBundle.html) Profile:
+#### Supported Search Parameters on [**NGClaimsBundle**](StructureDefinition-ng-bundle-hmo-to-hospital.html) Profile:
 
 | **Search Parameter**         | **Type** | **Description**                                                             | **FHIRPath Expression**                                                       |
 |-----------------------------|----------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | `patient.identifier`        | `token`  | Search for bundles containing a patient with a specific identifier (e.g. NIN) | `Bundle.entry.resource.ofType(Patient).identifier`                             |
-| `vaccine-code`              | `token`  | Search for bundles containing an immunization with a specific vaccine code   | `Bundle.entry.resource.ofType(Immunization).vaccineCode`                       |
 | `patient-address-state`     | `token`  | Search for bundles where the patient resides in a specific Nigerian state    | `Bundle.entry.resource.ofType(Patient).address.state`                          |
 | `organization-identifier`   | `token`  | Search for bundles referencing a healthcare facility with a specific ID      | `Bundle.entry.resource.ofType(Organization).identifier`                        |
 | `patient-birthdate`         | `date`   | Search for bundles containing patients born on a specific date               | `Bundle.entry.resource.ofType(Patient).birthDate`                              |
@@ -89,26 +77,13 @@ GET [base]/Patient?createddate=ge2024-01-01&createddate=le2024-12-31
 ---
 
 
-
-
-#### Notes
-- All search parameters comply with FHIR R4 standards and SMART Guidelines principles.
-- Custom value sets such as [**NGStatesVS**](ValueSet-nigeria-states.html), [**NGLGAsVS**](ValueSet-nigeria-lgas.html), and [**NGGenderVS**](ValueSet-nigeria-gender.html) are used to ensure consistency across systems.
-- Implementers are encouraged to optimize server-side indexing for these fields to enable fast and scalable search.
-
----
-
-For a complete list of FHIR search parameter types and modifiers, refer to the [FHIR Search documentation](https://www.hl7.org/fhir/search.html).
-
-
-
 ### Supported RESTful Operations for Nigeria Immunization Profiles
 
-This page describes the RESTful interactions supported for systems implementing the [**NgImmPatient**](StructureDefinition-NgImmPatient.html), [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html), and [**NgImmBundle**](StructureDefinition-NgImmBundle.html) profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data.
+This page describes the RESTful interactions supported for systems implementing the [**NGPatient**](StructureDefinition-NgPatient.html) and [**NGClaimsBundle**](StructureDefinition-ng-bundle-hmo-to-hospital.html) profiles, aligned with FHIR R4 and SMART Guidelines principles. These operations define how client systems (e.g., EMRs, registries, mobile apps) can interact with immunization-related patient data.
 
 ---
 
-#### Overview of Supported RESTful [**NgImmPatient**](StructureDefinition-NgImmPatient.html) Interactions
+#### Overview of Supported RESTful [**NGPatient**](StructureDefinition-NgPatient.html) Interactions
 
 | **Operation** | **FHIR Verb** | **Description**                                                                 |
 |---------------|---------------|---------------------------------------------------------------------------------|
@@ -179,31 +154,25 @@ Content-Type: application/fhir+json
 
 
 
-#### Supported Bundle Operations on [**NgImmBundle**](StructureDefinition-NgImmBundle.html)
+#### Supported Bundle Operations on [**NGClaimsBundle**](StructureDefinition-ng-bundle-hmo-to-hospital.html)
 
 | **Operation Name**             | **Operation Code**         | **Description**                                                                                     | **Input**           | **Output**              |
 |-------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------|---------------------|--------------------------|
-| Validate NgImm Bundle         | `$validate-ngimm-bundle`    | Validates a submitted bundle against Nigeria Immunization profiles                                 | `Bundle`            | `OperationOutcome`       |
-| Submit NgImm Bundle           | `$submit-ngimm-bundle`      | Submits a bundle to the national immunization registry                                              | `Bundle`            | Success Acknowledgement |
-| Export NgImm Bundle           | `$export-ngimm-bundle`      | Exports bundles by facility, district, or date                                                      | `Reference`, `dateTime` | `Bundle`            |
+| Validate Ng Bundle         | `$validate-ng-bundle`    | Validates a submitted bundle against Nigeria Test profiles                                 | `Bundle`            | `OperationOutcome`       |
+| Submit Ng Bundle           | `$submit-ng-bundle`      | Submits a bundle to the national immunization registry                                              | `Bundle`            | Success Acknowledgement |
+| Export Ng Bundle           | `$export-ng-bundle`      | Exports bundles by facility, district, or date                                                      | `Reference`, `dateTime` | `Bundle`            |
 | Get Patient History           | `$get-patient-history`      | Returns all immunization bundles related to a specific patient                                     | `token`             | `Bundle`                 |
-| Sync NgImm Bundle             | `$sync-ngimm-bundle`        | Returns all bundles updated since a specified timestamp                                            | `dateTime`          | `Bundle`                 |
+| Sync Ng Bundle             | `$sync-ng-bundle`        | Returns all bundles updated since a specified timestamp                                            | `dateTime`          | `Bundle`                 |
 | Evaluate Completeness         | `$evaluate-completeness`    | Checks if all Must Support fields are populated in the submitted bundle                            | `Bundle`            | `OperationOutcome`       |
 | Resolve Conflicts             | `$resolve-conflicts`        | Identifies and resolves duplicate/conflicting bundles for the same patient                         | `Reference`, `code` | `OperationOutcome`       |
-| Generate Immunization Summary| `$generate-summary`         | Produces a readable summary (e.g., printable immunization card) from a bundle                      | `Bundle`            | `string` (HTML/Text)     |
-| Get Next Dose Schedule       | `$get-next-dose-schedule`   | Retrieves next scheduled dose date from `protocolApplied.nextDoseDate`                             | `Bundle`            | `dateTime`               |
+| Generate Claims Summary| `$generate-summary`         | Produces a readable summary (e.g., printable claims card) from a bundle                      | `Bundle`            | `string` (HTML/Text)     |
 | Remove Obsolete Bundles      | `$remove-obsolete-bundles`  | Deletes bundles of patients older than 24 months and marked inactive                               | `date`              | `integer` (count)        |
 
 
 
+### Important Implementation Notes
 
 
-
-
-
-### ⚠️ Important Implementation Notes
-
-All create and update operations must conform to the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) and [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profiles. Ten operations can be carried out on [**NgImmBundle**](StructureDefinition-NgImmBundle.html)
 Use validation tools to ensure submitted resources are profile-conformant.
 Delete operation is disabled to avoid accidental removal of patient records; use status or metadata flags if deactivation is needed.
 All RESTful interactions must be secured and comply with Nigeria’s health data protection policies.

@@ -1,7 +1,7 @@
-Profile: NgClaimPractitionerRole
+Profile: NgPractitionerRole
 Parent: PractitionerRole
 Id: ng-claim-practitionerrole
-Title: "NG-Claim PractitionerRole"
+Title: "NG PractitionerRole"
 Description: "A profile for defining the role of a practitioner within a claims-processing organization."
 
 * practitioner 1..1 MS

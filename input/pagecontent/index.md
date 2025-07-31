@@ -1,4 +1,4 @@
-# 2025 nigeria Connectathon Claims FHIR Implementation Guide (IG)
+# 2025 nigeria Connectathon Claims FHIR Implementation Guide
 
 #### Revision History
 
@@ -32,7 +32,7 @@ As Nigeria advances towards a more integrated digital health landscape, the effi
 
 ###  Scope of the FHIR Implementation Guide
 
-This IG focuses on core FHIR interactions and simplified data workflows relevant to health insurance and claims processes in Nigeria. It includes representative profiles, search parameters, and operations to support common tasks like eligibility checking, claims submission, prior authorization, and payment notification.
+This IG focuses on core FHIR interactions and simplified data workflows relevant to health insurance and claims processes in Nigeria. It includes representative profiles, search parameters, and operations to support common tasks like eligibility checking, claims submission, prior authorization, and payment notification. Members, get ideas from this DevDays event slide(https://devdays.com/wp-content/uploads/2021/12/DD21US_20100607_Dharmesh_Patel_Mike_Arce_Claims_on_FHIR.pdf).
 
 <!-- The scope of this guide focuses on the following core components:
 - **Standardizing how immunization clients (patients) are registered and managed**, using the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile.
