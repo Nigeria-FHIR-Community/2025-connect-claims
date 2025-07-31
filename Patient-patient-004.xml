@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-004"/>
+  <meta>
+    <lastUpdated value="2019-01-25T15:36:00+01:00"/>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-004</b></p><a name="patient-004"> </a><a name="hcpatient-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2019-01-25 15:36:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Ngozi Adamu  Female, DoB: 1988-04-10 ( https://nimc.gov.ng#NIN55667788)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="https://nimc.gov.ng"/>
+    <value value="NIN55667788"/>
+  </identifier>
+  <name>
+    <family value="Adamu"/>
+    <given value="Ngozi"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1988-04-10"/>
+</Patient>

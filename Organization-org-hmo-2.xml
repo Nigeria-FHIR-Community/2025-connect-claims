@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-hmo-2"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-hmo-2</b></p><a name="org-hmo-2"> </a><a name="hcorg-hmo-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/HMO456</p><p><b>type</b>: <span title="Codes:">pay</span></p><p><b>name</b>: WellCare HMO</p><p><b>address</b>: 22 Insurance Avenue Wuse FCT </p></div>
+  </text>
+  <identifier>
+    <system value="https://nhia.gov.ng"/>
+    <value value="HMO456"/>
+  </identifier>
+  <type>
+    <coding>
+      <code value="pay"/>
+    </coding>
+  </type>
+  <name value="WellCare HMO"/>
+  <address>
+    <line value="22 Insurance Avenue"/>
+    <city value="Wuse"/>
+    <district value="bwari"/>
+    <state value="FCT"/>
+  </address>
+</Organization>

@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Claim/claim-002> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "claim-002"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim claim-002</b></p><a name=\"claim-002\"> </a><a name=\"hcclaim-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim.html\">NG-Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>created</b>: 2025-07-31</p><p><b>provider</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>priority</b>: <span title=\"Codes:\">high</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>666</td><td>false</td><td><code>NgClaimCoverage/coverage-002</code></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:\">99214</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "institutional" ]
+     ] )
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-002" ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-07-31"^^xsd:date] ; # 
+  fhir:provider [
+     fhir:reference [ fhir:v "urn:uuid:org-hmo" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:code [ fhir:v "high" ]
+     ] )
+  ] ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "666"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v false ] ;
+     fhir:coverage [
+       fhir:link <https://dhin.org/2025Connectathon/NgClaimCoverage/coverage-002> ;
+       fhir:reference [ fhir:v "NgClaimCoverage/coverage-002" ]
+     ]
+  ] ) ; # 
+  fhir:item ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:productOrService [
+       fhir:coding ( [
+         fhir:code [ fhir:v "99214" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

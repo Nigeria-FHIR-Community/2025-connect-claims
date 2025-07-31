@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Task/task-claim-review> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "task-claim-review"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task task-claim-review</b></p><a name=\"task-claim-review\"> </a><a name=\"hctask-claim-review\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-task.html\">NG-Claim Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Review Claim</span></p><p><b>description</b>: Please review this claim for adjudication</p><p><b>for</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-claim-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>requester</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Review Claim" ]
+  ] ; # 
+  fhir:description [ fhir:v "Please review this claim for adjudication"] ; # 
+  fhir:for [
+     fhir:reference [ fhir:v "urn:uuid:claim-002" ]
+  ] ; # 
+  fhir:requester [
+     fhir:reference [ fhir:v "urn:uuid:org-hmo" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

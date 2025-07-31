@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example: Patient to Insurer Eligibility Check Bundle - DHIN 2025 connectathon claims testing v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.46"}
+    h3,h4,h5,h6{--heading-prefix:"3.46"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DHIN 2025 connectathon claims testing</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+   <li> <a href="artifacts.html" class="dropdown-toggle">Artifacts</a></li>
+  <li> <a href="search-operation.html" class="dropdown-toggle">Search and Operations</a></li> 
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example: Patient to Insurer Eligibility Check Bundle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">DHIN 2025 connectathon claims testing - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dhin.org/2025Connectathon/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-PatientToInsurerBundleExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-PatientToInsurerBundleExample.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-PatientToInsurerBundleExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Example: Patient to Insurer Eligibility Check Bundle</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p class="res-header-id"/><a name="PatientToInsurerBundleExample"> </a><a name="hcPatientToInsurerBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-bundle-patient-to-insurer.html">4-NG-Bundle: Patient to Insurer</a></p></div><p>Bundle PatientToInsurerBundleExample of type collection</p><a name="urn-uuid-patient-004"> </a><a name="Patient_patient-004"> </a><a name="hcPatient_patient-004"> </a><hr/><p>Entry 1 - fullUrl = urn:uuid:patient-004</p><p>Resource Patient:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient patient-004</b></p><a name="patient-004"> </a><a name="hcpatient-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2019-01-25 15:36:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Ngozi Adamu  Female, DoB: 1988-04-10 ( https://nimc.gov.ng#NIN55667788)</p><hr/></blockquote><a name="urn-uuid-coverage-004"> </a><a name="Coverage_coverage-004"> </a><a name="hcCoverage_coverage-004"> </a><hr/><p>Entry 2 - fullUrl = urn:uuid:coverage-004</p><p>Resource Coverage:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Coverage coverage-004</b></p><a name="coverage-004"> </a><a name="hccoverage-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-coverage.html">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:">basic</span></p><p><b>beneficiary</b>: <a href="Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>payor</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></blockquote><a name="urn-uuid-eligibility-request-004"> </a><a name="CoverageEligibilityRequest_eligibility-request-004"> </a><a name="hcCoverageEligibilityRequest_eligibility-request-004"> </a><hr/><p>Entry 3 - fullUrl = urn:uuid:eligibility-request-004</p><p>Resource CoverageEligibilityRequest:</p><blockquote><p class="res-header-id"><b>Generated Narrative: CoverageEligibilityRequest eligibility-request-004</b></p><a name="eligibility-request-004"> </a><a name="hceligibility-request-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-eligibility-request.html">NG-CoverageEligibilityRequest</a></p></div><p><b>status</b>: Active</p><p><b>purpose</b>: familycoverage</p><p><b>patient</b>: <a href="Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>created</b>: 2025-08-02</p><p><b>insurer</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-PatientToInsurerBundleExample.html#urn-uuid-coverage-004">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></td></tr></table></blockquote><a name="urn-uuid-org-insurer"> </a><a name="Organization_org-insurer-4"> </a><a name="hcOrganization_org-insurer-4"> </a><hr/><p>Entry 4 - fullUrl = urn:uuid:org-insurer</p><p>Resource Organization:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Organization org-insurer-4</b></p><a name="org-insurer-4"> </a><a name="hcorg-insurer-4"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/INS456</p><p><b>type</b>: <span title="Codes:">ins</span></p><p><b>name</b>: Guardian Health Insurance</p><p><b>address</b>: 88 Medical Blvd Abuja FCT </p></blockquote><a name="urn-uuid-eligibility-response-004"> </a><a name="CoverageEligibilityResponse_eligibility-response-004"> </a><a name="hcCoverageEligibilityResponse_eligibility-response-004"> </a><hr/><p>Entry 5 - fullUrl = urn:uuid:eligibility-response-004</p><p>Resource CoverageEligibilityResponse:</p><blockquote><p class="res-header-id"><b>Generated Narrative: CoverageEligibilityResponse eligibility-response-004</b></p><a name="eligibility-response-004"> </a><a name="hceligibility-response-004"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-eligibility-response.html">NG-CoverageEligibilityResponse</a></p></div><p><b>status</b>: Active</p><p><b>purpose</b>: another</p><p><b>patient</b>: <a href="Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>created</b>: 2025-08-03</p><p><b>request</b>: <a href="CoverageEligibilityRequest-eligibility-request-004.html">CoverageEligibilityRequest: status = active; purpose = familycoverage; created = 2025-08-02</a></p><p><b>outcome</b>: well</p><p><b>insurer</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td><a href="Bundle-PatientToInsurerBundleExample.html#urn-uuid-coverage-004">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></td></tr></table></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://dhin-hie.org">https://dhin-hie.org</a>.  Package 2025connectathonClaims#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 19:24+0100">2025-07-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-hospital",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-hospital</b></p><a name=\"org-hospital\"> </a><a name=\"hcorg-hospital\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>type</b>: <span title=\"Codes:\">prov</span></p><p><b>name</b>: CityCare General Hospital</p><p><b>address</b>: 10 Shrine road Okija Anambra </p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://herfama.lagos.ng",
+    "value" : "HF001"
+  }],
+  "type" : [{
+    "coding" : [{
+      "code" : "prov"
+    }]
+  }],
+  "name" : "CityCare General Hospital",
+  "address" : [{
+    "line" : ["10 Shrine road"],
+    "city" : "Okija",
+    "district" : "amac",
+    "state" : "Anambra"
+  }]
+}

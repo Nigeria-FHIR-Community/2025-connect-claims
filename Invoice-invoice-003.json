@@ -1,0 +1,20 @@
+{
+  "resourceType" : "Invoice",
+  "id" : "invoice-003",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Invoice invoice-003</b></p><a name=\"invoice-003\"> </a><a name=\"hcinvoice-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-invoice.html\">NG-Claim Invoice</a></p></div><p><b>status</b>: draft</p><p><b>subject</b>: <a href=\"Patient-patient-003.html\">John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)</a></p><p><b>date</b>: 2025-08-02</p><h3>TotalNets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>8000</td><td>Nigerian naira</td></tr></table></div>"
+  },
+  "status" : "draft",
+  "subject" : {
+    "reference" : "Patient/patient-003"
+  },
+  "date" : "2025-08-02",
+  "totalNet" : {
+    "value" : 8000,
+    "currency" : "NGN"
+  }
+}

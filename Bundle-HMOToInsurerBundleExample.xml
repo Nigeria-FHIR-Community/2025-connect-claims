@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="HMOToInsurerBundleExample"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"/>
+  </meta>
+  <type value="collection"/>
+  <timestamp value="2025-08-01T09:00:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:claim-002"/>
+    <resource>
+      <Claim>
+        <id value="claim-002"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Claim_claim-002"> </a><p class="res-header-id"><b>Generated Narrative: Claim claim-002</b></p><a name="claim-002"> </a><a name="hcclaim-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim.html">NG-Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>created</b>: 2025-07-31</p><p><b>provider</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>priority</b>: <span title="Codes:">high</span></p><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td>666</td><td>false</td><td><code>NgClaimCoverage/coverage-002</code></td></tr></table><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:">99214</span></td></tr></table></div>
+        </text>
+        <status value="active"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+            <code value="institutional"/>
+          </coding>
+        </type>
+        <use value="claim"/>
+        <patient>
+          <reference value="urn:uuid:patient-002"/>
+        </patient>
+        <created value="2025-07-31"/>
+        <provider>
+          <reference value="urn:uuid:org-hmo"/>
+        </provider>
+        <priority>
+          <coding>
+            <code value="high"/>
+          </coding>
+        </priority>
+        <insurance>
+          <sequence value="666"/>
+          <focal value="false"/>
+          <coverage>
+            <reference value="NgClaimCoverage/coverage-002"/>
+          </coverage>
+        </insurance>
+        <item>
+          <sequence value="1"/>
+          <productOrService>
+            <coding>
+              <code value="99214"/>
+            </coding>
+          </productOrService>
+        </item>
+      </Claim>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:patient-002"/>
+    <resource>
+      <Patient>
+        <id value="patient-002"/>
+        <meta>
+          <lastUpdated value="2024-06-30T14:36:00+01:00"/>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-002"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-002</b></p><a name="patient-002"> </a><a name="hcpatient-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2024-06-30 14:36:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Chinyere Okoro  Female, DoB: 1990-03-15 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>
+        </text>
+        <identifier>
+          <system value="https://nimc.gov.ng"/>
+          <value value="NIN99887766"/>
+        </identifier>
+        <name>
+          <family value="Okoro"/>
+          <given value="Chinyere"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1990-03-15"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:coverage-002"/>
+    <resource>
+      <Coverage>
+        <id value="coverage-002"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-002"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-002</b></p><a name="coverage-002"> </a><a name="hccoverage-002"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-coverage.html">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:">basic</span></p><p><b>beneficiary</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>payor</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>
+        </text>
+        <status value="active"/>
+        <type>
+          <coding>
+            <code value="basic"/>
+          </coding>
+        </type>
+        <beneficiary>
+          <reference value="urn:uuid:patient-002"/>
+        </beneficiary>
+        <payor>
+          <reference value="urn:uuid:org-insurer"/>
+        </payor>
+      </Coverage>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:org-hmo"/>
+    <resource>
+      <Organization>
+        <id value="org-hmo-2"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-hmo-2"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-hmo-2</b></p><a name="org-hmo-2"> </a><a name="hcorg-hmo-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/HMO456</p><p><b>type</b>: <span title="Codes:">pay</span></p><p><b>name</b>: WellCare HMO</p><p><b>address</b>: 22 Insurance Avenue Wuse FCT </p></div>
+        </text>
+        <identifier>
+          <system value="https://nhia.gov.ng"/>
+          <value value="HMO456"/>
+        </identifier>
+        <type>
+          <coding>
+            <code value="pay"/>
+          </coding>
+        </type>
+        <name value="WellCare HMO"/>
+        <address>
+          <line value="22 Insurance Avenue"/>
+          <city value="Wuse"/>
+          <district value="bwari"/>
+          <state value="FCT"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:org-insurer"/>
+    <resource>
+      <Organization>
+        <id value="org-insurer-2"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-insurer-2"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-insurer-2</b></p><a name="org-insurer-2"> </a><a name="hcorg-insurer-2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/INS789</p><p><b>type</b>: <span title="Codes:">ins</span></p><p><b>name</b>: SecureHealth Insurance Ltd</p><p><b>address</b>: Plot 7 Abuja Crescent Maitama FCT </p></div>
+        </text>
+        <identifier>
+          <system value="https://nhia.gov.ng"/>
+          <value value="INS789"/>
+        </identifier>
+        <type>
+          <coding>
+            <code value="ins"/>
+          </coding>
+        </type>
+        <name value="SecureHealth Insurance Ltd"/>
+        <address>
+          <line value="Plot 7 Abuja Crescent"/>
+          <city value="Maitama"/>
+          <district value="bwari"/>
+          <state value="FCT"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:task-claim-review"/>
+    <resource>
+      <Task>
+        <id value="task-claim-review"/>
+        <meta>
+          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Task_task-claim-review"> </a><p class="res-header-id"><b>Generated Narrative: Task task-claim-review</b></p><a name="task-claim-review"> </a><a name="hctask-claim-review"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-task.html">NG-Claim Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title="Codes:">Review Claim</span></p><p><b>description</b>: Please review this claim for adjudication</p><p><b>for</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-claim-002">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>requester</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>
+        </text>
+        <status value="requested"/>
+        <intent value="order"/>
+        <code>
+          <text value="Review Claim"/>
+        </code>
+        <description value="Please review this claim for adjudication"/>
+        <for>
+          <reference value="urn:uuid:claim-002"/>
+        </for>
+        <requester>
+          <reference value="urn:uuid:org-hmo"/>
+        </requester>
+      </Task>
+    </resource>
+  </entry>
+</Bundle>

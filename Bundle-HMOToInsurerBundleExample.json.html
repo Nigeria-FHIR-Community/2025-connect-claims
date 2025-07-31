@@ -1,0 +1,476 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example: HMO to Insurer Claim Submission Bundle - JSON Representation - DHIN 2025 connectathon claims testing v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.43"}
+    h3,h4,h5,h6{--heading-prefix:"3.43"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DHIN 2025 connectathon claims testing</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+   <li> <a href="artifacts.html" class="dropdown-toggle">Artifacts</a></li>
+  <li> <a href="search-operation.html" class="dropdown-toggle">Search and Operations</a></li> 
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example: HMO to Insurer Claim Submission Bundle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">DHIN 2025 connectathon claims testing - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dhin.org/2025Connectathon/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-HMOToInsurerBundleExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-HMOToInsurerBundleExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-HMOToInsurerBundleExample.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example: HMO to Insurer Claim Submission Bundle - JSON Representation</h2>
+
+
+<p><a href="Bundle-HMOToInsurerBundleExample.json" no-download="true">Raw json</a> | <a href="Bundle-HMOToInsurerBundleExample.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "HMOToInsurerBundleExample",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-ng-bundle-hmo-to-insurer.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2025-08-01T09:00:00+01:00",
+  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:claim-002",
+      "<a href="http://hl7.org/fhir/R4/claim.html#Claim">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/claim.html">resourceType</a>" : "Claim",
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.id">id</a>" : "claim-002",
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ng-claim.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Claim_claim-002\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Claim claim-002&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;claim-002\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcclaim-002\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim.html\&quot;&gt;NG-Claim&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\&quot;&gt;Institutional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: Claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2025-07-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;high&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;666&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;td&gt;&lt;code&gt;NgClaimCoverage/coverage-002&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Items&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ProductOrService&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:\&quot;&gt;99214&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.type">type</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/claim-type",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "institutional"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.use">use</a>" : "claim",
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.patient">patient</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:patient-002"
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.created">created</a>" : "2025-07-31",
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.provider">provider</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:org-hmo"
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.priority">priority</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "high"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance">insurance</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.sequence">sequence</a>" : 666,
+            "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.focal">focal</a>" : false,
+            "<a href="http://hl7.org/fhir/R4/claim.html#Claim.insurance.coverage">coverage</a>" : {
+              "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "NgClaimCoverage/coverage-002"
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item">item</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.sequence">sequence</a>" : 1,
+            "<a href="http://hl7.org/fhir/R4/claim.html#Claim.item.productOrService">productOrService</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "99214"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:patient-002",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "patient-002",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2024-06-30T14:36:00+01:00",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-NgPatient.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_patient-002\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient patient-002&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;patient-002\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpatient-002\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2024-06-30 14:36:00+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-NgPatient.html\&quot;&gt;NG Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Chinyere Okoro  Female, DoB: 1990-03-15 ( https://nimc.gov.ng#NIN99887766)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://nimc.gov.ng",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "NIN99887766"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Okoro",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Chinyere"
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1990-03-15"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:coverage-002",
+      "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/coverage.html">resourceType</a>" : "Coverage",
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.id">id</a>" : "coverage-002",
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ng-claim-coverage.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Coverage_coverage-002\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Coverage coverage-002&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;coverage-002\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccoverage-002\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-coverage.html\&quot;&gt;NG-Claim Coverage&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;basic&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;beneficiary&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.type">type</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "basic"
+            }
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.beneficiary">beneficiary</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:patient-002"
+        },
+        "<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.payor">payor</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:org-insurer"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:org-hmo",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "org-hmo-2",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ng-imm-organization.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_org-hmo-2\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization org-hmo-2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;org-hmo-2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcorg-hmo-2\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-imm-organization.html\&quot;&gt;NG Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://nhia.gov.ng&lt;/code&gt;/HMO456&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;pay&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: WellCare HMO&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 22 Insurance Avenue Wuse FCT &lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://nhia.gov.ng",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "HMO456"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "pay"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "WellCare HMO",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+              "22 Insurance Avenue"
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Wuse",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "bwari",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "FCT"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:org-insurer",
+      "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/organization.html">resourceType</a>" : "Organization",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "org-insurer-2",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ng-imm-organization.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_org-insurer-2\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization org-insurer-2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;org-insurer-2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcorg-insurer-2\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-imm-organization.html\&quot;&gt;NG Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://nhia.gov.ng&lt;/code&gt;/INS789&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;ins&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: SecureHealth Insurance Ltd&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: Plot 7 Abuja Crescent Maitama FCT &lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://nhia.gov.ng",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "INS789"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.type">type</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ins"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "SecureHealth Insurance Ltd",
+        "<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
+              "Plot 7 Abuja Crescent"
+            ],
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Maitama",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "bwari",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "FCT"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "urn:uuid:task-claim-review",
+      "<a href="http://hl7.org/fhir/R4/task.html#Task">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/task.html">resourceType</a>" : "Task",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.id">id</a>" : "task-claim-review",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-ng-claim-task.html" style="color: Maroon">&#x1F517;</a> "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Task_task-claim-review\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Task task-claim-review&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;task-claim-review\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hctask-claim-review\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-task.html\&quot;&gt;NG-Claim Task&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Review Claim&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;description&lt;/b&gt;: Please review this claim for adjudication&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-claim-002\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\&quot;Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.status">status</a>" : "requested",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.intent">intent</a>" : "order",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.code">code</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Review Claim"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.description">description</a>" : "Please review this claim for adjudication",
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.for">for</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:claim-002"
+        },
+        "<a href="http://hl7.org/fhir/R4/task.html#Task.requester">requester</a>" : {
+          "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "urn:uuid:org-hmo"
+        }
+      }
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://dhin-hie.org">https://dhin-hie.org</a>.  Package 2025connectathonClaims#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 19:24+0100">2025-07-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

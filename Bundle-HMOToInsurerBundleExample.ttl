@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/Bundle/HMOToInsurerBundleExample> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HMOToInsurerBundleExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-08-01T09:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:claim-002"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:claim-002> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:patient-002"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:patient-002> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:coverage-002"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:coverage-002> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-hmo"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-hmo> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:org-insurer"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:org-insurer> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:task-claim-review"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:task-claim-review> )
+  ] ) . # 
+
+<urn:uuid:claim-002> a fhir:Claim ;
+  fhir:id [ fhir:v "claim-002"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Claim_claim-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Claim claim-002</b></p><a name=\"claim-002\"> </a><a name=\"hcclaim-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim.html\">NG-Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>created</b>: 2025-07-31</p><p><b>provider</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>priority</b>: <span title=\"Codes:\">high</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>666</td><td>false</td><td><code>NgClaimCoverage/coverage-002</code></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:\">99214</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "institutional" ]
+     ] )
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:patient-002" ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-07-31"^^xsd:date] ; # 
+  fhir:provider [
+     fhir:reference [ fhir:v "urn:uuid:org-hmo" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:code [ fhir:v "high" ]
+     ] )
+  ] ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "666"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v false ] ;
+     fhir:coverage [
+       fhir:link <https://dhin.org/2025Connectathon/NgClaimCoverage/coverage-002> ;
+       fhir:reference [ fhir:v "NgClaimCoverage/coverage-002" ]
+     ]
+  ] ) ; # 
+  fhir:item ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:productOrService [
+       fhir:coding ( [
+         fhir:code [ fhir:v "99214" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:patient-002> a fhir:Patient ;
+  fhir:id [ fhir:v "patient-002"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2024-06-30T14:36:00+01:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-002</b></p><a name=\"patient-002\"> </a><a name=\"hcpatient-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-06-30 14:36:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Chinyere Okoro  Female, DoB: 1990-03-15 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nimc.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NIN99887766" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Okoro" ] ;
+     fhir:given ( [ fhir:v "Chinyere" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-03-15"^^xsd:date] . # 
+
+<urn:uuid:coverage-002> a fhir:Coverage ;
+  fhir:id [ fhir:v "coverage-002"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-002</b></p><a name=\"coverage-002\"> </a><a name=\"hccoverage-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-coverage.html\">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:\">basic</span></p><p><b>beneficiary</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>payor</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:code [ fhir:v "basic" ]
+     ] )
+  ] ; # 
+  fhir:beneficiary [
+     fhir:reference [ fhir:v "urn:uuid:patient-002" ]
+  ] ; # 
+  fhir:payor ( [
+     fhir:reference [ fhir:v "urn:uuid:org-insurer" ]
+  ] ) . # 
+
+<urn:uuid:org-hmo> a fhir:Organization ;
+  fhir:id [ fhir:v "org-hmo-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-hmo-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-hmo-2</b></p><a name=\"org-hmo-2\"> </a><a name=\"hcorg-hmo-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/HMO456</p><p><b>type</b>: <span title=\"Codes:\">pay</span></p><p><b>name</b>: WellCare HMO</p><p><b>address</b>: 22 Insurance Avenue Wuse FCT </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nhia.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "HMO456" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "pay" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "WellCare HMO"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "22 Insurance Avenue" ] ) ;
+     fhir:city [ fhir:v "Wuse" ] ;
+     fhir:district [ fhir:v "bwari" ] ;
+     fhir:state [ fhir:v "FCT" ]
+  ] ) . # 
+
+<urn:uuid:org-insurer> a fhir:Organization ;
+  fhir:id [ fhir:v "org-insurer-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-insurer-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-insurer-2</b></p><a name=\"org-insurer-2\"> </a><a name=\"hcorg-insurer-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/INS789</p><p><b>type</b>: <span title=\"Codes:\">ins</span></p><p><b>name</b>: SecureHealth Insurance Ltd</p><p><b>address</b>: Plot 7 Abuja Crescent Maitama FCT </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://nhia.gov.ng"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "INS789" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "ins" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "SecureHealth Insurance Ltd"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Plot 7 Abuja Crescent" ] ) ;
+     fhir:city [ fhir:v "Maitama" ] ;
+     fhir:district [ fhir:v "bwari" ] ;
+     fhir:state [ fhir:v "FCT" ]
+  ] ) . # 
+
+<urn:uuid:task-claim-review> a fhir:Task ;
+  fhir:id [ fhir:v "task-claim-review"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
+       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_task-claim-review\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task task-claim-review</b></p><a name=\"task-claim-review\"> </a><a name=\"hctask-claim-review\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-task.html\">NG-Claim Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Review Claim</span></p><p><b>description</b>: Please review this claim for adjudication</p><p><b>for</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-claim-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>requester</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "requested"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Review Claim" ]
+  ] ; # 
+  fhir:description [ fhir:v "Please review this claim for adjudication"] ; # 
+  fhir:for [
+     fhir:reference [ fhir:v "urn:uuid:claim-002" ]
+  ] ; # 
+  fhir:requester [
+     fhir:reference [ fhir:v "urn:uuid:org-hmo" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

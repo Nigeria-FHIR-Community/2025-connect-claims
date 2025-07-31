@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-003"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure procedure-003</b></p><a name="procedure-003"> </a><a name="hcprocedure-003"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-procedure.html">NG Procedure</a></p></div><p><b>status</b>: In Progress</p><p><b>code</b>: <span title="Codes:">Wound dressing</span></p><p><b>subject</b>: <a href="Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>performed</b>: 2025-08-02 09:30:00+0100</p></div>
+  </text>
+  <status value="in-progress"/>
+  <code>
+    <text value="Wound dressing"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:patient-003"/>
+  </subject>
+  <performedDateTime value="2025-08-02T09:30:00+01:00"/>
+</Procedure>

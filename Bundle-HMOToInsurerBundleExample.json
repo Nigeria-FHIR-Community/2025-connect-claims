@@ -1,0 +1,195 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "HMOToInsurerBundleExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-08-01T09:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:claim-002",
+    "resource" : {
+      "resourceType" : "Claim",
+      "id" : "claim-002",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Claim_claim-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Claim claim-002</b></p><a name=\"claim-002\"> </a><a name=\"hcclaim-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim.html\">NG-Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>created</b>: 2025-07-31</p><p><b>provider</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>priority</b>: <span title=\"Codes:\">high</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>666</td><td>false</td><td><code>NgClaimCoverage/coverage-002</code></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:\">99214</span></td></tr></table></div>"
+      },
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/claim-type",
+          "code" : "institutional"
+        }]
+      },
+      "use" : "claim",
+      "patient" : {
+        "reference" : "urn:uuid:patient-002"
+      },
+      "created" : "2025-07-31",
+      "provider" : {
+        "reference" : "urn:uuid:org-hmo"
+      },
+      "priority" : {
+        "coding" : [{
+          "code" : "high"
+        }]
+      },
+      "insurance" : [{
+        "sequence" : 666,
+        "focal" : false,
+        "coverage" : {
+          "reference" : "NgClaimCoverage/coverage-002"
+        }
+      }],
+      "item" : [{
+        "sequence" : 1,
+        "productOrService" : {
+          "coding" : [{
+            "code" : "99214"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:patient-002",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-002",
+      "meta" : {
+        "lastUpdated" : "2024-06-30T14:36:00+01:00",
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-002</b></p><a name=\"patient-002\"> </a><a name=\"hcpatient-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-06-30 14:36:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Chinyere Okoro  Female, DoB: 1990-03-15 ( https://nimc.gov.ng#NIN99887766)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nimc.gov.ng",
+        "value" : "NIN99887766"
+      }],
+      "name" : [{
+        "family" : "Okoro",
+        "given" : ["Chinyere"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1990-03-15"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:coverage-002",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-002",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-002\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-002</b></p><a name=\"coverage-002\"> </a><a name=\"hccoverage-002\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-coverage.html\">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:\">basic</span></p><p><b>beneficiary</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-patient-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>payor</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"
+      },
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "code" : "basic"
+        }]
+      },
+      "beneficiary" : {
+        "reference" : "urn:uuid:patient-002"
+      },
+      "payor" : [{
+        "reference" : "urn:uuid:org-insurer"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-hmo",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-hmo-2",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-hmo-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-hmo-2</b></p><a name=\"org-hmo-2\"> </a><a name=\"hcorg-hmo-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/HMO456</p><p><b>type</b>: <span title=\"Codes:\">pay</span></p><p><b>name</b>: WellCare HMO</p><p><b>address</b>: 22 Insurance Avenue Wuse FCT </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nhia.gov.ng",
+        "value" : "HMO456"
+      }],
+      "type" : [{
+        "coding" : [{
+          "code" : "pay"
+        }]
+      }],
+      "name" : "WellCare HMO",
+      "address" : [{
+        "line" : ["22 Insurance Avenue"],
+        "city" : "Wuse",
+        "district" : "bwari",
+        "state" : "FCT"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-insurer",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-insurer-2",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-insurer-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-insurer-2</b></p><a name=\"org-insurer-2\"> </a><a name=\"hcorg-insurer-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/INS789</p><p><b>type</b>: <span title=\"Codes:\">ins</span></p><p><b>name</b>: SecureHealth Insurance Ltd</p><p><b>address</b>: Plot 7 Abuja Crescent Maitama FCT </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nhia.gov.ng",
+        "value" : "INS789"
+      }],
+      "type" : [{
+        "coding" : [{
+          "code" : "ins"
+        }]
+      }],
+      "name" : "SecureHealth Insurance Ltd",
+      "address" : [{
+        "line" : ["Plot 7 Abuja Crescent"],
+        "city" : "Maitama",
+        "district" : "bwari",
+        "state" : "FCT"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:task-claim-review",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "task-claim-review",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Task_task-claim-review\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Task task-claim-review</b></p><a name=\"task-claim-review\"> </a><a name=\"hctask-claim-review\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-task.html\">NG-Claim Task</a></p></div><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes:\">Review Claim</span></p><p><b>description</b>: Please review this claim for adjudication</p><p><b>for</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-claim-002\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><p><b>requester</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"
+      },
+      "status" : "requested",
+      "intent" : "order",
+      "code" : {
+        "text" : "Review Claim"
+      },
+      "description" : "Please review this claim for adjudication",
+      "for" : {
+        "reference" : "urn:uuid:claim-002"
+      },
+      "requester" : {
+        "reference" : "urn:uuid:org-hmo"
+      }
+    }
+  }]
+}

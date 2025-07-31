@@ -1,0 +1,452 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Example: Patient to Hospital Interaction Bundle - TTL Representation - DHIN 2025 connectathon claims testing v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.45"}
+    h3,h4,h5,h6{--heading-prefix:"3.45"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">DHIN 2025 connectathon claims testing</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Nigeria flag" src="assets/images/nga.svg" height="16" title="Nigeria"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav"> 
+
+ <li> <a href="index.html" class="dropdown-toggle">Home</a></li> 
+   <li> <a href="artifacts.html" class="dropdown-toggle">Artifacts</a></li>
+  <li> <a href="search-operation.html" class="dropdown-toggle">Search and Operations</a></li> 
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example: Patient to Hospital Interaction Bundle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">DHIN 2025 connectathon claims testing - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dhin.org/2025Connectathon/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-PatientToHospitalBundleExample.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-PatientToHospitalBundleExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-PatientToHospitalBundleExample.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example: Patient to Hospital Interaction Bundle - TTL Representation</h2>
+
+
+<p><a href="Bundle-PatientToHospitalBundleExample.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-PatientToHospitalBundleExample.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PatientToHospitalBundleExample&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;collection&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2025-08-02T10:15:00+01:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:patient-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;urn:uuid:patient-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:encounter-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/encounter.html#Encounter">fhir:resource</a> &lt;urn:uuid:encounter-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:practitioner-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">fhir:resource</a> &lt;urn:uuid:practitioner-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:procedure-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/procedure.html#Procedure">fhir:resource</a> &lt;urn:uuid:procedure-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:observation-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;urn:uuid:observation-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:service-request-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">fhir:resource</a> &lt;urn:uuid:service-request-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:invoice-003&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/invoice.html#Invoice">fhir:resource</a> &lt;urn:uuid:invoice-003&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:uuid:org-hospital&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization">fhir:resource</a> &lt;urn:uuid:org-hospital&gt; )
+  ] ) . # 
+
+&lt;urn:uuid:patient-003&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;patient-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-05-21T14:36:00+01:00&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/NgPatient&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/NgPatient&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_patient-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient patient-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;patient-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpatient-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Last updated: 2023-05-21 14:36:00+0100&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-NgPatient.html\&quot;&gt;NG Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)&lt;/p&gt;&lt;hr/&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://nimc.gov.ng&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NIN44556677&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Doe&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;John&quot; ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;male&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;1995-05-20&quot;^^xsd:date] . # 
+
+&lt;urn:uuid:encounter-003&gt; <a href="http://hl7.org/fhir/R4/encounter.html">a</a> fhir:Encounter ;
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;encounter-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Encounter_encounter-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Encounter encounter-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;encounter-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcencounter-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-encounter.html\&quot;&gt;NG-Claim Encounter&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: [not stated] AMB: AMB&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2025-08-02 09:00:00+0100 --&amp;gt; (ongoing)&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in-progress&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:class</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;AMB&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:patient-003&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02T09:00:00+01:00&quot;^^xsd:dateTime ]
+  ] . # 
+
+&lt;urn:uuid:practitioner-003&gt; <a href="http://hl7.org/fhir/R4/practitioner.html">a</a> fhir:Practitioner ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;practitioner-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Practitioner_practitioner-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner practitioner-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;practitioner-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcpractitioner-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-NgPractitioner.html\&quot;&gt;NG Practitioner&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://mdcn.gov.ng&lt;/code&gt;/MDCN334455&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Grace Ibrahim &lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mdcn.gov.ng&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MDCN334455&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ibrahim&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Grace&quot; ] )
+  ] ) . # 
+
+&lt;urn:uuid:procedure-003&gt; <a href="http://hl7.org/fhir/R4/procedure.html">a</a> fhir:Procedure ;
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;procedure-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Procedure_procedure-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Procedure procedure-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;procedure-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcprocedure-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-procedure.html\&quot;&gt;NG Procedure&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Wound dressing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2025-08-02 09:30:00+0100&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;in-progress&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Wound dressing&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:patient-003&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed[x]">fhir:performed</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:dateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02T09:30:00+01:00&quot;^^xsd:dateTime
+  ] . # 
+
+&lt;urn:uuid:observation-003&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;observation-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_observation-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation observation-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;observation-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcobservation-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-observation.html\&quot;&gt;NG-Claim Observation&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Temperature&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2025-08-02 09:40:00+0100&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 37.4 °C&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Temperature&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:patient-003&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">fhir:effective</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:dateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02T09:40:00+01:00&quot;^^xsd:dateTime
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">a</a> fhir:Quantity ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> 37.4 ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">fhir:unit</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;°C&quot; ]
+  ] . # 
+
+&lt;urn:uuid:service-request-003&gt; <a href="http://hl7.org/fhir/R4/servicerequest.html">a</a> fhir:ServiceRequest ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;service-request-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;ServiceRequest_service-request-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ServiceRequest service-request-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;service-request-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcservice-request-003\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: Order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;Malaria test&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\&quot;&gt;Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2025-08-02&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;order&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Malaria test&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:uuid:patient-003&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.authoredOn">fhir:authoredOn</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02&quot;^^xsd:date] . # 
+
+&lt;urn:uuid:invoice-003&gt; <a href="http://hl7.org/fhir/R4/invoice.html">a</a> fhir:Invoice ;
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;invoice-003&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Invoice_invoice-003\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Invoice invoice-003&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;invoice-003\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcinvoice-003\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-claim-invoice.html\&quot;&gt;NG-Claim Invoice&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-patient-003.html\&quot;&gt;John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2025-08-02&lt;/p&gt;&lt;h3&gt;TotalNets&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;8000&lt;/td&gt;&lt;td&gt;Nigerian naira&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/patient-003&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-08-02&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/invoice.html#Invoice.totalNet">fhir:totalNet</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:v</a> &quot;8000&quot;^^xsd:decimal ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">fhir:currency</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NGN&quot; ]
+  ] . # 
+
+&lt;urn:uuid:org-hospital&gt; <a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;org-hospital-2&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Organization_org-hospital-2\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Organization org-hospital-2&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;org-hospital-2\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcorg-hospital-2\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ng-imm-organization.html\&quot;&gt;NG Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;https://herfama.lagos.ng&lt;/code&gt;/HF123&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=\&quot;Codes:\&quot;&gt;prov&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: St. Raphael Hospital&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: 22 Raymond Street Ikeja Lagos &lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://herfama.lagos.ng&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HF123&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.type">fhir:type</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;prov&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;St. Raphael Hospital&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.address">fhir:address</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:line</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;22 Raymond Street&quot; ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ikeja&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">fhir:district</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ikeja&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">fhir:state</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Lagos&quot; ]
+  ] ) . # 
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://dhin-hie.org">https://dhin-hie.org</a>.  Package 2025connectathonClaims#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 19:24+0100">2025-07-31</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

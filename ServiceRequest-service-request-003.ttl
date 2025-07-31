@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://dhin.org/2025Connectathon/ServiceRequest/service-request-003> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "service-request-003"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest service-request-003</b></p><a name=\"service-request-003\"> </a><a name=\"hcservice-request-003\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:\">Malaria test</span></p><p><b>subject</b>: <a href=\"Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>authoredOn</b>: 2025-08-02</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Malaria test" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:patient-003" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-08-02"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

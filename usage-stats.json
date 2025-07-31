@@ -1,0 +1,163 @@
+{
+  "package": "2025connectathonClaims",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "NG",
+  "extensions": [],
+  "profiles": {
+    "Patient": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient",
+        "title": "NG Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner",
+        "title": "NG Practitioner"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer",
+        "title": "2-NG-Bundle: HMO to Insurer"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo",
+        "title": "1-NG-Bundle: Hospital to HMO (Claim Submission)"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital",
+        "title": "3-NG-Bundle: Patient to Hospital"
+      },
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer",
+        "title": "4-NG-Bundle: Patient to Insurer"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim",
+        "title": "NG-Claim"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage",
+        "title": "NG-Claim Coverage"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter",
+        "title": "NG-Claim Encounter"
+      }
+    ],
+    "Invoice": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice",
+        "title": "NG-Claim Invoice"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation",
+        "title": "NG-Claim Observation"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-practitionerrole",
+        "title": "NG PractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure",
+        "title": "NG Procedure"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task",
+        "title": "NG-Claim Task"
+      }
+    ],
+    "ClaimResponse": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse",
+        "title": "NG-ClaimResponse"
+      }
+    ],
+    "CoverageEligibilityRequest": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request",
+        "title": "NG-CoverageEligibilityRequest"
+      }
+    ],
+    "CoverageEligibilityResponse": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response",
+        "title": "NG-CoverageEligibilityResponse"
+      }
+    ],
+    "ExplanationOfBenefit": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-explanationofbenefit",
+        "title": "NG-ExplanationOfBenefit"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization",
+        "title": "NG Organization"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

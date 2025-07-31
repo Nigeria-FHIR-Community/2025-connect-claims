@@ -1,0 +1,201 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "PatientToHospitalBundleExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-08-02T10:15:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:patient-003",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-003",
+      "meta" : {
+        "lastUpdated" : "2023-05-21T14:36:00+01:00",
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-003</b></p><a name=\"patient-003\"> </a><a name=\"hcpatient-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2023-05-21 14:36:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nimc.gov.ng",
+        "value" : "NIN44556677"
+      }],
+      "name" : [{
+        "family" : "Doe",
+        "given" : ["John"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1995-05-20"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:encounter-003",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "encounter-003",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_encounter-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter encounter-003</b></p><a name=\"encounter-003\"> </a><a name=\"hcencounter-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-encounter.html\">NG-Claim Encounter</a></p></div><p><b>status</b>: In Progress</p><p><b>class</b>: [not stated] AMB: AMB</p><p><b>subject</b>: <a href=\"Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>period</b>: 2025-08-02 09:00:00+0100 --&gt; (ongoing)</p></div>"
+      },
+      "status" : "in-progress",
+      "class" : {
+        "code" : "AMB"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:patient-003"
+      },
+      "period" : {
+        "start" : "2025-08-02T09:00:00+01:00"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:practitioner-003",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "practitioner-003",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-003</b></p><a name=\"practitioner-003\"> </a><a name=\"hcpractitioner-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPractitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN334455</p><p><b>name</b>: Grace Ibrahim </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://mdcn.gov.ng",
+        "value" : "MDCN334455"
+      }],
+      "name" : [{
+        "family" : "Ibrahim",
+        "given" : ["Grace"]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:procedure-003",
+    "resource" : {
+      "resourceType" : "Procedure",
+      "id" : "procedure-003",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Procedure_procedure-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Procedure procedure-003</b></p><a name=\"procedure-003\"> </a><a name=\"hcprocedure-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-procedure.html\">NG Procedure</a></p></div><p><b>status</b>: In Progress</p><p><b>code</b>: <span title=\"Codes:\">Wound dressing</span></p><p><b>subject</b>: <a href=\"Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>performed</b>: 2025-08-02 09:30:00+0100</p></div>"
+      },
+      "status" : "in-progress",
+      "code" : {
+        "text" : "Wound dressing"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:patient-003"
+      },
+      "performedDateTime" : "2025-08-02T09:30:00+01:00"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:observation-003",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "observation-003",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_observation-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation observation-003</b></p><a name=\"observation-003\"> </a><a name=\"hcobservation-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-observation.html\">NG-Claim Observation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">Temperature</span></p><p><b>subject</b>: <a href=\"Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>effective</b>: 2025-08-02 09:40:00+0100</p><p><b>value</b>: 37.4 °C</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "text" : "Temperature"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:patient-003"
+      },
+      "effectiveDateTime" : "2025-08-02T09:40:00+01:00",
+      "valueQuantity" : {
+        "value" : 37.4,
+        "unit" : "°C"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:service-request-003",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "service-request-003",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_service-request-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest service-request-003</b></p><a name=\"service-request-003\"> </a><a name=\"hcservice-request-003\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:\">Malaria test</span></p><p><b>subject</b>: <a href=\"Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003\">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>authoredOn</b>: 2025-08-02</p></div>"
+      },
+      "status" : "active",
+      "intent" : "order",
+      "code" : {
+        "text" : "Malaria test"
+      },
+      "subject" : {
+        "reference" : "urn:uuid:patient-003"
+      },
+      "authoredOn" : "2025-08-02"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:invoice-003",
+    "resource" : {
+      "resourceType" : "Invoice",
+      "id" : "invoice-003",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Invoice_invoice-003\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Invoice invoice-003</b></p><a name=\"invoice-003\"> </a><a name=\"hcinvoice-003\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-invoice.html\">NG-Claim Invoice</a></p></div><p><b>status</b>: draft</p><p><b>subject</b>: <a href=\"Patient-patient-003.html\">John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)</a></p><p><b>date</b>: 2025-08-02</p><h3>TotalNets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style=\"display: none\">*</td><td>8000</td><td>Nigerian naira</td></tr></table></div>"
+      },
+      "status" : "draft",
+      "subject" : {
+        "reference" : "Patient/patient-003"
+      },
+      "date" : "2025-08-02",
+      "totalNet" : {
+        "value" : 8000,
+        "currency" : "NGN"
+      }
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-hospital",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-hospital-2",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-hospital-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-hospital-2</b></p><a name=\"org-hospital-2\"> </a><a name=\"hcorg-hospital-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF123</p><p><b>type</b>: <span title=\"Codes:\">prov</span></p><p><b>name</b>: St. Raphael Hospital</p><p><b>address</b>: 22 Raymond Street Ikeja Lagos </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://herfama.lagos.ng",
+        "value" : "HF123"
+      }],
+      "type" : [{
+        "coding" : [{
+          "code" : "prov"
+        }]
+      }],
+      "name" : "St. Raphael Hospital",
+      "address" : [{
+        "line" : ["22 Raymond Street"],
+        "city" : "Ikeja",
+        "district" : "ikeja",
+        "state" : "Lagos"
+      }]
+    }
+  }]
+}

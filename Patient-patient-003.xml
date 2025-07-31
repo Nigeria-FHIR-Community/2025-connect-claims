@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-003"/>
+  <meta>
+    <lastUpdated value="2023-05-21T14:36:00+01:00"/>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-003</b></p><a name="patient-003"> </a><a name="hcpatient-003"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2023-05-21 14:36:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">John Doe  Male, DoB: 1995-05-20 ( https://nimc.gov.ng#NIN44556677)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="https://nimc.gov.ng"/>
+    <value value="NIN44556677"/>
+  </identifier>
+  <name>
+    <family value="Doe"/>
+    <given value="John"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1995-05-20"/>
+</Patient>

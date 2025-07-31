@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Invoice xmlns="http://hl7.org/fhir">
+  <id value="invoice-001"/>
+  <meta>
+    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Invoice invoice-001</b></p><a name="invoice-001"> </a><a name="hcinvoice-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-invoice.html">NG-Claim Invoice</a></p></div><p><b>status</b>: issued</p><p><b>subject</b>: <code>NgPatient/patient-001</code></p><p><b>date</b>: 2025-07-30</p><h3>TotalNets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>15000</td><td>Nigerian naira</td></tr></table></div>
+  </text>
+  <status value="issued"/>
+  <subject>
+    <reference value="NgPatient/patient-001"/>
+  </subject>
+  <date value="2025-07-30"/>
+  <totalNet>
+    <value value="15000"/>
+    <currency value="NGN"/>
+  </totalNet>
+</Invoice>

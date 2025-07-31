@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="service-request-003"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest service-request-003</b></p><a name="service-request-003"> </a><a name="hcservice-request-003"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title="Codes:">Malaria test</span></p><p><b>subject</b>: <a href="Bundle-PatientToHospitalBundleExample.html#urn-uuid-patient-003">Bundle: type = collection; timestamp = 2025-08-02 10:15:00+0100</a></p><p><b>authoredOn</b>: 2025-08-02</p></div>
+  </text>
+  <status value="active"/>
+  <intent value="order"/>
+  <code>
+    <text value="Malaria test"/>
+  </code>
+  <subject>
+    <reference value="urn:uuid:patient-003"/>
+  </subject>
+  <authoredOn value="2025-08-02"/>
+</ServiceRequest>

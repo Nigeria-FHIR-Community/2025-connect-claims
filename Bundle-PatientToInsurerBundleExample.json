@@ -1,0 +1,150 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "PatientToInsurerBundleExample",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-08-03T11:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:patient-004",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-004",
+      "meta" : {
+        "lastUpdated" : "2019-01-25T15:36:00+01:00",
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-004\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-004</b></p><a name=\"patient-004\"> </a><a name=\"hcpatient-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2019-01-25 15:36:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ngozi Adamu  Female, DoB: 1988-04-10 ( https://nimc.gov.ng#NIN55667788)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nimc.gov.ng",
+        "value" : "NIN55667788"
+      }],
+      "name" : [{
+        "family" : "Adamu",
+        "given" : ["Ngozi"]
+      }],
+      "gender" : "female",
+      "birthDate" : "1988-04-10"
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:coverage-004",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-004",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-004\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-004</b></p><a name=\"coverage-004\"> </a><a name=\"hccoverage-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-coverage.html\">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:\">basic</span></p><p><b>beneficiary</b>: <a href=\"Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004\">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>payor</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>"
+      },
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "code" : "basic"
+        }]
+      },
+      "beneficiary" : {
+        "reference" : "urn:uuid:patient-004"
+      },
+      "payor" : [{
+        "reference" : "urn:uuid:org-insurer"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:eligibility-request-004",
+    "resource" : {
+      "resourceType" : "CoverageEligibilityRequest",
+      "id" : "eligibility-request-004",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CoverageEligibilityRequest_eligibility-request-004\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CoverageEligibilityRequest eligibility-request-004</b></p><a name=\"eligibility-request-004\"> </a><a name=\"hceligibility-request-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-eligibility-request.html\">NG-CoverageEligibilityRequest</a></p></div><p><b>status</b>: Active</p><p><b>purpose</b>: familycoverage</p><p><b>patient</b>: <a href=\"Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004\">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>created</b>: 2025-08-02</p><p><b>insurer</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-PatientToInsurerBundleExample.html#urn-uuid-coverage-004\">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></td></tr></table></div>"
+      },
+      "status" : "active",
+      "purpose" : ["familycoverage"],
+      "patient" : {
+        "reference" : "urn:uuid:patient-004"
+      },
+      "created" : "2025-08-02",
+      "insurer" : {
+        "reference" : "urn:uuid:org-insurer"
+      },
+      "insurance" : [{
+        "coverage" : {
+          "reference" : "urn:uuid:coverage-004"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:org-insurer",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "org-insurer-4",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_org-insurer-4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization org-insurer-4</b></p><a name=\"org-insurer-4\"> </a><a name=\"hcorg-insurer-4\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/INS456</p><p><b>type</b>: <span title=\"Codes:\">ins</span></p><p><b>name</b>: Guardian Health Insurance</p><p><b>address</b>: 88 Medical Blvd Abuja FCT </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nhia.gov.ng",
+        "value" : "INS456"
+      }],
+      "type" : [{
+        "coding" : [{
+          "code" : "ins"
+        }]
+      }],
+      "name" : "Guardian Health Insurance",
+      "address" : [{
+        "line" : ["88 Medical Blvd"],
+        "city" : "Abuja",
+        "district" : "gwarinpa",
+        "state" : "FCT"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:eligibility-response-004",
+    "resource" : {
+      "resourceType" : "CoverageEligibilityResponse",
+      "id" : "eligibility-response-004",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CoverageEligibilityResponse_eligibility-response-004\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CoverageEligibilityResponse eligibility-response-004</b></p><a name=\"eligibility-response-004\"> </a><a name=\"hceligibility-response-004\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-eligibility-response.html\">NG-CoverageEligibilityResponse</a></p></div><p><b>status</b>: Active</p><p><b>purpose</b>: another</p><p><b>patient</b>: <a href=\"Bundle-PatientToInsurerBundleExample.html#urn-uuid-patient-004\">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></p><p><b>created</b>: 2025-08-03</p><p><b>request</b>: <a href=\"CoverageEligibilityRequest-eligibility-request-004.html\">CoverageEligibilityRequest: status = active; purpose = familycoverage; created = 2025-08-02</a></p><p><b>outcome</b>: well</p><p><b>insurer</b>: <a href=\"Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-insurer\">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-PatientToInsurerBundleExample.html#urn-uuid-coverage-004\">Bundle: type = collection; timestamp = 2025-08-03 11:00:00+0100</a></td></tr></table></div>"
+      },
+      "status" : "active",
+      "purpose" : ["another"],
+      "patient" : {
+        "reference" : "urn:uuid:patient-004"
+      },
+      "created" : "2025-08-03",
+      "request" : {
+        "reference" : "CoverageEligibilityRequest/eligibility-request-004"
+      },
+      "outcome" : "well",
+      "insurer" : {
+        "reference" : "urn:uuid:org-insurer"
+      },
+      "insurance" : [{
+        "coverage" : {
+          "reference" : "urn:uuid:coverage-004"
+        }
+      }]
+    }
+  }]
+}
