@@ -1,0 +1,1617 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+   <id value="2025connectathonClaims"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p class="res-header-id">
+            <b>Generated Narrative: ImplementationGuide 2025connectathonClaims</b>
+         </p>
+         <a name="2025connectathonClaims"> </a>
+         <a name="hc2025connectathonClaims"> </a>
+         <h2>DHIN2025connectathonclaims</h2>
+         <p>The official URL for this implementation guide is: </p>
+         <pre>https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims</pre>
+         <div>
+            <p>Implementation Guide for testing Claims</p>
+         </div>
+      </div>
+   </text>
+   <url value="https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims"/>
+   <version value="0.1.0"/>
+   <name value="DHIN2025connectathonclaims"/>
+   <title value="DHIN 2025 connectathon claims testing"/>
+   <status value="draft"/>
+   <date value="2025-07-31T10:17:12+01:00"/>
+   <publisher value="https://dhin-hie.org"/>
+   <contact>
+      <name value="https://dhin-hie.org"/>
+      <telecom>
+         <system value="url"/>
+         <value value="https://dhin-hie.org"/>
+      </telecom>
+      <telecom>
+         <system value="email"/>
+         <value value="info@dhin-hie.org"/>
+      </telecom>
+   </contact>
+   <contact>
+      <name value="Digital Health Interoperability Network (DHIN)."/>
+      <telecom>
+         <system value="email"/>
+         <value value="info@dhin-hie.org"/>
+         <use value="work"/>
+      </telecom>
+   </contact>
+   <description value="Implementation Guide for testing Claims"/>
+   <jurisdiction>
+      <coding>
+         <system value="urn:iso:std:iso:3166"/>
+         <code value="NG"/>
+         <display value="Nigeria"/>
+      </coding>
+   </jurisdiction>
+   <packageId value="2025connectathonClaims"/>
+   <license value="CC0-1.0"/>
+   <fhirVersion value="4.0.1"/>
+   <dependsOn id="hl7tx">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+      </extension>
+      <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+      <packageId value="hl7.terminology.r4"/>
+      <version value="6.5.0"/>
+   </dependsOn>
+   <dependsOn id="hl7ext">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+      </extension>
+      <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+      <packageId value="hl7.fhir.uv.extensions.r4"/>
+      <version value="5.2.0"/>
+   </dependsOn>
+   <definition>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="copyrightyear"/>
+         </extension>
+         <extension url="value">
+            <valueString value="2025+"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="releaselabel"/>
+         </extension>
+         <extension url="value">
+            <valueString value="ci-build"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="autoload-resources"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-liquid"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/liquid"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-qa"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/qa"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-temp"/>
+         </extension>
+         <extension url="value">
+            <valueString value="temp/pages"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-output"/>
+         </extension>
+         <extension url="value">
+            <valueString value="output"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-suppressed-warnings"/>
+         </extension>
+         <extension url="value">
+            <valueString value="input/ignoreWarnings.txt"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="path-history"/>
+         </extension>
+         <extension url="value">
+            <valueString value="https://dhin.org/2025Connectathon/history.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-html"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="template-md"/>
+         </extension>
+         <extension url="value">
+            <valueString value="template-page-md.html"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-contact"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-context"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-copyright"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-jurisdiction"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-license"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-publisher"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-version"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="apply-wg"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="active-tables"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="fmm-definition"/>
+         </extension>
+         <extension url="value">
+            <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="propagate-status"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="excludelogbinaryformat"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
+            <valueString value="tabbed-snapshots"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+         <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
+      </extension>
+      <grouping id="-dyn-searchparameter">
+         <name value="Behavior: Search Parameters"/>
+         <description value="These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources."/>
+      </grouping>
+      <grouping id="-str-profile">
+         <name value="Structures: Resource Profiles"/>
+         <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-valueset">
+         <name value="Terminology: Value Sets"/>
+         <description value="These define sets of codes used by systems conforming to this implementation guide."/>
+      </grouping>
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByLastUpdated.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByLastUpdated"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Last Updated Date"/>
+         <description value="Retrieve bundles based on last updated timestamp"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByFacilityIdentifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByFacilityIdentifier"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Organization Identifier"/>
+         <description value="Retrieve bundles that reference a specific healthcare organization/facility"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByBirthDate.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByBirthDate"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Patient BirthDate"/>
+         <description value="Retrieve bundles where the Patient has a specific birth date"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByPatientIdentifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByPatientIdentifier"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Patient Identifier"/>
+         <description value="Allows search of NgImmBundle resources where the embedded Patient has a specific identifier (e.g., NIN)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByState.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByState"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Patient State"/>
+         <description value="Retrieve bundles where the Patient resides in a specific Nigerian State"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-NgImmBundleSearchByVaccineCode.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/NgImmBundleSearchByVaccineCode"/>
+         </reference>
+         <name value="NG-Imm Search Bundle by Vaccine Code"/>
+         <description value="Searches bundles containing a specific vaccine code in Immunization"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-immdate.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-immdate"/>
+         </reference>
+         <name value="NG-Imm Search Immunization by date of vaccination"/>
+         <description value="Search Immunization records by date of vaccination"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-immstatus.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-immstatus"/>
+         </reference>
+         <name value="NG-Imm Search Immunization by immunization status"/>
+         <description value="Search Immunization records by status (eg. completed, or not done)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-immpatient.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-immpatient"/>
+         </reference>
+         <name value="NG-Imm Search Immunization by patient"/>
+         <description value="Search Immunization records by patient"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-immvaccinecode.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-immvaccinecode"/>
+         </reference>
+         <name value="NG-Imm Search Immunization by vaccine code"/>
+         <description value="Search Immunization records by vaccination code"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-identifier.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-identifier"/>
+         </reference>
+         <name value="NG-Imm Search Patient by Identifier"/>
+         <description value="Search by patient identifier"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-birthdate.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-birthdate"/>
+         </reference>
+         <name value="NG-Imm Search Patient by birth date"/>
+         <description value="Search by patient birth date"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-city.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-city"/>
+         </reference>
+         <name value="NG-Imm Search Patient by city"/>
+         <description value="Search patient records by city, town or settlement"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-createddate.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-createddate"/>
+         </reference>
+         <name value="NG-Imm Search Patient by date of creation or update"/>
+         <description value="Search by patient's creation or last updated date (range supported)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-firstname.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-firstname"/>
+         </reference>
+         <name value="NG-Imm Search Patient by firstname"/>
+         <description value="Search by patient firstname"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-gender.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-gender"/>
+         </reference>
+         <name value="NG-Imm Search Patient by gender"/>
+         <description value="Search by patient gender"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-lastname.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-lastname"/>
+         </reference>
+         <name value="NG-Imm Search Patient by lastname"/>
+         <description value="Search by patient lastname"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-state.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-state"/>
+         </reference>
+         <name value="NG-Imm Search Patient by state"/>
+         <description value="Search by patient's State of residence"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-lga.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-lga"/>
+         </reference>
+         <name value="NG-Imm Search by Patient LGA"/>
+         <description value="Search by patient LGA of residence"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="SearchParameter"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="SearchParameter-SearchParameter-ngimm-telecom.html"/>
+         </extension>
+         <reference>
+            <reference value="SearchParameter/SearchParameter-ngimm-telecom"/>
+         </reference>
+         <name value="NG-Imm Search patient by phone or email"/>
+         <description value="Search patient record by phone number or email address"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-dyn-searchparameter"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim"/>
+         </reference>
+         <name value="NG-Claim"/>
+         <description value="A profile representing submitted claims from providers to payers."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-coverage.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-coverage"/>
+         </reference>
+         <name value="NG-Claim Coverage"/>
+         <description value="A profile capturing a patient's insurance coverage details."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-encounter.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-encounter"/>
+         </reference>
+         <name value="NG-Claim Encounter"/>
+         <description value="A profile representing patient encounters related to claims."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-invoice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-invoice"/>
+         </reference>
+         <name value="NG-Claim Invoice"/>
+         <description value="A profile for invoices generated by providers for reimbursement."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-observation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-observation"/>
+         </reference>
+         <name value="NG-Claim Observation"/>
+         <description value="A profile representing clinical or diagnostic findings used in claims."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-organization.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-organization"/>
+         </reference>
+         <name value="NG-Claim Organization"/>
+         <description value="A profile for provider and payer organizations."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-patient.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-patient"/>
+         </reference>
+         <name value="NG-Claim Patient"/>
+         <description value="A profile representing patients involved in insurance claims."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-practitioner.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-practitioner"/>
+         </reference>
+         <name value="NG-Claim Practitioner"/>
+         <description value="A profile representing healthcare professionals who submit claims."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-practitionerrole.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-practitionerrole"/>
+         </reference>
+         <name value="NG-Claim PractitionerRole"/>
+         <description value="A profile for defining the role of a practitioner within a claims-processing organization."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-procedure.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-procedure"/>
+         </reference>
+         <name value="NG-Claim Procedure"/>
+         <description value="A profile for clinical procedures tied to a submitted claim."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claim-task.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claim-task"/>
+         </reference>
+         <name value="NG-Claim Task"/>
+         <description value="A profile for workflow and task management in insurance processing."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-claimresponse.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-claimresponse"/>
+         </reference>
+         <name value="NG-ClaimResponse"/>
+         <description value="A profile representing responses from insurers regarding submitted claims."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-eligibility-request.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-eligibility-request"/>
+         </reference>
+         <name value="NG-CoverageEligibilityRequest"/>
+         <description value="A profile for checking patient's eligibility for insurance services."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-eligibility-response.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-eligibility-response"/>
+         </reference>
+         <name value="NG-CoverageEligibilityResponse"/>
+         <description value="A profile for the insurer’s response to an eligibility check."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ng-explanationofbenefit.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ng-explanationofbenefit"/>
+         </reference>
+         <name value="NG-ExplanationOfBenefit"/>
+         <description value="A profile detailing adjudicated claim results."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-gender.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-gender"/>
+         </reference>
+         <name value="NG-Imm Gender or Sex VS"/>
+         <description value="Subset of HL7 administrative-gender limited to 'male' and 'female'."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-facility-types.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-facility-types"/>
+         </reference>
+         <name value="NG-Imm HealthFacility Type VS"/>
+         <description value="Classification of Nigerian health facilities"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-lgas.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-lgas"/>
+         </reference>
+         <name value="NG-Imm LGAs VS"/>
+         <description value="The administrative Local Government Areas where a person or a facility is."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-languages.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-languages"/>
+         </reference>
+         <name value="NG-Imm Languages VS"/>
+         <description value="The Patient's preferred language for communication."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-location-owner.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-location-owner"/>
+         </reference>
+         <name value="NG-Imm Location Owner"/>
+         <description value="The owner of an Immunization location"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-states.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-states"/>
+         </reference>
+         <name value="NG-Imm States VS"/>
+         <description value="The state where a person or a facility is."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-nigeria-wards.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/nigeria-wards"/>
+         </reference>
+         <name value="NG-Imm Wards VS"/>
+         <description value="The administrative Ward (within an LGA) where a person or a facility is."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-wards.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-wards"/>
+         </reference>
+         <name value="NG-Imm Administrative Wards CS"/>
+         <description value="This CodeSystem defines ward codes and names mapped to their respective Local Government Areas (LGAs) in Nigeria."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-facility-type.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-facility-type"/>
+         </reference>
+         <name value="NG-Imm Facility Type CS"/>
+         <description value="A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-gender.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-gender"/>
+         </reference>
+         <name value="NG-Imm Gender CS"/>
+         <description value="The administrative gender of a person."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-lgas.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-lgas"/>
+         </reference>
+         <name value="NG-Imm LGAs in Nigeria CS"/>
+         <description value="This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-location-owner-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-location-owner-cs"/>
+         </reference>
+         <name value="NG-Imm Location Owner CS"/>
+         <description value="This CodeSystem defines Immunization Location Owner."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-states.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-states"/>
+         </reference>
+         <name value="NG-Imm States in Nigeria CS"/>
+         <description value="This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-nigeria-languages.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/nigeria-languages"/>
+         </reference>
+         <name value="NG‑Imm Languages in Nigeria CS"/>
+         <description value="This CodeSystem defines codes for major languages spoken across Nigeria."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <page>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="toc.html"/>
+         </extension>
+         <nameUrl value="toc.html"/>
+         <title value="Table of Contents"/>
+         <generation value="html"/>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="index.html"/>
+            </extension>
+            <nameUrl value="index.html"/>
+            <title value="Home"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="search-operation.html"/>
+            </extension>
+            <nameUrl value="search-operation.html"/>
+            <title value="Search and Operation"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="data-privacy.html"/>
+            </extension>
+            <nameUrl value="data-privacy.html"/>
+            <title value="Data Privacy"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <nameUrl value="artifacts.html"/>
+            <title value="Artifacts Summary"/>
+            <generation value="html"/>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByLastUpdated.html"/>
+               <title value="NG-Imm Search Bundle by Last Updated Date"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByFacilityIdentifier.html"/>
+               <title value="NG-Imm Search Bundle by Organization Identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByBirthDate.html"/>
+               <title value="NG-Imm Search Bundle by Patient BirthDate"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByPatientIdentifier.html"/>
+               <title value="NG-Imm Search Bundle by Patient Identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByState.html"/>
+               <title value="NG-Imm Search Bundle by Patient State"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-NgImmBundleSearchByVaccineCode.html"/>
+               <title value="NG-Imm Search Bundle by Vaccine Code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-lga.html"/>
+               <title value="NG-Imm Search by Patient LGA"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-immdate.html"/>
+               <title value="NG-Imm Search Immunization by date of vaccination"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-immstatus.html"/>
+               <title value="NG-Imm Search Immunization by immunization status"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-immpatient.html"/>
+               <title value="NG-Imm Search Immunization by patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-immvaccinecode.html"/>
+               <title value="NG-Imm Search Immunization by vaccine code"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-birthdate.html"/>
+               <title value="NG-Imm Search Patient by birth date"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-city.html"/>
+               <title value="NG-Imm Search Patient by city"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-createddate.html"/>
+               <title value="NG-Imm Search Patient by date of creation or update"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-firstname.html"/>
+               <title value="NG-Imm Search Patient by firstname"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-gender.html"/>
+               <title value="NG-Imm Search Patient by gender"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-identifier.html"/>
+               <title value="NG-Imm Search Patient by Identifier"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-lastname.html"/>
+               <title value="NG-Imm Search Patient by lastname"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-telecom.html"/>
+               <title value="NG-Imm Search patient by phone or email"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="SearchParameter-SearchParameter-ngimm-state.html"/>
+               <title value="NG-Imm Search Patient by state"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim.html"/>
+               <title value="NG-Claim"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-coverage.html"/>
+               <title value="NG-Claim Coverage"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-encounter.html"/>
+               <title value="NG-Claim Encounter"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-invoice.html"/>
+               <title value="NG-Claim Invoice"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-observation.html"/>
+               <title value="NG-Claim Observation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-organization.html"/>
+               <title value="NG-Claim Organization"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-patient.html"/>
+               <title value="NG-Claim Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-practitioner.html"/>
+               <title value="NG-Claim Practitioner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-practitionerrole.html"/>
+               <title value="NG-Claim PractitionerRole"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-procedure.html"/>
+               <title value="NG-Claim Procedure"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claim-task.html"/>
+               <title value="NG-Claim Task"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-claimresponse.html"/>
+               <title value="NG-ClaimResponse"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-eligibility-request.html"/>
+               <title value="NG-CoverageEligibilityRequest"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-eligibility-response.html"/>
+               <title value="NG-CoverageEligibilityResponse"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-ng-explanationofbenefit.html"/>
+               <title value="NG-ExplanationOfBenefit"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-gender.html"/>
+               <title value="NG-Imm Gender or Sex VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-facility-types.html"/>
+               <title value="NG-Imm HealthFacility Type VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-languages.html"/>
+               <title value="NG-Imm Languages VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-lgas.html"/>
+               <title value="NG-Imm LGAs VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-location-owner.html"/>
+               <title value="NG-Imm Location Owner"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-states.html"/>
+               <title value="NG-Imm States VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-nigeria-wards.html"/>
+               <title value="NG-Imm Wards VS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-wards.html"/>
+               <title value="NG-Imm Administrative Wards CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-facility-type.html"/>
+               <title value="NG-Imm Facility Type CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-gender.html"/>
+               <title value="NG-Imm Gender CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-lgas.html"/>
+               <title value="NG-Imm LGAs in Nigeria CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-location-owner-cs.html"/>
+               <title value="NG-Imm Location Owner CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-states.html"/>
+               <title value="NG-Imm States in Nigeria CS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-nigeria-languages.html"/>
+               <title value="NG‑Imm Languages in Nigeria CS"/>
+               <generation value="generated"/>
+            </page>
+         </page>
+      </page>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/capabilities"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/examples"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/extensions"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/models"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/operations"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/profiles"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/vocabulary"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/maps"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/testing"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="input/history"/>
+      </parameter>
+      <parameter>
+         <code value="path-resource"/>
+         <value value="fsh-generated/resources"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="template/config"/>
+      </parameter>
+      <parameter>
+         <code value="path-pages"/>
+         <value value="input/images"/>
+      </parameter>
+      <parameter>
+         <code value="path-tx-cache"/>
+         <value value="input-cache/txcache"/>
+      </parameter>
+      <parameter>
+         <code value="copyrightyear"/>
+         <value value="2025+"/>
+      </parameter>
+      <parameter>
+         <code value="releaselabel"/>
+         <value value="ci-build"/>
+      </parameter>
+      <parameter>
+         <code value="autoload-resources"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="template/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-liquid"/>
+         <value value="input/liquid"/>
+      </parameter>
+      <parameter>
+         <code value="path-qa"/>
+         <value value="temp/qa"/>
+      </parameter>
+      <parameter>
+         <code value="path-temp"/>
+         <value value="temp/pages"/>
+      </parameter>
+      <parameter>
+         <code value="path-output"/>
+         <value value="output"/>
+      </parameter>
+      <parameter>
+         <code value="path-suppressed-warnings"/>
+         <value value="input/ignoreWarnings.txt"/>
+      </parameter>
+      <parameter>
+         <code value="path-history"/>
+         <value value="https://dhin.org/2025Connectathon/history.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-html"/>
+         <value value="template-page.html"/>
+      </parameter>
+      <parameter>
+         <code value="template-md"/>
+         <value value="template-page-md.html"/>
+      </parameter>
+      <parameter>
+         <code value="apply-contact"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-context"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-copyright"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-jurisdiction"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-license"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-publisher"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="active-tables"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="fmm-definition"/>
+         <value value="http://hl7.org/fhir/versions.html#maturity"/>
+      </parameter>
+      <parameter>
+         <code value="propagate-status"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="excludelogbinaryformat"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="tabbed-snapshots"/>
+         <value value="true"/>
+      </parameter>
+   </definition>
+</ImplementationGuide>
