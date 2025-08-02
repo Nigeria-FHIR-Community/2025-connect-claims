@@ -21,13 +21,13 @@
    <name value="DHIN2025connectathonclaims"/>
    <title value="DHIN 2025 connectathon claims testing"/>
    <status value="draft"/>
-   <date value="2025-07-31T19:23:08+01:00"/>
-   <publisher value="https://dhin-hie.org"/>
+   <date value="2025-08-02T14:19:18+01:00"/>
+   <publisher value="https://www.dhin-hie.org"/>
    <contact>
-      <name value="https://dhin-hie.org"/>
+      <name value="https://www.dhin-hie.org"/>
       <telecom>
          <system value="url"/>
-         <value value="https://dhin-hie.org"/>
+         <value value="https://www.dhin-hie.org/IGs"/>
       </telecom>
       <telecom>
          <system value="email"/>
@@ -67,7 +67,7 @@
       </extension>
       <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
       <packageId value="hl7.fhir.uv.extensions.r4"/>
-      <version value="5.2.0"/>
+      <version value="5.3.0-ballot-tc"/>
    </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -83,7 +83,7 @@
             <valueString value="releaselabel"/>
          </extension>
          <extension url="value">
-            <valueString value="ci-build"/>
+            <valueString value="draft"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1465,14 +1465,6 @@
             <generation value="markdown"/>
          </page>
          <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="search-operation.html"/>
-            </extension>
-            <nameUrl value="search-operation.html"/>
-            <title value="Search and Operation"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
             <nameUrl value="artifacts.html"/>
             <title value="Artifacts Summary"/>
             <generation value="html"/>
@@ -1874,7 +1866,7 @@
       </parameter>
       <parameter>
          <code value="releaselabel"/>
-         <value value="ci-build"/>
+         <value value="draft"/>
       </parameter>
       <parameter>
          <code value="autoload-resources"/>
