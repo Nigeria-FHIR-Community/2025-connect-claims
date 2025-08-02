@@ -52,8 +52,8 @@
       "systems" : ["https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas"],
       "uses" : {
       },
-      "StructureDefinition-NgPatient.html" : "NG Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
+      "StructureDefinition-NgPatient.html" : "NG Patient"
     },
     {
       "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner",
@@ -78,8 +78,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NgPatient.html" : "NG Patient",
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
+      "StructureDefinition-NgPatient.html" : "NG Patient"
     },
     {
       "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-wards",

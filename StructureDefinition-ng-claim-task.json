@@ -10,13 +10,13 @@
   "name" : "NgClaimTask",
   "title" : "NG-Claim Task",
   "status" : "draft",
-  "date" : "2025-07-31T19:23:08+01:00",
-  "publisher" : "https://dhin-hie.org",
+  "date" : "2025-08-02T14:19:18+01:00",
+  "publisher" : "https://www.dhin-hie.org",
   "contact" : [{
-    "name" : "https://dhin-hie.org",
+    "name" : "https://www.dhin-hie.org",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://dhin-hie.org"
+      "value" : "https://www.dhin-hie.org/IGs"
     },
     {
       "system" : "email",

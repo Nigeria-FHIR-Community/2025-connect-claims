@@ -18,13 +18,13 @@
   fhir:name [ fhir:v "DHIN2025connectathonclaims"] ; # 
   fhir:title [ fhir:v "DHIN 2025 connectathon claims testing"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-31T19:23:08+01:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "https://dhin-hie.org"] ; # 
+  fhir:date [ fhir:v "2025-08-02T14:19:18+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://www.dhin-hie.org"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "https://dhin-hie.org" ] ;
+     fhir:name [ fhir:v "https://www.dhin-hie.org" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://dhin-hie.org" ]
+       fhir:value [ fhir:v "https://www.dhin-hie.org/IGs" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
        fhir:value [ fhir:v "info@dhin-hie.org" ]
@@ -77,7 +77,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -106,7 +106,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ci-build"
+           fhir:v "draft"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -487,7 +487,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ci-build"
+           fhir:v "draft"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -2057,20 +2057,6 @@
            fhir:v "index.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "search-operation.html"^^xsd:anyURI
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:url ;
-           fhir:v "search-operation.html"^^xsd:anyURI
-         ] ;
-         fhir:title [ fhir:v "Search and Operation" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

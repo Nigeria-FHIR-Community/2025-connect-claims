@@ -10,13 +10,13 @@
   <name value="NGFacilityTypeCS"/>
   <title value="NG-Imm Facility Type CS"/>
   <status value="active"/>
-  <date value="2025-07-31T19:23:08+01:00"/>
-  <publisher value="https://dhin-hie.org"/>
+  <date value="2025-08-02T14:19:18+01:00"/>
+  <publisher value="https://www.dhin-hie.org"/>
   <contact>
-    <name value="https://dhin-hie.org"/>
+    <name value="https://www.dhin-hie.org"/>
     <telecom>
       <system value="url"/>
-      <value value="https://dhin-hie.org"/>
+      <value value="https://www.dhin-hie.org/IGs"/>
     </telecom>
     <telecom>
       <system value="email"/>

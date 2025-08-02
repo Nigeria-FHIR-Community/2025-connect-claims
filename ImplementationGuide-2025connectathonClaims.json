@@ -10,13 +10,13 @@
   "name" : "DHIN2025connectathonclaims",
   "title" : "DHIN 2025 connectathon claims testing",
   "status" : "draft",
-  "date" : "2025-07-31T19:23:08+01:00",
-  "publisher" : "https://dhin-hie.org",
+  "date" : "2025-08-02T14:19:18+01:00",
+  "publisher" : "https://www.dhin-hie.org",
   "contact" : [{
-    "name" : "https://dhin-hie.org",
+    "name" : "https://www.dhin-hie.org",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://dhin-hie.org"
+      "value" : "https://www.dhin-hie.org/IGs"
     },
     {
       "system" : "email",
@@ -60,7 +60,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0-ballot-tc"
   }],
   "definition" : {
     "extension" : [{
@@ -81,7 +81,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "draft"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -360,7 +360,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "draft"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1396,15 +1396,6 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "search-operation.html"
-        }],
-        "nameUrl" : "search-operation.html",
-        "title" : "Search and Operation",
         "generation" : "markdown"
       }]
     },
