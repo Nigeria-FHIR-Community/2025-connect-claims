@@ -34,11 +34,6 @@ As Nigeria advances towards a more integrated digital health landscape, the effi
 
 This IG focuses on core FHIR interactions and simplified data workflows relevant to health insurance and claims processes in Nigeria. It includes representative profiles, search parameters, and operations to support common tasks like eligibility checking, claims submission, prior authorization, and payment notification. Members, get ideas from this DevDays event slide(https://devdays.com/wp-content/uploads/2021/12/DD21US_20100607_Dharmesh_Patel_Mike_Arce_Claims_on_FHIR.pdf).
 
-<!-- The scope of this guide focuses on the following core components:
-- **Standardizing how immunization clients (patients) are registered and managed**, using the [**NgImmPatient**](StructureDefinition-NgImmPatient.html) profile.
-- **Structuring immunization service delivery records**, such as vaccine administration, using the [**NgImmImmunization**](StructureDefinition-NgImmImmunization.html) profile.
-- **Defining the necessary search parameters, RESTful operations, and data constraints** to ensure interoperable exchange of immunization data across digital platforms.
-- **Providing the minimum data structures required** for systems to exchange immunization-related data across multiple levels of the health system, from point-of-care to national dashboards. -->
 
 #### Use cases covered in this guide
 The IG covers the following key use cases (which will continue to expand in subsequent iterations) by the Nigeria FHIR community:
