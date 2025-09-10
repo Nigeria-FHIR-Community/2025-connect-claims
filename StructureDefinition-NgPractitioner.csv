@@ -169,7 +169,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Practitioner.qualification.period","Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
 ","The time duration this qualification is valid","Period during which the qualification is valid.","","Qualifications are often for a limited period of time, and can be revoked.","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity.playingRole[classCode=QUAL].effectiveTime","./Qualifications.StartDate and ./Qualifications.EndDate"
-"Practitioner.qualification.issuer","Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]}
+"Practitioner.qualification.issuer","Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]}
 ","The regulating organization that issue the qualification","Organization that regulates and issues the qualification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playingEntity.playingRole[classCode=QUAL].scoper"
 "Practitioner.communication","Practitioner.communication","","","",0,*,"","","","CodeableConcept {[]} {[]}

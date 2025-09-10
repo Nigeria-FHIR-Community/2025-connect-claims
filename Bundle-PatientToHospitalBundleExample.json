@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "PatientToHospitalBundleExample",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital"]
   },
   "type" : "collection",
   "timestamp" : "2025-08-02T10:15:00+01:00",
@@ -13,7 +13,7 @@
       "id" : "patient-003",
       "meta" : {
         "lastUpdated" : "2023-05-21T14:36:00+01:00",
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"]
       },
       "text" : {
         "status" : "generated",
@@ -37,7 +37,7 @@
       "resourceType" : "Encounter",
       "id" : "encounter-003",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"]
       },
       "text" : {
         "status" : "generated",
@@ -61,7 +61,7 @@
       "resourceType" : "Practitioner",
       "id" : "practitioner-003",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"]
       },
       "text" : {
         "status" : "generated",
@@ -83,7 +83,7 @@
       "resourceType" : "Procedure",
       "id" : "procedure-003",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"]
       },
       "text" : {
         "status" : "generated",
@@ -105,7 +105,7 @@
       "resourceType" : "Observation",
       "id" : "observation-003",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"]
       },
       "text" : {
         "status" : "generated",
@@ -151,7 +151,7 @@
       "resourceType" : "Invoice",
       "id" : "invoice-003",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"]
       },
       "text" : {
         "status" : "generated",
@@ -174,7 +174,7 @@
       "resourceType" : "Organization",
       "id" : "org-hospital-2",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"]
       },
       "text" : {
         "status" : "generated",

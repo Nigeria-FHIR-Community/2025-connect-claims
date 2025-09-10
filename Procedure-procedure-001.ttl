@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Procedure/procedure-001> a fhir:Procedure ;
+<https://www.dhin-hie.org/IGs/Procedure/procedure-001> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "procedure-001"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure>
      ] )
   ] ; # 
   fhir:text [

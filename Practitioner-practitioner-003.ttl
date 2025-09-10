@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Practitioner/practitioner-003> a fhir:Practitioner ;
+<https://www.dhin-hie.org/IGs/Practitioner/practitioner-003> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "practitioner-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner>
      ] )
   ] ; # 
   fhir:text [

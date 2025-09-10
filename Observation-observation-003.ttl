@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Observation/observation-003> a fhir:Observation ;
+<https://www.dhin-hie.org/IGs/Observation/observation-003> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "observation-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation>
      ] )
   ] ; # 
   fhir:text [

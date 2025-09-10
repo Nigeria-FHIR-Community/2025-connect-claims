@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Encounter/encounter-003> a fhir:Encounter ;
+<https://www.dhin-hie.org/IGs/Encounter/encounter-003> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "encounter-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter>
      ] )
   ] ; # 
   fhir:text [

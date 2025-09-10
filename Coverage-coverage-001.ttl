@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Coverage/coverage-001> a fhir:Coverage ;
+<https://www.dhin-hie.org/IGs/Coverage/coverage-001> a fhir:Coverage ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "coverage-001"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage>
      ] )
   ] ; # 
   fhir:text [

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-facility-type",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGFacilityTypeCS",
@@ -12,7 +12,7 @@
       "ValueSet-nigeria-facility-types.html" : "NG-Imm HealthFacility Type VS"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-gender",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGGenderCS",
@@ -23,7 +23,7 @@
       "ValueSet-nigeria-gender.html" : "NG-Imm Gender or Sex VS"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-languages",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLanguagesCS",
@@ -34,7 +34,7 @@
       "ValueSet-nigeria-languages.html" : "NG-Imm Languages VS"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLGAsCS",
@@ -45,7 +45,7 @@
       "ValueSet-nigeria-lgas.html" : "NG-Imm LGAs VS"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-location-owner-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "NGOrganizationOwnerCS",
@@ -56,7 +56,7 @@
       "ValueSet-nigeria-location-owner.html" : "NG-Imm Location Owner"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-states",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGStatesCS",
@@ -67,7 +67,7 @@
       "ValueSet-nigeria-states.html" : "NG-Imm States VS"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-wards",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGWardsCS",

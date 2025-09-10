@@ -2,7 +2,7 @@
   "resourceType" : "Claim",
   "id" : "claim-001",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"]
   },
   "text" : {
     "status" : "generated",

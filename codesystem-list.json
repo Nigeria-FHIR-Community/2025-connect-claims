@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-facility-type",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGFacilityTypeCS",
@@ -9,7 +9,7 @@
       "description" : "A standardized classification system used to describe the type or level of health facility within a healthcare delivery system, based on the scope of services provided, staffing, infrastructure, and administrative role."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-gender",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGGenderCS",
@@ -17,7 +17,7 @@
       "description" : "The administrative gender of a person."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-languages",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLanguagesCS",
@@ -25,7 +25,7 @@
       "description" : "This CodeSystem defines codes for major languages spoken across Nigeria."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLGAsCS",
@@ -33,7 +33,7 @@
       "description" : "This CodeSystem defines LGA codes and names mapped to their respective States in Nigeria."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-location-owner-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "NGOrganizationOwnerCS",
@@ -41,7 +41,7 @@
       "description" : "This CodeSystem defines Immunization Location Owner."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-states",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGStatesCS",
@@ -49,7 +49,7 @@
       "description" : "This CodeSystem defines ward codes and names mapped to their respective States in Nigeria."
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards",
+      "url" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-wards",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGWardsCS",

@@ -2,7 +2,7 @@
   "resourceType" : "Task",
   "id" : "task-claim-review",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task"]
   },
   "text" : {
     "status" : "generated",

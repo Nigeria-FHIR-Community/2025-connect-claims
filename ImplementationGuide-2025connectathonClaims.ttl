@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims> a fhir:ImplementationGuide ;
+<https://www.dhin-hie.org/IGs/ImplementationGuide/2025connectathonClaims> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "2025connectathonClaims"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide 2025connectathonClaims</b></p><a name=\"2025connectathonClaims\"> </a><a name=\"hc2025connectathonClaims\"> </a><h2>DHIN2025connectathonclaims</h2><p>The official URL for this implementation guide is: </p><pre>https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims</pre><div><p>Implementation Guide for testing Claims</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide 2025connectathonClaims</b></p><a name=\"2025connectathonClaims\"> </a><a name=\"hc2025connectathonClaims\"> </a><h2>DHIN2025connectathonclaims</h2><p>The official URL for this implementation guide is: </p><pre>https://www.dhin-hie.org/IGs/ImplementationGuide/2025connectathonClaims</pre><div><p>Implementation Guide for testing Claims</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://www.dhin-hie.org/IGs/ImplementationGuide/2025connectathonClaims"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "DHIN2025connectathonclaims"] ; # 
   fhir:title [ fhir:v "DHIN 2025 connectathon claims testing"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-02T14:19:18+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-10T08:54:29+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "https://www.dhin-hie.org"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "https://www.dhin-hie.org" ] ;
@@ -77,7 +77,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.3.0-ballot-tc" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -226,7 +226,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://dhin.org/2025Connectathon/history.html"
+           fhir:v "https://www.dhin-hie.org/IGs/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -607,7 +607,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://dhin.org/2025Connectathon/history.html"
+           fhir:v "https://www.dhin-hie.org/IGs/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -846,7 +846,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-bundle-hospital-to-hmo" ]
        ] ;
        fhir:name [ fhir:v "1-NG-Bundle: Hospital to HMO (Claim Submission)" ] ;
@@ -864,7 +864,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-bundle-hmo-to-insurer" ]
        ] ;
        fhir:name [ fhir:v "2-NG-Bundle: HMO to Insurer" ] ;
@@ -882,7 +882,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-bundle-patient-to-hospital" ]
        ] ;
        fhir:name [ fhir:v "3-NG-Bundle: Patient to Hospital" ] ;
@@ -900,7 +900,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-bundle-patient-to-insurer" ]
        ] ;
        fhir:name [ fhir:v "4-NG-Bundle: Patient to Insurer" ] ;
@@ -918,14 +918,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Claim/claim-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Claim/claim-001> ;
          fhir:reference [ fhir:v "Claim/claim-001" ]
        ] ;
        fhir:name [ fhir:v "claim-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim>
        ]
      ] [
        fhir:extension ( [
@@ -936,14 +936,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Claim/claim-002> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Claim/claim-002> ;
          fhir:reference [ fhir:v "Claim/claim-002" ]
        ] ;
        fhir:name [ fhir:v "claim-002" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim>
        ]
      ] [
        fhir:extension ( [
@@ -954,14 +954,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Coverage/coverage-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Coverage/coverage-001> ;
          fhir:reference [ fhir:v "Coverage/coverage-001" ]
        ] ;
        fhir:name [ fhir:v "coverage-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage>
        ]
      ] [
        fhir:extension ( [
@@ -972,14 +972,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Coverage/coverage-002> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Coverage/coverage-002> ;
          fhir:reference [ fhir:v "Coverage/coverage-002" ]
        ] ;
        fhir:name [ fhir:v "coverage-002" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage>
        ]
      ] [
        fhir:extension ( [
@@ -990,14 +990,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Coverage/coverage-004> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Coverage/coverage-004> ;
          fhir:reference [ fhir:v "Coverage/coverage-004" ]
        ] ;
        fhir:name [ fhir:v "coverage-004" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage>
        ]
      ] [
        fhir:extension ( [
@@ -1008,14 +1008,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CoverageEligibilityRequest/eligibility-request-004> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CoverageEligibilityRequest/eligibility-request-004> ;
          fhir:reference [ fhir:v "CoverageEligibilityRequest/eligibility-request-004" ]
        ] ;
        fhir:name [ fhir:v "eligibility-request-004" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request>
        ]
      ] [
        fhir:extension ( [
@@ -1026,14 +1026,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CoverageEligibilityResponse/eligibility-response-004> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CoverageEligibilityResponse/eligibility-response-004> ;
          fhir:reference [ fhir:v "CoverageEligibilityResponse/eligibility-response-004" ]
        ] ;
        fhir:name [ fhir:v "eligibility-response-004" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response>
        ]
      ] [
        fhir:extension ( [
@@ -1044,14 +1044,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Encounter/encounter-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Encounter/encounter-001> ;
          fhir:reference [ fhir:v "Encounter/encounter-001" ]
        ] ;
        fhir:name [ fhir:v "encounter-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter>
        ]
      ] [
        fhir:extension ( [
@@ -1062,14 +1062,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Encounter/encounter-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Encounter/encounter-003> ;
          fhir:reference [ fhir:v "Encounter/encounter-003" ]
        ] ;
        fhir:name [ fhir:v "encounter-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter>
        ]
      ] [
        fhir:extension ( [
@@ -1080,15 +1080,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Bundle/HMOToInsurerBundleExample> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Bundle/HMOToInsurerBundleExample> ;
          fhir:reference [ fhir:v "Bundle/HMOToInsurerBundleExample" ]
        ] ;
        fhir:name [ fhir:v "Example: HMO to Insurer Claim Submission Bundle" ] ;
        fhir:description [ fhir:v "An example bundle from an HMO to an insurer containing submitted claims and associated resources." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer>
        ]
      ] [
        fhir:extension ( [
@@ -1099,15 +1099,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Bundle/HospitalToHMOClaimBundle> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Bundle/HospitalToHMOClaimBundle> ;
          fhir:reference [ fhir:v "Bundle/HospitalToHMOClaimBundle" ]
        ] ;
        fhir:name [ fhir:v "Example: Hospital to HMO Claim Bundle" ] ;
        fhir:description [ fhir:v "An example bundle submitted from a hospital to an HMO for reimbursement." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo>
        ]
      ] [
        fhir:extension ( [
@@ -1118,15 +1118,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Bundle/PatientToHospitalBundleExample> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Bundle/PatientToHospitalBundleExample> ;
          fhir:reference [ fhir:v "Bundle/PatientToHospitalBundleExample" ]
        ] ;
        fhir:name [ fhir:v "Example: Patient to Hospital Interaction Bundle" ] ;
        fhir:description [ fhir:v "An example bundle representing a patient registration and clinical encounter at a hospital." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital>
        ]
      ] [
        fhir:extension ( [
@@ -1137,15 +1137,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Bundle/PatientToInsurerBundleExample> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Bundle/PatientToInsurerBundleExample> ;
          fhir:reference [ fhir:v "Bundle/PatientToInsurerBundleExample" ]
        ] ;
        fhir:name [ fhir:v "Example: Patient to Insurer Eligibility Check Bundle" ] ;
        fhir:description [ fhir:v "An example bundle representing a patient-initiated eligibility request to an insurer." ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer>
        ]
      ] [
        fhir:extension ( [
@@ -1156,14 +1156,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Invoice/invoice-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Invoice/invoice-001> ;
          fhir:reference [ fhir:v "Invoice/invoice-001" ]
        ] ;
        fhir:name [ fhir:v "invoice-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice>
        ]
      ] [
        fhir:extension ( [
@@ -1174,14 +1174,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Invoice/invoice-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Invoice/invoice-003> ;
          fhir:reference [ fhir:v "Invoice/invoice-003" ]
        ] ;
        fhir:name [ fhir:v "invoice-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice>
        ]
      ] [
        fhir:extension ( [
@@ -1192,7 +1192,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-imm-organization" ]
        ] ;
        fhir:name [ fhir:v "NG Organization" ] ;
@@ -1210,7 +1210,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient> ;
          fhir:reference [ fhir:v "StructureDefinition/NgPatient" ]
        ] ;
        fhir:name [ fhir:v "NG Patient" ] ;
@@ -1228,7 +1228,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/NgPractitioner" ]
        ] ;
        fhir:name [ fhir:v "NG Practitioner" ] ;
@@ -1246,7 +1246,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-practitionerrole> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-practitionerrole> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-practitionerrole" ]
        ] ;
        fhir:name [ fhir:v "NG PractitionerRole" ] ;
@@ -1264,7 +1264,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-procedure" ]
        ] ;
        fhir:name [ fhir:v "NG Procedure" ] ;
@@ -1282,7 +1282,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim" ] ;
@@ -1300,7 +1300,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-coverage" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim Coverage" ] ;
@@ -1318,7 +1318,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-encounter" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim Encounter" ] ;
@@ -1336,7 +1336,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-invoice" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim Invoice" ] ;
@@ -1354,7 +1354,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-observation" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim Observation" ] ;
@@ -1372,7 +1372,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claim-task" ]
        ] ;
        fhir:name [ fhir:v "NG-Claim Task" ] ;
@@ -1390,7 +1390,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-claimresponse" ]
        ] ;
        fhir:name [ fhir:v "NG-ClaimResponse" ] ;
@@ -1408,7 +1408,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-eligibility-request" ]
        ] ;
        fhir:name [ fhir:v "NG-CoverageEligibilityRequest" ] ;
@@ -1426,7 +1426,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-eligibility-response" ]
        ] ;
        fhir:name [ fhir:v "NG-CoverageEligibilityResponse" ] ;
@@ -1444,7 +1444,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-explanationofbenefit> ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-explanationofbenefit> ;
          fhir:reference [ fhir:v "StructureDefinition/ng-explanationofbenefit" ]
        ] ;
        fhir:name [ fhir:v "NG-ExplanationOfBenefit" ] ;
@@ -1462,7 +1462,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-wards> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-wards" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Administrative Wards CS" ] ;
@@ -1480,7 +1480,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-facility-type> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-facility-type" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Facility Type CS" ] ;
@@ -1498,7 +1498,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-gender> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-gender" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Gender CS" ] ;
@@ -1516,7 +1516,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-gender> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-gender> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-gender" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Gender or Sex VS" ] ;
@@ -1534,7 +1534,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-facility-types> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-facility-types" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm HealthFacility Type VS" ] ;
@@ -1552,7 +1552,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-languages> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-languages> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-languages" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Languages VS" ] ;
@@ -1570,7 +1570,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-lgas" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm LGAs in Nigeria CS" ] ;
@@ -1588,7 +1588,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-lgas" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm LGAs VS" ] ;
@@ -1606,7 +1606,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-location-owner> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-location-owner" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Location Owner" ] ;
@@ -1624,7 +1624,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-location-owner-cs> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-location-owner-cs" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Location Owner CS" ] ;
@@ -1642,7 +1642,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-states> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-states> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-states" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm States in Nigeria CS" ] ;
@@ -1660,7 +1660,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-states> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-states> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-states" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm States VS" ] ;
@@ -1678,7 +1678,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ValueSet/nigeria-wards> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ValueSet/nigeria-wards> ;
          fhir:reference [ fhir:v "ValueSet/nigeria-wards" ]
        ] ;
        fhir:name [ fhir:v "NG-Imm Wards VS" ] ;
@@ -1696,7 +1696,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages> ;
+         fhir:link <https://www.dhin-hie.org/IGs/CodeSystem/nigeria-languages> ;
          fhir:reference [ fhir:v "CodeSystem/nigeria-languages" ]
        ] ;
        fhir:name [ fhir:v "NG‑Imm Languages in Nigeria CS" ] ;
@@ -1714,14 +1714,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Observation/observation-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Observation/observation-001> ;
          fhir:reference [ fhir:v "Observation/observation-001" ]
        ] ;
        fhir:name [ fhir:v "observation-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1732,14 +1732,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Observation/observation-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Observation/observation-003> ;
          fhir:reference [ fhir:v "Observation/observation-003" ]
        ] ;
        fhir:name [ fhir:v "observation-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation>
        ]
      ] [
        fhir:extension ( [
@@ -1750,14 +1750,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-hmo> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-hmo> ;
          fhir:reference [ fhir:v "Organization/org-hmo" ]
        ] ;
        fhir:name [ fhir:v "org-hmo" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1768,14 +1768,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-hmo-2> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-hmo-2> ;
          fhir:reference [ fhir:v "Organization/org-hmo-2" ]
        ] ;
        fhir:name [ fhir:v "org-hmo-2" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1786,14 +1786,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-hospital> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-hospital> ;
          fhir:reference [ fhir:v "Organization/org-hospital" ]
        ] ;
        fhir:name [ fhir:v "org-hospital" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1804,14 +1804,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-hospital-2> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-hospital-2> ;
          fhir:reference [ fhir:v "Organization/org-hospital-2" ]
        ] ;
        fhir:name [ fhir:v "org-hospital-2" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1822,14 +1822,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-insurer-2> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-insurer-2> ;
          fhir:reference [ fhir:v "Organization/org-insurer-2" ]
        ] ;
        fhir:name [ fhir:v "org-insurer-2" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1840,14 +1840,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Organization/org-insurer-4> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Organization/org-insurer-4> ;
          fhir:reference [ fhir:v "Organization/org-insurer-4" ]
        ] ;
        fhir:name [ fhir:v "org-insurer-4" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
        ]
      ] [
        fhir:extension ( [
@@ -1858,14 +1858,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Patient/patient-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Patient/patient-001> ;
          fhir:reference [ fhir:v "Patient/patient-001" ]
        ] ;
        fhir:name [ fhir:v "patient-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
        ]
      ] [
        fhir:extension ( [
@@ -1876,14 +1876,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Patient/patient-002> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Patient/patient-002> ;
          fhir:reference [ fhir:v "Patient/patient-002" ]
        ] ;
        fhir:name [ fhir:v "patient-002" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
        ]
      ] [
        fhir:extension ( [
@@ -1894,14 +1894,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Patient/patient-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Patient/patient-003> ;
          fhir:reference [ fhir:v "Patient/patient-003" ]
        ] ;
        fhir:name [ fhir:v "patient-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
        ]
      ] [
        fhir:extension ( [
@@ -1912,14 +1912,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Patient/patient-004> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Patient/patient-004> ;
          fhir:reference [ fhir:v "Patient/patient-004" ]
        ] ;
        fhir:name [ fhir:v "patient-004" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
        ]
      ] [
        fhir:extension ( [
@@ -1930,14 +1930,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Practitioner/practitioner-001> ;
          fhir:reference [ fhir:v "Practitioner/practitioner-001" ]
        ] ;
        fhir:name [ fhir:v "practitioner-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner>
        ]
      ] [
        fhir:extension ( [
@@ -1948,14 +1948,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Practitioner/practitioner-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Practitioner/practitioner-003> ;
          fhir:reference [ fhir:v "Practitioner/practitioner-003" ]
        ] ;
        fhir:name [ fhir:v "practitioner-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner>
        ]
      ] [
        fhir:extension ( [
@@ -1966,14 +1966,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Procedure/procedure-001> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Procedure/procedure-001> ;
          fhir:reference [ fhir:v "Procedure/procedure-001" ]
        ] ;
        fhir:name [ fhir:v "procedure-001" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure>
        ]
      ] [
        fhir:extension ( [
@@ -1984,14 +1984,14 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Procedure/procedure-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Procedure/procedure-003> ;
          fhir:reference [ fhir:v "Procedure/procedure-003" ]
        ] ;
        fhir:name [ fhir:v "procedure-003" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure>
        ]
      ] [
        fhir:extension ( [
@@ -2002,7 +2002,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/ServiceRequest/service-request-003> ;
+         fhir:link <https://www.dhin-hie.org/IGs/ServiceRequest/service-request-003> ;
          fhir:reference [ fhir:v "ServiceRequest/service-request-003" ]
        ] ;
        fhir:name [ fhir:v "service-request-003" ] ;
@@ -2019,15 +2019,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://dhin.org/2025Connectathon/Task/task-claim-review> ;
+         fhir:link <https://www.dhin-hie.org/IGs/Task/task-claim-review> ;
          fhir:reference [ fhir:v "Task/task-claim-review" ]
        ] ;
        fhir:name [ fhir:v "task-claim-review" ] ;
        fhir:description [ fhir:v "Please review this claim for adjudication" ] ;
        fhir:example [
          a fhir:canonical ;
-         fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
-         fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task>
+         fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
+         fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task>
        ]
      ] ) ;
      fhir:page [

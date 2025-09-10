@@ -232,7 +232,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Patient[classCode=PAT]","ClinicalDocument.recordTarget.patientRole"
 "Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -350,7 +350,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:encounter.resource","Bundle.entry.resource","","Visit
-","",0,1,"","","","Encounter {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter]]} {[]}
+","",0,1,"","","","Encounter {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter]]} {[]}
 ","An interaction during which services are provided to the patient","An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Encounter[@moodCode='EVN']"
 "Bundle.entry:encounter.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -467,7 +467,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner]]} {[]}
+"Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PRD (as one example)","Entity. Role, or Act","Role"
 "Bundle.entry:practitioner.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -584,7 +584,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure]]} {[]}
+"Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure]]} {[]}
 ","An action that is being or was performed on a patient","An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Procedure[moodCode=EVN]"
 "Bundle.entry:procedure.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -702,7 +702,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:observation.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation]]} {[]}
+MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
 "Bundle.entry:observation.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -934,7 +934,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice]]} {[]}
+"Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice]]} {[]}
 ","Invoice containing ChargeItems from an Account","Invoice containing collected ChargeItems from an Account with calculated individual and total price for Billing purpose.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","FT1","Entity. Role, or Act","Act[moodCode=EVN]"
 "Bundle.entry:invoice.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1050,7 +1050,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)"
 "Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2

@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "HMOToInsurerBundleExample",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer"]
   },
   "type" : "collection",
   "timestamp" : "2025-08-01T09:00:00+01:00",
@@ -12,7 +12,7 @@
       "resourceType" : "Claim",
       "id" : "claim-002",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"]
       },
       "text" : {
         "status" : "generated",
@@ -62,7 +62,7 @@
       "id" : "patient-002",
       "meta" : {
         "lastUpdated" : "2024-06-30T14:36:00+01:00",
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"]
       },
       "text" : {
         "status" : "generated",
@@ -86,7 +86,7 @@
       "resourceType" : "Coverage",
       "id" : "coverage-002",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"]
       },
       "text" : {
         "status" : "generated",
@@ -112,7 +112,7 @@
       "resourceType" : "Organization",
       "id" : "org-hmo-2",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"]
       },
       "text" : {
         "status" : "generated",
@@ -142,7 +142,7 @@
       "resourceType" : "Organization",
       "id" : "org-insurer-2",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"]
       },
       "text" : {
         "status" : "generated",
@@ -172,7 +172,7 @@
       "resourceType" : "Task",
       "id" : "task-claim-review",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task"]
       },
       "text" : {
         "status" : "generated",

@@ -2,7 +2,7 @@
   "resourceType" : "Procedure",
   "id" : "procedure-001",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"]
   },
   "text" : {
     "status" : "generated",

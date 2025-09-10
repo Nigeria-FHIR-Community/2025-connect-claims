@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/ServiceRequest/service-request-003> a fhir:ServiceRequest ;
+<https://www.dhin-hie.org/IGs/ServiceRequest/service-request-003> a fhir:ServiceRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "service-request-003"] ; # 
   fhir:text [

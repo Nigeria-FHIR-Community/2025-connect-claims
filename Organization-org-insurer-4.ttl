@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Organization/org-insurer-4> a fhir:Organization ;
+<https://www.dhin-hie.org/IGs/Organization/org-insurer-4> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "org-insurer-4"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
      ] )
   ] ; # 
   fhir:text [

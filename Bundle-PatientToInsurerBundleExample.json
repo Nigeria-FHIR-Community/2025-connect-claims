@@ -2,7 +2,7 @@
   "resourceType" : "Bundle",
   "id" : "PatientToInsurerBundleExample",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer"]
   },
   "type" : "collection",
   "timestamp" : "2025-08-03T11:00:00+01:00",
@@ -13,7 +13,7 @@
       "id" : "patient-004",
       "meta" : {
         "lastUpdated" : "2019-01-25T15:36:00+01:00",
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"]
       },
       "text" : {
         "status" : "generated",
@@ -37,7 +37,7 @@
       "resourceType" : "Coverage",
       "id" : "coverage-004",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"]
       },
       "text" : {
         "status" : "generated",
@@ -63,7 +63,7 @@
       "resourceType" : "CoverageEligibilityRequest",
       "id" : "eligibility-request-004",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"]
       },
       "text" : {
         "status" : "generated",
@@ -91,7 +91,7 @@
       "resourceType" : "Organization",
       "id" : "org-insurer-4",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"]
       },
       "text" : {
         "status" : "generated",
@@ -121,7 +121,7 @@
       "resourceType" : "CoverageEligibilityResponse",
       "id" : "eligibility-response-004",
       "meta" : {
-        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"]
+        "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response"]
       },
       "text" : {
         "status" : "generated",

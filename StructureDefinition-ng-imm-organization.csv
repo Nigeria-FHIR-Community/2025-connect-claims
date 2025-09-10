@@ -69,7 +69,7 @@ This element is labeled as a modifier because it may be used to mark that the re
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
 
-We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-facility-types","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in v2",".code","n/a","FiveWs.class"
 "Organization.name","Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","The name of the organization or health facility","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
@@ -136,11 +136,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","XAD.3","AD.part[parttype = CTY]","./Jurisdiction"
 "Organization.address.district","Organization.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.9","AD.part[parttype = CNT | CPA]"
 "Organization.address.state","Organization.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.4","AD.part[parttype = STA]","./Region"
 "Organization.address.postalCode","Organization.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
@@ -155,7 +155,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
   <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD.12 / XAD.13 + XAD.14","./usablePeriod[type=""IVL<TS>""]","./StartDate and ./EndDate"
-"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]}
+"Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]}
 ","The Organization which this organization forms a part","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","No equivalent in HL7 v2",".playedBy[classCode=Part].scoper","n/a"
 "Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}

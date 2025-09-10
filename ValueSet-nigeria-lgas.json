@@ -3,14 +3,14 @@
   "id" : "nigeria-lgas",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-lgas</b></p><a name=\"nigeria-lgas\"> </a><a name=\"hcnigeria-lgas\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-lgas.html\"><code>https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nigeria-lgas</b></p><a name=\"nigeria-lgas\"> </a><a name=\"hcnigeria-lgas\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nigeria-lgas.html\"><code>https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas</code></a></li></ul></div>"
   },
-  "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas",
+  "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas",
   "version" : "0.1.0",
   "name" : "NGLGAsVS",
   "title" : "NG-Imm LGAs VS",
   "status" : "active",
-  "date" : "2025-08-02T14:19:18+01:00",
+  "date" : "2025-09-10T08:54:29+01:00",
   "publisher" : "https://www.dhin-hie.org",
   "contact" : [{
     "name" : "https://www.dhin-hie.org",
@@ -41,7 +41,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas"
+      "system" : "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas"
     }]
   }
 }

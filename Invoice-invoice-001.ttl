@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Invoice/invoice-001> a fhir:Invoice ;
+<https://www.dhin-hie.org/IGs/Invoice/invoice-001> a fhir:Invoice ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "invoice-001"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice>
      ] )
   ] ; # 
   fhir:text [
@@ -21,7 +21,7 @@
   ] ; # 
   fhir:status [ fhir:v "issued"] ; # 
   fhir:subject [
-     fhir:link <https://dhin.org/2025Connectathon/NgPatient/patient-001> ;
+     fhir:link <https://www.dhin-hie.org/IGs/NgPatient/patient-001> ;
      fhir:reference [ fhir:v "NgPatient/patient-001" ]
   ] ; # 
   fhir:date [ fhir:v "2025-07-30"^^xsd:date] ; # 

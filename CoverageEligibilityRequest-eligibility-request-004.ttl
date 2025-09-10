@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/CoverageEligibilityRequest/eligibility-request-004> a fhir:CoverageEligibilityRequest ;
+<https://www.dhin-hie.org/IGs/CoverageEligibilityRequest/eligibility-request-004> a fhir:CoverageEligibilityRequest ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "eligibility-request-004"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request>
      ] )
   ] ; # 
   fhir:text [

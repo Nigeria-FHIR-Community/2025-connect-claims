@@ -47,7 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.use","Claim.use","","","",1,1,"Y","","Y","code {[]} {[]}
 ","what the claim is for (Required - claim | preauthorization | predetermination)","A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.","","This element is required to understand the nature of the request for adjudication.","","","","","","","",,"required","The purpose of the Claim: predetermination, preauthorization, claim.","http://hl7.org/fhir/ValueSet/claim-use|4.0.1","",,,,"Claim.use",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class"
-"Claim.patient","Claim.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]}
+"Claim.patient","Claim.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]}
 ","The recipient of the products and services","The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought.","","The patient must be supplied to the insurer so that confirmation of coverage and service history may be considered as part of the authorization and/or adjudiction.","","","","","","","",,,,,"",,,,"Claim.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "Claim.billablePeriod","Claim.billablePeriod","","","",0,1,"","","Y","Period {[]} {[]}
@@ -120,7 +120,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.payee.type","Claim.payee.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Category of recipient","Type of Party to be reimbursed: subscriber, provider, other.","","Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.","","","","","","","",,"example","A code for the party to be reimbursed.","http://hl7.org/fhir/ValueSet/payeetype","",,,,"Claim.payee.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Claim.payee.party","Claim.payee.party","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner]]}
+"Claim.payee.party","Claim.payee.party","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner]]}
 ","Recipient reference","Reference to the individual or organization to whom any payment will be made.","Not required if the payee is 'subscriber' or 'provider'.","Need to provide demographics if the payee is not 'subscriber' nor 'provider'.","","","","","","","",,,,,"",,,,"Claim.payee.party",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Claim.referral","Claim.referral","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
@@ -254,7 +254,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]}","Specific clinical procedure","The code or reference to a Procedure resource which identifies the clinical intervention performed.","","This identifies the actual clinical procedure.","","","","","","","",,"example","Example ICD10 Procedure codes.","http://hl7.org/fhir/ValueSet/icd-10-procedures","","type:$this}
 ","",,"open","Claim.procedure.procedure[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Claim.procedure.procedure[x]:procedureReference","Claim.procedure.procedure[x]","procedureReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure]]}
+"Claim.procedure.procedure[x]:procedureReference","Claim.procedure.procedure[x]","procedureReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure]]}
 ","Specific clinical procedure","The code or reference to a Procedure resource which identifies the clinical intervention performed.","","This identifies the actual clinical procedure.","","","","","","","",,,,,"",,,,"Claim.procedure.procedure[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Claim.procedure.udi","Claim.procedure.udi","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
@@ -293,7 +293,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.insurance.preAuthRef","Claim.insurance.preAuthRef","","","",0,*,"","","","string {[]} {[]}
 ","Prior authorization reference number","Reference numbers previously provided by the insurer to the provider to be quoted on subsequent claims containing services or products related to the prior authorization.","This value is an alphanumeric string that may be provided over the phone, via text, via paper, or within a ClaimResponse resource and is not a FHIR Identifier.","Providers must quote previously issued authorization reference numbers in order to obtain adjudication as previously advised on the Preauthorization.","","","","","","","",,,,,"",,,,"Claim.insurance.preAuthRef",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Claim.insurance.claimResponse","Claim.insurance.claimResponse","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse]]}
+"Claim.insurance.claimResponse","Claim.insurance.claimResponse","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse]]}
 ","Adjudication results","The result of the adjudication of the line items for the Coverage specified in this insurance.","Must not be specified when 'focal=true' for this insurance.","An insurer need the adjudication results from prior insurers to determine the outstanding balance remaining by item for the items in the curent claim.","","","","","","","",,,,,"",,,,"Claim.insurance.claimResponse",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Claim.accident","Claim.accident","","","",0,1,"","","","BackboneElement {[]} {[]}

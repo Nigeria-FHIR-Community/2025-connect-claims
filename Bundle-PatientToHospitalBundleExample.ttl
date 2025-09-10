@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Bundle/PatientToHospitalBundleExample> a fhir:Bundle ;
+<https://www.dhin-hie.org/IGs/Bundle/PatientToHospitalBundleExample> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientToHospitalBundleExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital>
      ] )
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -48,8 +48,8 @@
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2023-05-21T14:36:00+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
      ] )
   ] ; # 
   fhir:text [
@@ -71,8 +71,8 @@
   fhir:id [ fhir:v "encounter-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter>
      ] )
   ] ; # 
   fhir:text [
@@ -94,8 +94,8 @@
   fhir:id [ fhir:v "practitioner-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner>
      ] )
   ] ; # 
   fhir:text [
@@ -115,8 +115,8 @@
   fhir:id [ fhir:v "procedure-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure>
      ] )
   ] ; # 
   fhir:text [
@@ -139,8 +139,8 @@
   fhir:id [ fhir:v "observation-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation>
      ] )
   ] ; # 
   fhir:text [
@@ -184,8 +184,8 @@
   fhir:id [ fhir:v "invoice-003"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice>
      ] )
   ] ; # 
   fhir:text [
@@ -194,7 +194,7 @@
   ] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:subject [
-     fhir:link <https://dhin.org/2025Connectathon/Patient/patient-003> ;
+     fhir:link <https://www.dhin-hie.org/IGs/Patient/patient-003> ;
      fhir:reference [ fhir:v "Patient/patient-003" ]
   ] ; # 
   fhir:date [ fhir:v "2025-08-02"^^xsd:date] ; # 
@@ -207,8 +207,8 @@
   fhir:id [ fhir:v "org-hospital-2"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
      ] )
   ] ; # 
   fhir:text [

@@ -2,7 +2,7 @@
   "resourceType" : "Practitioner",
   "id" : "practitioner-003",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"]
   },
   "text" : {
     "status" : "generated",

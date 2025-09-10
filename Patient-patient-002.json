@@ -3,7 +3,7 @@
   "id" : "patient-002",
   "meta" : {
     "lastUpdated" : "2024-06-30T14:36:00+01:00",
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"]
   },
   "text" : {
     "status" : "generated",

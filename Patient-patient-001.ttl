@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Patient/patient-001> a fhir:Patient ;
+<https://www.dhin-hie.org/IGs/Patient/patient-001> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "patient-001"] ; # 
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2025-07-30T14:36:00+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
      ] )
   ] ; # 
   fhir:text [

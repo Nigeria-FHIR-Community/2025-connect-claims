@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Bundle/PatientToInsurerBundleExample> a fhir:Bundle ;
+<https://www.dhin-hie.org/IGs/Bundle/PatientToInsurerBundleExample> a fhir:Bundle ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientToInsurerBundleExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer>
      ] )
   ] ; # 
   fhir:type [ fhir:v "collection"] ; # 
@@ -39,8 +39,8 @@
   fhir:meta [
      fhir:lastUpdated [ fhir:v "2019-01-25T15:36:00+01:00"^^xsd:dateTime ] ;
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/NgPatient>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient>
      ] )
   ] ; # 
   fhir:text [
@@ -62,8 +62,8 @@
   fhir:id [ fhir:v "coverage-004"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage>
      ] )
   ] ; # 
   fhir:text [
@@ -87,8 +87,8 @@
   fhir:id [ fhir:v "eligibility-request-004"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request>
      ] )
   ] ; # 
   fhir:text [
@@ -114,8 +114,8 @@
   fhir:id [ fhir:v "org-insurer-4"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization>
      ] )
   ] ; # 
   fhir:text [
@@ -143,8 +143,8 @@
   fhir:id [ fhir:v "eligibility-response-004"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response>
      ] )
   ] ; # 
   fhir:text [
@@ -158,7 +158,7 @@
   ] ; # 
   fhir:created [ fhir:v "2025-08-03"^^xsd:date] ; # 
   fhir:request [
-     fhir:link <https://dhin.org/2025Connectathon/CoverageEligibilityRequest/eligibility-request-004> ;
+     fhir:link <https://www.dhin-hie.org/IGs/CoverageEligibilityRequest/eligibility-request-004> ;
      fhir:reference [ fhir:v "CoverageEligibilityRequest/eligibility-request-004" ]
   ] ; # 
   fhir:outcome [ fhir:v "well"] ; # 

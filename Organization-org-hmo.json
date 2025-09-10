@@ -2,7 +2,7 @@
   "resourceType" : "Organization",
   "id" : "org-hmo",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"]
   },
   "text" : {
     "status" : "generated",

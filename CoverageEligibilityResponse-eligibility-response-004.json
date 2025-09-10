@@ -2,7 +2,7 @@
   "resourceType" : "CoverageEligibilityResponse",
   "id" : "eligibility-response-004",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response"]
   },
   "text" : {
     "status" : "generated",

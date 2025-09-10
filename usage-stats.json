@@ -7,109 +7,109 @@
   "profiles": {
     "Patient": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient",
         "title": "NG Patient"
       }
     ],
     "Practitioner": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner",
         "title": "NG Practitioner"
       }
     ],
     "Bundle": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer",
         "title": "2-NG-Bundle: HMO to Insurer"
       },
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo",
         "title": "1-NG-Bundle: Hospital to HMO (Claim Submission)"
       },
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital",
         "title": "3-NG-Bundle: Patient to Hospital"
       },
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer",
         "title": "4-NG-Bundle: Patient to Insurer"
       }
     ],
     "Claim": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim",
         "title": "NG-Claim"
       }
     ],
     "Coverage": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage",
         "title": "NG-Claim Coverage"
       }
     ],
     "Encounter": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter",
         "title": "NG-Claim Encounter"
       }
     ],
     "Invoice": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice",
         "title": "NG-Claim Invoice"
       }
     ],
     "Observation": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation",
         "title": "NG-Claim Observation"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-practitionerrole",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-practitionerrole",
         "title": "NG PractitionerRole"
       }
     ],
     "Procedure": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure",
         "title": "NG Procedure"
       }
     ],
     "Task": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task",
         "title": "NG-Claim Task"
       }
     ],
     "ClaimResponse": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse",
         "title": "NG-ClaimResponse"
       }
     ],
     "CoverageEligibilityRequest": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request",
         "title": "NG-CoverageEligibilityRequest"
       }
     ],
     "CoverageEligibilityResponse": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response",
         "title": "NG-CoverageEligibilityResponse"
       }
     ],
     "ExplanationOfBenefit": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-explanationofbenefit",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-explanationofbenefit",
         "title": "NG-ExplanationOfBenefit"
       }
     ],
     "Organization": [
       {
-        "url": "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization",
+        "url": "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization",
         "title": "NG Organization"
       }
     ]

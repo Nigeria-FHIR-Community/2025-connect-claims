@@ -2,7 +2,7 @@
   "resourceType" : "Observation",
   "id" : "observation-001",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"]
   },
   "text" : {
     "status" : "generated",

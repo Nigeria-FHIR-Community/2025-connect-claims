@@ -232,7 +232,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:claim.resource","Bundle.entry.resource","","Adjudication Request
-Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim]]} {[]}
+Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim]]} {[]}
 ","Claim, Pre-determination or Pre-authorization","A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement.","The Claim resource fulfills three information request requirements: Claim - a request for adjudication for reimbursement for products and/or services provided; Preauthorization - a request to authorize the future provision of products and/or services including an anticipated adjudication; and, Predetermination - a request for a non-bind adjudication of possible future products and/or services.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act"
 "Bundle.entry:claim.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -350,7 +350,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:claimResponse.resource","Bundle.entry.resource","","Remittance Advice
-","",0,1,"","","","ClaimResponse {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse]]} {[]}
+","",0,1,"","","","ClaimResponse {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse]]} {[]}
 ","Response to a claim predetermination or preauthorization","This resource provides the adjudication details from the processing of a Claim resource.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act"
 "Bundle.entry:claimResponse.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -468,7 +468,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:explanationOfBenefit.resource","Bundle.entry.resource","","EOB
-","",0,1,"","","","ExplanationOfBenefit {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-explanationofbenefit]]} {[]}
+","",0,1,"","","","ExplanationOfBenefit {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-explanationofbenefit]]} {[]}
 ","Explanation of Benefit resource","This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act"
 "Bundle.entry:explanationOfBenefit.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -585,7 +585,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","(also see master files messages)","Entity. Role, or Act","Organization(classCode=ORG, determinerCode=INST)"
 "Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -702,7 +702,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:task.resource","Bundle.entry.resource","","","",0,1,"","","","Task {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task]]} {[]}
+"Bundle.entry:task.resource","Bundle.entry.resource","","","",0,1,"","","","Task {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task]]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","ControlAct[moodCode=INT]"
 "Bundle.entry:task.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -820,7 +820,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Patient[classCode=PAT]","ClinicalDocument.recordTarget.patientRole"
 "Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -937,7 +937,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage]]} {[]}
+"Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage]]} {[]}
 ","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Coverage"
 "Bundle.entry:coverage.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2

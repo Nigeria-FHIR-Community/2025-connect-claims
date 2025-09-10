@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -27,8 +27,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/adjudication",
@@ -42,8 +42,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.596"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/adjudication-error",
@@ -57,8 +57,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.39"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse"
+      "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/adjudication-reason",
@@ -72,8 +72,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.598"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -177,10 +177,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
-      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
       "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer"
+      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -255,11 +255,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.536"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/claim-subtype",
@@ -273,9 +273,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.566"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/claim-type",
@@ -289,9 +289,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.558"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/claim-use",
@@ -305,9 +305,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.544"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -321,11 +321,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.79"],
       "uses" : {
       },
-      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
       "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
+      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
       "StructureDefinition-NgPatient.html" : "NG Patient",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer"
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -353,9 +353,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
       "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -369,9 +369,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
       "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -738,10 +738,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1174"],
       "uses" : {
       },
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ex-diagnosis-on-admission",
@@ -804,8 +804,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.616"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ex-procedure-type",
@@ -834,9 +834,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.576"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/ex-revenue-center",
@@ -879,11 +879,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.592"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
-      "StructureDefinition-ng-claim-coverage.html" : "NG-Claim Coverage",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim-coverage.html" : "NG-Claim Coverage",
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/forms",
@@ -897,9 +897,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.37"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/fundsreserve",
@@ -913,9 +913,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.33"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -929,10 +929,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
-      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
       "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer"
+      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/icd-10",
@@ -946,9 +946,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.531"],
       "uses" : {
       },
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/icd-10-procedures",
@@ -977,9 +977,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
       "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -993,9 +993,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
       "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/invoice-priceComponentType",
@@ -1037,25 +1037,25 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ng-claim-invoice.html" : "NG-Claim Invoice",
-      "StructureDefinition-ng-claim-observation.html" : "NG-Claim Observation",
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
-      "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
-      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
       "StructureDefinition-ng-claim-encounter.html" : "NG-Claim Encounter",
       "StructureDefinition-ng-claim-practitionerrole.html" : "NG PractitionerRole",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
-      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
       "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
-      "StructureDefinition-ng-claim-task.html" : "NG-Claim Task",
-      "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
-      "StructureDefinition-ng-claim-coverage.html" : "NG-Claim Coverage",
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-claim-procedure.html" : "NG Procedure",
-      "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-claim-coverage.html" : "NG-Claim Coverage",
+      "StructureDefinition-ng-claim-task.html" : "NG-Claim Task",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
+      "StructureDefinition-NgPractitioner.html" : "NG Practitioner",
+      "StructureDefinition-ng-claim-observation.html" : "NG-Claim Observation",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
+      "StructureDefinition-ng-claim-invoice.html" : "NG-Claim Invoice"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1105,20 +1105,6 @@
       "StructureDefinition-NgPatient.html" : "NG Patient"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "Mime Types",
-      "title" : "MimeType",
-      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
-      "systems" : ["urn:ietf:bcp:13"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
-      "uses" : {
-      },
-      "StructureDefinition-NgPatient.html" : "NG Patient"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/missing-tooth-reason",
       "version" : "4.0.1",
       "status" : "draft",
@@ -1160,8 +1146,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.15"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -1261,9 +1247,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.31"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/payment-adjustment-reason",
@@ -1279,8 +1265,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.600"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -1410,9 +1396,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.552"],
       "uses" : {
       },
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/provider-qualification",
@@ -1493,9 +1479,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.13"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
-      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit"
+      "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -1523,10 +1509,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
-      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
       "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer"
+      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1546,11 +1532,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
-      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer",
       "StructureDefinition-ng-bundle-patient-to-hospital.html" : "3-NG-Bundle: Patient to Hospital",
+      "StructureDefinition-ng-bundle-hospital-to-hmo.html" : "1-NG-Bundle: Hospital to HMO (Claim Submission)",
       "StructureDefinition-NgPatient.html" : "NG Patient",
-      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer"
+      "StructureDefinition-ng-bundle-patient-to-insurer.html" : "4-NG-Bundle: Patient to Insurer",
+      "StructureDefinition-ng-bundle-hmo-to-insurer.html" : "2-NG-Bundle: HMO to Insurer"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-place",
@@ -1564,9 +1550,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.564"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -1594,11 +1580,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.542"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
-      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest",
       "StructureDefinition-ng-eligibility-response.html" : "NG-CoverageEligibilityResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
+      "StructureDefinition-ng-eligibility-request.html" : "NG-CoverageEligibilityRequest"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/subscriber-relationship",
@@ -1628,9 +1614,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.546"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/task-code",
@@ -1689,9 +1675,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.540"],
       "uses" : {
       },
-      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse",
       "StructureDefinition-ng-explanationofbenefit.html" : "NG-ExplanationOfBenefit",
-      "StructureDefinition-ng-claim.html" : "NG-Claim"
+      "StructureDefinition-ng-claim.html" : "NG-Claim",
+      "StructureDefinition-ng-claimresponse.html" : "NG-ClaimResponse"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -1763,94 +1749,88 @@
       "StructureDefinition-ng-claim-encounter.html" : "NG-Claim Encounter"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-facility-types",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGFacilityTypeVS",
       "title" : "NG-Imm HealthFacility Type VS",
       "description" : "Classification of Nigerian health facilities",
       "systems" : [
-        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-facility-type"
+        "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-facility-type"
       ],
       "uses" : {
       },
       "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-gender",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-gender",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "NGGenderVS",
       "title" : "NG-Imm Gender or Sex VS",
       "description" : "Subset of HL7 administrative-gender limited to 'male' and 'female'.",
-      "systems" : [
-        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-gender"
-      ],
+      "systems" : ["https://www.dhin-hie.org/IGs/CodeSystem/nigeria-gender"],
       "uses" : {
       },
       "StructureDefinition-NgPatient.html" : "NG Patient"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-languages",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-languages",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLanguagesVS",
       "title" : "NG-Imm Languages VS",
       "description" : "The Patient's preferred language for communication.",
-      "systems" : [
-        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-languages"
-      ],
+      "systems" : ["https://www.dhin-hie.org/IGs/CodeSystem/nigeria-languages"],
       "uses" : {
       },
       "StructureDefinition-NgPatient.html" : "NG Patient"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGLGAsVS",
       "title" : "NG-Imm LGAs VS",
       "description" : "The administrative Local Government Areas where a person or a facility is.",
-      "systems" : ["https://dhin.org/2025Connectathon/CodeSystem/nigeria-lgas"],
+      "systems" : ["https://www.dhin-hie.org/IGs/CodeSystem/nigeria-lgas"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-location-owner",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-location-owner",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGOrganizationOwnerVS",
       "title" : "NG-Imm Location Owner",
       "description" : "The owner of an Immunization location",
       "systems" : [
-        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-location-owner-cs"
+        "https://www.dhin-hie.org/IGs/CodeSystem/nigeria-location-owner-cs"
       ]
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-states",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-states",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGStatesVS",
       "title" : "NG-Imm States VS",
       "description" : "The state where a person or a facility is.",
-      "systems" : [
-        "https://dhin.org/2025Connectathon/CodeSystem/nigeria-states"
-      ],
+      "systems" : ["https://www.dhin-hie.org/IGs/CodeSystem/nigeria-states"],
       "uses" : {
       },
-      "StructureDefinition-ng-imm-organization.html" : "NG Organization",
-      "StructureDefinition-NgPatient.html" : "NG Patient"
+      "StructureDefinition-NgPatient.html" : "NG Patient",
+      "StructureDefinition-ng-imm-organization.html" : "NG Organization"
     },
     {
-      "url" : "https://dhin.org/2025Connectathon/ValueSet/nigeria-wards",
+      "url" : "https://www.dhin-hie.org/IGs/ValueSet/nigeria-wards",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "NGWardsVS",
       "title" : "NG-Imm Wards VS",
       "description" : "The administrative Ward (within an LGA) where a person or a facility is.",
-      "systems" : ["https://dhin.org/2025Connectathon/CodeSystem/nigeria-wards"]
+      "systems" : ["https://www.dhin-hie.org/IGs/CodeSystem/nigeria-wards"]
     }
   ]
 }

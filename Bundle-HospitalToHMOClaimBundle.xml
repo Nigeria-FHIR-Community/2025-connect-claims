@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="HospitalToHMOClaimBundle"/>
   <meta>
-    <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo"/>
+    <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo"/>
   </meta>
   <type value="collection"/>
   <timestamp value="2025-07-30T08:00:00+01:00"/>
@@ -14,7 +14,7 @@
         <id value="patient-001"/>
         <meta>
           <lastUpdated value="2025-07-30T14:36:00+01:00"/>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_patient-001"> </a><p class="res-header-id"><b>Generated Narrative: Patient patient-001</b></p><a name="patient-001"> </a><a name="hcpatient-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2025-07-30 14:36:00+0100</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPatient.html">NG Patient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Ade Ogunleye  Male, DoB: 1985-09-21 ( https://nimc.gov.ng#NIN123456789)</p><hr/></div>
@@ -38,7 +38,7 @@
       <Claim>
         <id value="claim-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Claim_claim-001"> </a><p class="res-header-id"><b>Generated Narrative: Claim claim-001</b></p><a name="claim-001"> </a><a name="hcclaim-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim.html">NG-Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-patient-001">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>created</b>: 2025-07-28</p><p><b>provider</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-org-hospital">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>priority</b>: <span title="Codes:">high</span></p><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td>8987</td><td>true</td><td><code>NgClaimCoverage/coverage-001</code></td></tr></table><h3>Items</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>ProductOrService</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:">99213</span></td></tr></table></div>
@@ -87,7 +87,7 @@
       <Coverage>
         <id value="coverage-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Coverage_coverage-001"> </a><p class="res-header-id"><b>Generated Narrative: Coverage coverage-001</b></p><a name="coverage-001"> </a><a name="hccoverage-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-coverage.html">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:">Premium</span></p><p><b>beneficiary</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-patient-001">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>payor</b>: <a href="Bundle-HMOToInsurerBundleExample.html#urn-uuid-org-hmo">Bundle: type = collection; timestamp = 2025-08-01 09:00:00+0100</a></p></div>
@@ -113,7 +113,7 @@
       <Encounter>
         <id value="encounter-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_encounter-001"> </a><p class="res-header-id"><b>Generated Narrative: Encounter encounter-001</b></p><a name="encounter-001"> </a><a name="hcencounter-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-encounter.html">NG-Claim Encounter</a></p></div><p><b>status</b>: Finished</p><p><b>class</b>: [not stated] AMB: AMB</p><p><b>subject</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-patient-001">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>period</b>: 2025-07-27 10:00:00+0100 --&gt; 2025-07-27 11:00:00+0100</p></div>
@@ -138,7 +138,7 @@
       <Procedure>
         <id value="procedure-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Procedure_procedure-001"> </a><p class="res-header-id"><b>Generated Narrative: Procedure procedure-001</b></p><a name="procedure-001"> </a><a name="hcprocedure-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-procedure.html">NG Procedure</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:">Blood test</span></p><p><b>subject</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-patient-001">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>performed</b>: 2025-07-27 10:30:00+0100</p></div>
@@ -160,7 +160,7 @@
       <Observation>
         <id value="observation-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_observation-001"> </a><p class="res-header-id"><b>Generated Narrative: Observation observation-001</b></p><a name="observation-001"> </a><a name="hcobservation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-observation.html">NG-Claim Observation</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Hemoglobin</span></p><p><b>subject</b>: <a href="Bundle-HospitalToHMOClaimBundle.html#urn-uuid-patient-001">Bundle: type = collection; timestamp = 2025-07-30 08:00:00+0100</a></p><p><b>effective</b>: 2025-07-27 10:40:00+0100</p><p><b>value</b>: 13.2 g/dL</p></div>
@@ -186,7 +186,7 @@
       <Organization>
         <id value="org-hospital"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-hospital"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-hospital</b></p><a name="org-hospital"> </a><a name="hcorg-hospital"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF001</p><p><b>type</b>: <span title="Codes:">prov</span></p><p><b>name</b>: CityCare General Hospital</p><p><b>address</b>: 10 Shrine road Okija Anambra </p></div>
@@ -216,7 +216,7 @@
       <Organization>
         <id value="org-hmo"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_org-hmo"> </a><p class="res-header-id"><b>Generated Narrative: Organization org-hmo</b></p><a name="org-hmo"> </a><a name="hcorg-hmo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-imm-organization.html">NG Organization</a></p></div><p><b>identifier</b>: <code>https://nhia.gov.ng</code>/HMO123</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:">tertiary</span></p><p><b>name</b>: TrustHMO</p><p><b>address</b>: 15 surulere street Garki FCT </p></div>
@@ -247,7 +247,7 @@
       <Practitioner>
         <id value="practitioner-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_practitioner-001"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner practitioner-001</b></p><a name="practitioner-001"> </a><a name="hcpractitioner-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-NgPractitioner.html">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN56789</p><p><b>name</b>: Fati Okafor </p></div>
@@ -269,7 +269,7 @@
       <Invoice>
         <id value="invoice-001"/>
         <meta>
-          <profile value="https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"/>
+          <profile value="https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Invoice_invoice-001"> </a><p class="res-header-id"><b>Generated Narrative: Invoice invoice-001</b></p><a name="invoice-001"> </a><a name="hcinvoice-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ng-claim-invoice.html">NG-Claim Invoice</a></p></div><p><b>status</b>: issued</p><p><b>subject</b>: <code>NgPatient/patient-001</code></p><p><b>date</b>: 2025-07-30</p><h3>TotalNets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>15000</td><td>Nigerian naira</td></tr></table></div>

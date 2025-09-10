@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Task/task-claim-review> a fhir:Task ;
+<https://www.dhin-hie.org/IGs/Task/task-claim-review> a fhir:Task ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "task-claim-review"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task>
      ] )
   ] ; # 
   fhir:text [

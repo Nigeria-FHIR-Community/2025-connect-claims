@@ -2,7 +2,7 @@
   "resourceType" : "Encounter",
   "id" : "encounter-003",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"]
   },
   "text" : {
     "status" : "generated",

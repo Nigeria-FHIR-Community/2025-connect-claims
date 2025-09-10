@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dhin.org/2025Connectathon/Claim/claim-001> a fhir:Claim ;
+<https://www.dhin-hie.org/IGs/Claim/claim-001> a fhir:Claim ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "claim-001"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"^^xsd:anyURI ;
-       fhir:link <https://dhin.org/2025Connectathon/StructureDefinition/ng-claim>
+       fhir:v "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"^^xsd:anyURI ;
+       fhir:link <https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim>
      ] )
   ] ; # 
   fhir:text [
@@ -43,7 +43,7 @@
      fhir:sequence [ fhir:v "8987"^^xsd:positiveInteger ] ;
      fhir:focal [ fhir:v true ] ;
      fhir:coverage [
-       fhir:link <https://dhin.org/2025Connectathon/NgClaimCoverage/coverage-001> ;
+       fhir:link <https://www.dhin-hie.org/IGs/NgClaimCoverage/coverage-001> ;
        fhir:reference [ fhir:v "NgClaimCoverage/coverage-001" ]
      ]
   ] ) ; # 

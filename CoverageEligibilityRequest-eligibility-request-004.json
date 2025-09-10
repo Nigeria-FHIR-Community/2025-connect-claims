@@ -2,7 +2,7 @@
   "resourceType" : "CoverageEligibilityRequest",
   "id" : "eligibility-request-004",
   "meta" : {
-    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"]
+    "profile" : ["https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"]
   },
   "text" : {
     "status" : "generated",

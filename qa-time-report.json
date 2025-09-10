@@ -1,1613 +1,1628 @@
 {
-  "date" : "Sat, 02 Aug, 2025 14:20:11 +0100",
+  "date" : "Wed, 10 Sep, 2025 08:55:31 +0100",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-2025connectathonClaims.json",
-      "size" : 19560,
+      "size" : 19395,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 13
+          "start" : 59,
+          "length" : 24
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 54,
+          "start" : 63,
           "length" : 15
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 92
+          "start" : 64,
+          "length" : 108
         },
         {
           "activity" : "validate",
-          "start" : 64,
-          "length" : 15433
+          "start" : 74,
+          "length" : 9966
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 81,
-          "length" : 240
+          "start" : 85,
+          "length" : 190
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 272
+          "start" : 101,
+          "length" : 321
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 7
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 1
+          "start" : 189,
+          "length" : 3
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Bundle-HMOToInsurerBundleExample.json",
-      "size" : 5227,
+      "size" : 5192,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 9
+          "start" : 58,
+          "length" : 8
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 43
+          "start" : 59,
+          "length" : 53
         },
         {
-          "activity" : "checkR4R4B",
-          "start" : 54,
+          "activity" : "load",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 591
+          "start" : 64,
+          "length" : 732
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 246
+          "start" : 84,
+          "length" : 228
         },
         {
           "activity" : "generate1",
-          "start" : 81,
-          "length" : 55
+          "start" : 85,
+          "length" : 53
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 53
+          "start" : 102,
+          "length" : 54
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Bundle-HospitalToHMOClaimBundle.json",
-      "size" : 7453,
+      "size" : 7398,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 58,
           "length" : 9
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 26
+          "start" : 59,
+          "length" : 38
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 54,
+          "start" : 64,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 35
+          "start" : 64,
+          "length" : 31
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 91
+          "start" : 84,
+          "length" : 86
         },
         {
           "activity" : "generate1",
-          "start" : 81,
-          "length" : 72
+          "start" : 85,
+          "length" : 64
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 66
+          "start" : 102,
+          "length" : 62
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Bundle-PatientToHospitalBundleExample.json",
-      "size" : 5031,
+      "size" : 4991,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 7
+          "start" : 58,
+          "length" : 10
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 13
+          "start" : 59,
+          "length" : 11
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 54,
+          "start" : 64,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 23
+          "start" : 64,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 59
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 84,
+          "length" : 52
         },
         {
           "activity" : "generate1",
-          "start" : 81,
-          "length" : 56
+          "start" : 85,
+          "length" : 54
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 52
+          "start" : 102,
+          "length" : 39
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Bundle-PatientToInsurerBundleExample.json",
-      "size" : 4126,
+      "size" : 4096,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 6
+          "start" : 58,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 6
-        },
-        {
-          "activity" : "load",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 3
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 2
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
           "length" : 2
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 1
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 2
         },
         {
-          "activity" : "load-configure",
-          "start" : 54,
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 21
+          "start" : 64,
+          "length" : 16
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 43
+          "start" : 84,
+          "length" : 35
         },
         {
           "activity" : "generate1",
-          "start" : 81,
-          "length" : 47
+          "start" : 85,
+          "length" : 48
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 50
+          "start" : 102,
+          "length" : 45
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Claim-claim-001.json",
-      "size" : 916,
+      "size" : 911,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 58,
           "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 8
+          "start" : 64,
+          "length" : 6
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 20
+          "start" : 84,
+          "length" : 14
         },
         {
           "activity" : "generate1",
-          "start" : 81,
+          "start" : 85,
           "length" : 28
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 28
+          "start" : 102,
+          "length" : 21
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Claim-claim-002.json",
-      "size" : 912,
+      "size" : 907,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 58,
           "length" : 4
         },
         {
-          "activity" : "checkR4R4B",
-          "start" : 54,
+          "activity" : "load-configure",
+          "start" : 63,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 7
+          "start" : 64,
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 9
+          "start" : 85,
+          "length" : 7
         },
         {
           "activity" : "generate1",
-          "start" : 81,
+          "start" : 85,
           "length" : 21
         },
         {
           "activity" : "generate2",
-          "start" : 99,
-          "length" : 29
+          "start" : 102,
+          "length" : 21
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/CodeSystem-nigeria-facility-type.json",
-      "size" : 2228,
+      "size" : 2223,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 58,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 49,
-          "length" : 12
-        },
-        {
-          "activity" : "loadDepInfo",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 14
-        },
-        {
-          "activity" : "validate",
-          "start" : 56,
-          "length" : 1076
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 81,
-          "length" : 39
-        },
-        {
-          "activity" : "generate2",
-          "start" : 99,
-          "length" : 777
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-gender.json",
-      "size" : 792,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 19
-        },
-        {
-          "activity" : "generate1",
-          "start" : 81,
-          "length" : 25
-        },
-        {
-          "activity" : "generate2",
-          "start" : 100,
-          "length" : 62
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-languages.json",
-      "size" : 2044,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 9
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 19
-        },
-        {
-          "activity" : "generate1",
-          "start" : 81,
-          "length" : 33
-        },
-        {
-          "activity" : "generate2",
-          "start" : 100,
-          "length" : 66
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-lgas.json",
-      "size" : 81726,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 25
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 46
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 2
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 54,
-          "length" : 13
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 54,
-          "length" : 112
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 423
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "generate1",
-          "start" : 81,
-          "length" : 633
-        },
-        {
-          "activity" : "generate2",
-          "start" : 100,
-          "length" : 431
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 33
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-location-owner-cs.json",
-      "size" : 916,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 5
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 6
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 21
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 44
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-states.json",
-      "size" : 2850,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 16
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 7
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 10
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 42
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 67
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 2
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CodeSystem-nigeria-wards.json",
-      "size" : 1757,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 5
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 6
-        },
-        {
-          "activity" : "validate",
-          "start" : 57,
-          "length" : 10
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 35
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 47
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Coverage-coverage-001.json",
-      "size" : 412,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
+          "start" : 59,
           "length" : 18
         },
         {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 24
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Coverage-coverage-002.json",
-      "size" : 414,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
+          "start" : 64,
+          "length" : 18
         },
         {
           "activity" : "validate",
-          "start" : 80,
-          "length" : 4
+          "start" : 66,
+          "length" : 1058
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 82,
-          "length" : 23
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 21
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Coverage-coverage-004.json",
-      "size" : 414,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 22
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CoverageEligibilityRequest-eligibility-request-004.json",
-      "size" : 528,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 6
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 20
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 30
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/CoverageEligibilityResponse-eligibility-response-004.json",
-      "size" : 635,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 3
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 23
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
+          "start" : 85,
           "length" : 36
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Encounter-encounter-001.json",
-      "size" : 400,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 15
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 18
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Encounter-encounter-003.json",
-      "size" : 363,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 21
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 19
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Invoice-invoice-001.json",
-      "size" : 344,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 2
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 16
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 19
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Invoice-invoice-003.json",
-      "size" : 340,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 17
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Observation-observation-001.json",
-      "size" : 425,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 3
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 21
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 21
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Observation-observation-003.json",
-      "size" : 425,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 4
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 16
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-hmo-2.json",
-      "size" : 560,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 7
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 18
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-hmo.json",
-      "size" : 576,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 19
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 20
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-hospital-2.json",
-      "size" : 579,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 15
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 14
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-hospital.json",
-      "size" : 580,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 14
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-insurer-2.json",
-      "size" : 583,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 17
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 22
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Organization-org-insurer-4.json",
-      "size" : 577,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 80,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 18
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 17
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-patient-001.json",
-      "size" : 464,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 81,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 17
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-patient-002.json",
-      "size" : 467,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 81,
-          "length" : 6
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 17
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 18
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 4
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-patient-003.json",
-      "size" : 459,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
-          "length" : 1
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 81,
-          "length" : 8
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 19
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 16
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Patient-patient-004.json",
-      "size" : 464,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 81,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 14
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 17
-        }
-      ]
-    },
-    {
-      "name" : "fsh-generated/resources/Practitioner-practitioner-001.json",
-      "size" : 378,
-      "processes" : [
-        {
-          "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 1
-        },
-        {
-          "activity" : "validate",
-          "start" : 81,
-          "length" : 5
-        },
-        {
-          "activity" : "generate1",
-          "start" : 82,
-          "length" : 16
-        },
-        {
-          "activity" : "generate2",
-          "start" : 101,
-          "length" : 22
+          "start" : 102,
+          "length" : 679
         },
         {
-          "activity" : "generateExampleZip",
+          "activity" : "generateValidationPack",
           "start" : 155,
           "length" : 1
         }
       ]
     },
     {
-      "name" : "fsh-generated/resources/Practitioner-practitioner-003.json",
-      "size" : 381,
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-gender.json",
+      "size" : 787,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 58,
+          "length" : 4
         },
         {
-          "activity" : "load-configure",
-          "start" : 54,
+          "activity" : "load",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
+          "start" : 64,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 22
+        },
+        {
+          "activity" : "generate1",
+          "start" : 85,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 73
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 189,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-languages.json",
+      "size" : 2039,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 58,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 85,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 65
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-lgas.json",
+      "size" : 81721,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 58,
+          "length" : 33
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 59
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 64,
+          "length" : 135
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 392
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 85,
+          "length" : 587
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 358
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 27
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-location-owner-cs.json",
+      "size" : 911,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 42
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-states.json",
+      "size" : 2845,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 53
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-nigeria-wards.json",
+      "size" : 1752,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 7
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 67,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 41
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Coverage-coverage-001.json",
+      "size" : 407,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
           "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 81,
+          "start" : 85,
           "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 82,
+          "start" : 86,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Coverage-coverage-002.json",
+      "size" : 409,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Coverage-coverage-004.json",
+      "size" : 409,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 24
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CoverageEligibilityRequest-eligibility-request-004.json",
+      "size" : 523,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CoverageEligibilityResponse-eligibility-response-004.json",
+      "size" : 630,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-encounter-001.json",
+      "size" : 395,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-encounter-003.json",
+      "size" : 358,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 103,
+          "length" : 21
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Invoice-invoice-001.json",
+      "size" : 339,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Invoice-invoice-003.json",
+      "size" : 335,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-001.json",
+      "size" : 420,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 16
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 22
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-observation-003.json",
+      "size" : 420,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-hmo-2.json",
+      "size" : 555,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-hmo.json",
+      "size" : 571,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-hospital-2.json",
+      "size" : 574,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-hospital.json",
+      "size" : 575,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-insurer-2.json",
+      "size" : 578,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-org-insurer-4.json",
+      "size" : 572,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-001.json",
+      "size" : 459,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-002.json",
+      "size" : 462,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-003.json",
+      "size" : 454,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-004.json",
+      "size" : 459,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 15
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 14
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-practitioner-001.json",
+      "size" : 373,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 104,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-practitioner-003.json",
+      "size" : 376,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 85,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 86,
           "length" : 19
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 18
+          "start" : 104,
+          "length" : 19
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Procedure-procedure-001.json",
-      "size" : 359,
+      "size" : 354,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
+          "start" : 65,
           "length" : 2
         },
         {
           "activity" : "validate",
-          "start" : 81,
+          "start" : 85,
           "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 82,
+          "start" : 86,
           "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 28
+          "start" : 104,
+          "length" : 15
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Procedure-procedure-003.json",
-      "size" : 365,
+      "size" : 360,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
+          "start" : 59,
+          "length" : 3
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 2
+          "start" : 65,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 81,
+          "start" : 85,
           "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 82,
-          "length" : 20
+          "start" : 86,
+          "length" : 15
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 23
+          "start" : 104,
+          "length" : 14
         }
       ]
     },
@@ -1617,1505 +1632,1525 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 3
         },
         {
+          "activity" : "loadDepInfo",
+          "start" : 63,
+          "length" : 1
+        },
+        {
           "activity" : "generateNarratives",
-          "start" : 55,
+          "start" : 65,
           "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 81,
+          "start" : 85,
           "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 82,
+          "start" : 86,
           "length" : 16
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 23
+          "start" : 104,
+          "length" : 22
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-NgPatient.json",
-      "size" : 9569,
+      "size" : 8705,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
+          "start" : 59,
+          "length" : 10
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 17
+          "start" : 59,
+          "length" : 16
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 50,
-          "length" : 204
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 54,
-          "length" : 1
+          "start" : 59,
+          "length" : 174
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 102
+          "start" : 65,
+          "length" : 106
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 871
+          "start" : 67,
+          "length" : 688
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 2
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 82,
-          "length" : 969
+          "start" : 86,
+          "length" : 850
         },
         {
           "activity" : "generate2",
-          "start" : 101,
-          "length" : 1205
+          "start" : 104,
+          "length" : 1350
         },
         {
           "activity" : "generate2",
-          "start" : 117,
-          "length" : 2805
+          "start" : 118,
+          "length" : 2163
         },
         {
           "activity" : "makeDependencies",
-          "start" : 141,
+          "start" : 140,
           "length" : 1
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 21
+          "start" : 155,
+          "length" : 17
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-NgPractitioner.json",
-      "size" : 3243,
+      "size" : 3233,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 6
+          "start" : 59,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 50,
-          "length" : 110
+          "start" : 60,
+          "length" : 86
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 37
+          "start" : 65,
+          "length" : 43
         },
         {
           "activity" : "validate",
-          "start" : 58,
-          "length" : 262
+          "start" : 68,
+          "length" : 198
         },
         {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
+          "activity" : "scanForUsageStats",
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 83,
-          "length" : 388
+          "start" : 87,
+          "length" : 396
         },
         {
           "activity" : "generate2",
-          "start" : 103,
-          "length" : 489
+          "start" : 105,
+          "length" : 418
         },
         {
           "activity" : "generate2",
           "start" : 120,
-          "length" : 411
+          "length" : 345
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 8
+          "start" : 155,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-bundle-hmo-to-insurer.json",
-      "size" : 4634,
+      "size" : 4594,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 8
+          "start" : 59,
+          "length" : 14
         },
         {
-          "activity" : "generateSnapshots",
-          "start" : 50,
-          "length" : 618
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 127
-        },
-        {
-          "activity" : "validate",
-          "start" : 58,
-          "length" : 1165
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
+          "activity" : "load",
+          "start" : 59,
           "length" : 1
         },
         {
+          "activity" : "generateSnapshots",
+          "start" : 60,
+          "length" : 504
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 65,
+          "length" : 104
+        },
+        {
+          "activity" : "validate",
+          "start" : 68,
+          "length" : 874
+        },
+        {
           "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 3
+          "start" : 84,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 84,
-          "length" : 1306
+          "start" : 88,
+          "length" : 1084
         },
         {
           "activity" : "generate2",
-          "start" : 103,
-          "length" : 1663
+          "start" : 106,
+          "length" : 1501
         },
         {
           "activity" : "generate2",
           "start" : 120,
-          "length" : 1676
+          "length" : 1346
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 35
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 194,
-          "length" : 1
+          "start" : 155,
+          "length" : 26
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 1
+          "start" : 189,
+          "length" : 3
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-bundle-hospital-to-hmo.json",
-      "size" : 5580,
+      "size" : 5530,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 7
+          "start" : 59,
+          "length" : 12
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 51,
-          "length" : 363
+          "start" : 60,
+          "length" : 316
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 142
+          "start" : 65,
+          "length" : 125
         },
         {
           "activity" : "validate",
-          "start" : 60,
-          "length" : 1113
+          "start" : 69,
+          "length" : 961
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 85,
-          "length" : 1494
+          "start" : 89,
+          "length" : 1444
         },
         {
           "activity" : "generate2",
-          "start" : 105,
-          "length" : 1660
+          "start" : 107,
+          "length" : 1499
         },
         {
           "activity" : "generate2",
-          "start" : 122,
-          "length" : 1538
+          "start" : 121,
+          "length" : 1392
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 36
+          "start" : 155,
+          "length" : 35
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 189,
+          "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-bundle-patient-to-hospital.json",
-      "size" : 5068,
+      "size" : 5028,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 9
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 51,
-          "length" : 152
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
+          "start" : 60,
+          "length" : 143
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 118
+          "start" : 65,
+          "length" : 126
         },
         {
           "activity" : "validate",
-          "start" : 61,
-          "length" : 800
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
-          "length" : 1
+          "start" : 70,
+          "length" : 820
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 87,
-          "length" : 1341
+          "start" : 90,
+          "length" : 1321
         },
         {
           "activity" : "generate2",
-          "start" : 106,
-          "length" : 1154
+          "start" : 109,
+          "length" : 1063
         },
         {
           "activity" : "generate2",
           "start" : 123,
-          "length" : 1226
+          "length" : 1102
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 27
+          "start" : 155,
+          "length" : 31
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-bundle-patient-to-insurer.json",
-      "size" : 3839,
+      "size" : 3809,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 51,
-          "length" : 189
+          "start" : 61,
+          "length" : 145
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 43
+          "start" : 65,
+          "length" : 36
         },
         {
           "activity" : "validate",
-          "start" : 61,
-          "length" : 549
+          "start" : 71,
+          "length" : 511
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 2
+          "start" : 84,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 88,
-          "length" : 955
+          "start" : 92,
+          "length" : 897
         },
         {
           "activity" : "generate2",
-          "start" : 108,
-          "length" : 1050
+          "start" : 110,
+          "length" : 933
         },
         {
           "activity" : "generate2",
-          "start" : 125,
-          "length" : 909
+          "start" : 124,
+          "length" : 756
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 21
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 1
+          "start" : 189,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-coverage.json",
-      "size" : 1174,
+      "size" : 1169,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 51,
-          "length" : 17
+          "start" : 61,
+          "length" : 23
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 12
+          "start" : 65,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 62,
-          "length" : 119
+          "start" : 71,
+          "length" : 128
         },
         {
           "activity" : "generate1",
-          "start" : 89,
-          "length" : 239
+          "start" : 92,
+          "length" : 232
         },
         {
           "activity" : "generate2",
-          "start" : 109,
-          "length" : 388
+          "start" : 111,
+          "length" : 308
         },
         {
           "activity" : "generate2",
           "start" : 125,
-          "length" : 186
+          "length" : 180
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 9
+          "start" : 155,
+          "length" : 5
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-encounter.json",
-      "size" : 1052,
+      "size" : 1047,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 32
+          "start" : 61,
+          "length" : 31
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 14
+          "start" : 65,
+          "length" : 17
         },
         {
           "activity" : "validate",
-          "start" : 62,
-          "length" : 188
+          "start" : 71,
+          "length" : 235
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 89,
-          "length" : 355
+          "start" : 93,
+          "length" : 341
         },
         {
           "activity" : "generate2",
-          "start" : 109,
-          "length" : 805
+          "start" : 111,
+          "length" : 411
         },
         {
           "activity" : "generate2",
-          "start" : 126,
-          "length" : 288
+          "start" : 125,
+          "length" : 294
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 7
         },
         {
           "activity" : "scanProfilesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-invoice.json",
-      "size" : 1280,
+      "size" : 1275,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 11
+          "start" : 61,
+          "length" : 22
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 38
+          "start" : 65,
+          "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 62,
-          "length" : 113
+          "start" : 72,
+          "length" : 110
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 244
+          "start" : 93,
+          "length" : 265
         },
         {
           "activity" : "generate2",
-          "start" : 110,
-          "length" : 429
+          "start" : 111,
+          "length" : 364
         },
         {
           "activity" : "generate2",
-          "start" : 126,
-          "length" : 168
+          "start" : 125,
+          "length" : 161
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 4
+          "start" : 155,
+          "length" : 5
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-observation.json",
-      "size" : 1084,
+      "size" : 1079,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 5
         },
         {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 11
+        },
+        {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 13
+          "start" : 61,
+          "length" : 26
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 17
+          "start" : 65,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 62,
-          "length" : 145
+          "start" : 72,
+          "length" : 178
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 340
+          "start" : 93,
+          "length" : 305
         },
         {
           "activity" : "generate2",
-          "start" : 110,
-          "length" : 583
+          "start" : 112,
+          "length" : 365
         },
         {
           "activity" : "generate2",
-          "start" : 126,
-          "length" : 244
+          "start" : 125,
+          "length" : 222
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 6
+          "start" : 155,
+          "length" : 9
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-practitionerrole.json",
-      "size" : 1070,
+      "size" : 1065,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 20
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
-        },
-        {
-          "activity" : "scan",
-          "start" : 54,
-          "length" : 1
+          "start" : 61,
+          "length" : 29
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 10
+          "start" : 65,
+          "length" : 11
         },
         {
           "activity" : "validate",
-          "start" : 63,
-          "length" : 90
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
-          "length" : 1
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 1
+          "start" : 72,
+          "length" : 100
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 216
+          "start" : 94,
+          "length" : 199
         },
         {
           "activity" : "generate2",
-          "start" : 111,
-          "length" : 289
+          "start" : 112,
+          "length" : 236
         },
         {
           "activity" : "generate2",
           "start" : 126,
-          "length" : 142
+          "length" : 139
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 3
+          "start" : 155,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-procedure.json",
-      "size" : 1037,
+      "size" : 1032,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 11
+          "start" : 61,
+          "length" : 24
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
+          "start" : 65,
           "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 63,
-          "length" : 116
+          "start" : 72,
+          "length" : 143
         },
         {
           "activity" : "generate1",
-          "start" : 90,
-          "length" : 275
+          "start" : 94,
+          "length" : 250
         },
         {
           "activity" : "generate2",
-          "start" : 111,
-          "length" : 354
+          "start" : 112,
+          "length" : 284
         },
         {
           "activity" : "generate2",
           "start" : 126,
-          "length" : 188
+          "length" : 183
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 194,
-          "length" : 1
+          "start" : 155,
+          "length" : 7
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim-task.json",
-      "size" : 983,
+      "size" : 978,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 4
+          "start" : 59,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 11
+          "start" : 61,
+          "length" : 29
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 16
+          "start" : 65,
+          "length" : 15
         },
         {
           "activity" : "validate",
-          "start" : 63,
-          "length" : 220
+          "start" : 72,
+          "length" : 200
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 84,
+          "length" : 1
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 91,
-          "length" : 299
+          "start" : 94,
+          "length" : 272
         },
         {
           "activity" : "generate2",
-          "start" : 112,
-          "length" : 389
+          "start" : 113,
+          "length" : 472
         },
         {
           "activity" : "generate2",
-          "start" : 127,
-          "length" : 223
+          "start" : 126,
+          "length" : 194
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 5
+          "start" : 155,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claim.json",
-      "size" : 3508,
+      "size" : 3483,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 7
+          "start" : 59,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 29
+          "start" : 61,
+          "length" : 59
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 134
+          "start" : 65,
+          "length" : 76
         },
         {
           "activity" : "validate",
-          "start" : 63,
-          "length" : 329
+          "start" : 72,
+          "length" : 411
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 1
+          "start" : 84,
+          "length" : 2
         },
         {
           "activity" : "generate1",
-          "start" : 91,
-          "length" : 680
+          "start" : 94,
+          "length" : 655
         },
         {
           "activity" : "generate2",
-          "start" : 112,
-          "length" : 842
+          "start" : 113,
+          "length" : 742
         },
         {
           "activity" : "generate2",
-          "start" : 127,
-          "length" : 521
+          "start" : 126,
+          "length" : 493
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 17
         },
         {
           "activity" : "scanProfilesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-claimresponse.json",
-      "size" : 1559,
+      "size" : 1554,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 9
+          "start" : 59,
+          "length" : 10
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 34
+          "start" : 61,
+          "length" : 49
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 23
+          "start" : 65,
+          "length" : 25
         },
         {
           "activity" : "validate",
-          "start" : 63,
-          "length" : 304
+          "start" : 73,
+          "length" : 342
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 92,
-          "length" : 597
+          "start" : 95,
+          "length" : 657
         },
         {
           "activity" : "generate2",
-          "start" : 113,
-          "length" : 624
+          "start" : 114,
+          "length" : 586
         },
         {
           "activity" : "generate2",
           "start" : 127,
-          "length" : 490
+          "length" : 476
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 11
+          "start" : 155,
+          "length" : 13
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-eligibility-request.json",
-      "size" : 1414,
+      "size" : 1409,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 9
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 12
+          "start" : 61,
+          "length" : 29
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 12
+          "start" : 65,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 64,
-          "length" : 113
+          "start" : 73,
+          "length" : 130
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
+          "start" : 84,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 92,
-          "length" : 283
+          "start" : 96,
+          "length" : 267
         },
         {
           "activity" : "generate2",
-          "start" : 113,
-          "length" : 331
+          "start" : 114,
+          "length" : 303
         },
         {
           "activity" : "generate2",
-          "start" : 128,
-          "length" : 220
+          "start" : 127,
+          "length" : 197
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 5
+          "start" : 155,
+          "length" : 9
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-eligibility-response.json",
-      "size" : 1425,
+      "size" : 1420,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 6
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 11
+          "start" : 61,
+          "length" : 25
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 16
+          "start" : 65,
+          "length" : 14
         },
         {
           "activity" : "validate",
-          "start" : 64,
-          "length" : 136
+          "start" : 73,
+          "length" : 155
         },
         {
           "activity" : "generate1",
-          "start" : 92,
-          "length" : 308
+          "start" : 96,
+          "length" : 276
         },
         {
           "activity" : "generate2",
-          "start" : 114,
-          "length" : 396
+          "start" : 115,
+          "length" : 393
         },
         {
           "activity" : "generate2",
-          "start" : 128,
-          "length" : 220
+          "start" : 127,
+          "length" : 232
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 189,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-explanationofbenefit.json",
-      "size" : 1282,
+      "size" : 1277,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 3
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 6
+          "start" : 59,
+          "length" : 8
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 43
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
+          "start" : 61,
+          "length" : 64
         },
         {
           "activity" : "generateNarratives",
-          "start" : 55,
-          "length" : 38
+          "start" : 65,
+          "length" : 37
         },
         {
           "activity" : "validate",
-          "start" : 64,
-          "length" : 476
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 80,
-          "length" : 1
+          "start" : 73,
+          "length" : 593
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 2
+          "start" : 84,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 93,
-          "length" : 1052
+          "start" : 96,
+          "length" : 924
         },
         {
           "activity" : "generate2",
-          "start" : 114,
-          "length" : 1004
+          "start" : 115,
+          "length" : 1013
         },
         {
           "activity" : "generate2",
           "start" : 128,
-          "length" : 941
+          "length" : 868
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 19
+          "start" : 155,
+          "length" : 18
         },
         {
           "activity" : "scanProfilesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-ng-imm-organization.json",
-      "size" : 4189,
+      "size" : 4164,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 5
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 12
-        },
-        {
-          "activity" : "generateSnapshots",
-          "start" : 52,
-          "length" : 12
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 20
-        },
-        {
-          "activity" : "validate",
-          "start" : 64,
-          "length" : 122
-        },
-        {
-          "activity" : "generate1",
-          "start" : 94,
-          "length" : 355
-        },
-        {
-          "activity" : "generate2",
-          "start" : 115,
-          "length" : 342
-        },
-        {
-          "activity" : "generate2",
-          "start" : 129,
-          "length" : 204
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 59,
           "length" : 9
         },
         {
+          "activity" : "generateSnapshots",
+          "start" : 61,
+          "length" : 41
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 66,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 74,
+          "length" : 132
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 84,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 97,
+          "length" : 341
+        },
+        {
+          "activity" : "generate2",
+          "start" : 116,
+          "length" : 330
+        },
+        {
+          "activity" : "generate2",
+          "start" : 128,
+          "length" : 205
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 7
+        },
+        {
           "activity" : "scanExamplesForR5",
-          "start" : 194,
+          "start" : 189,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/Task-task-claim-review.json",
-      "size" : 438,
+      "size" : 433,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 2
+          "start" : 66,
+          "length" : 1
         },
         {
           "activity" : "validate",
-          "start" : 81,
-          "length" : 5
+          "start" : 85,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 16
+          "start" : 97,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 115,
-          "length" : 23
+          "start" : 116,
+          "length" : 24
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-facility-types.json",
-      "size" : 452,
+      "size" : 442,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
+          "start" : 59,
           "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 8
         },
         {
-          "activity" : "scan",
-          "start" : 54,
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 64,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 39
+          "start" : 66,
+          "length" : 80
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 18
+          "start" : 67,
+          "length" : 11
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 15
+          "start" : 97,
+          "length" : 20
         },
         {
           "activity" : "generate2",
-          "start" : 115,
-          "length" : 99
+          "start" : 116,
+          "length" : 92
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 156,
+          "start" : 155,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-gender.json",
-      "size" : 439,
+      "size" : 429,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 4
+          "start" : 66,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 6
+          "start" : 67,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 19
+          "start" : 97,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 116,
-          "length" : 49
+          "length" : 45
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-languages.json",
-      "size" : 432,
+      "size" : 422,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 4
+          "start" : 59,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 4
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
+          "start" : 66,
           "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 6
+          "start" : 67,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 15
+          "start" : 97,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 116,
-          "length" : 82
+          "start" : 117,
+          "length" : 74
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 155,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-lgas.json",
-      "size" : 430,
+      "size" : 420,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 4
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 54,
-          "length" : 1
+          "start" : 59,
+          "length" : 5
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 4
+          "start" : 66,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 6
+          "start" : 67,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 13
+          "start" : 97,
+          "length" : 20
         },
         {
           "activity" : "generate2",
-          "start" : 116,
-          "length" : 958
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
+          "start" : 117,
+          "length" : 849
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-location-owner.json",
-      "size" : 446,
+      "size" : 436,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 3
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 3
+          "start" : 59,
+          "length" : 16
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
+          "start" : 66,
           "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 7
+          "start" : 67,
+          "length" : 3
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 22
+          "start" : 97,
+          "length" : 14
         },
         {
           "activity" : "generate2",
           "start" : 117,
-          "length" : 51
+          "length" : 43
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-states.json",
-      "size" : 408,
+      "size" : 398,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
+          "start" : 59,
+          "length" : 4
         },
         {
           "activity" : "load",
-          "start" : 50,
-          "length" : 5
+          "start" : 59,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
-          "start" : 56,
+          "start" : 66,
           "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 8
+          "start" : 67,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 15
+          "start" : 98,
+          "length" : 14
         },
         {
           "activity" : "generate2",
-          "start" : 117,
-          "length" : 90
+          "start" : 118,
+          "length" : 79
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/ValueSet-nigeria-wards.json",
-      "size" : 433,
+      "size" : 423,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 49,
-          "length" : 2
-        },
-        {
-          "activity" : "load",
-          "start" : 50,
+          "start" : 59,
           "length" : 4
         },
         {
+          "activity" : "load",
+          "start" : 59,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 63,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 63,
+          "length" : 1
+        },
+        {
           "activity" : "generateNarratives",
-          "start" : 56,
-          "length" : 5
+          "start" : 66,
+          "length" : 4
         },
         {
           "activity" : "validate",
-          "start" : 57,
-          "length" : 5
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 80,
-          "length" : 1
+          "start" : 67,
+          "length" : 4
         },
         {
           "activity" : "generate1",
-          "start" : 94,
-          "length" : 16
+          "start" : 98,
+          "length" : 18
         },
         {
           "activity" : "generate2",
-          "start" : 117,
-          "length" : 59
-        },
-        {
-          "activity" : "generateValidationPack",
-          "start" : 156,
-          "length" : 1
+          "start" : 118,
+          "length" : 54
         }
       ]
     }

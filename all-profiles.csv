@@ -91,7 +91,7 @@ It is often used to filter patient lists to exclude inactive patients
 
 Deceased patients may also be marked as inactive for the same reasons, but may be active for some time after death.","If a record is inactive, and linked to an active record, then future patient/record updates should occur on the other patient.","Need to be able to mark a patient record as not to be used because it was created in error.","","This resource is generally assumed to be active if no value is provided for the active element","","","","","",,,,,"",,,,"Patient.active",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"NgPatient","Patient.name","Patient.name","","","",1,*,"Y","","Y","HumanName {[]} {[]}
+"NgPatient","Patient.name","Patient.name","","","",1,1,"Y","","Y","HumanName {[]} {[]}
 ","A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.name.id","Patient.name.id","","","",0,1,"","","","string {[]} {[]}
@@ -128,7 +128,7 @@ middle name","",1,*,"","","Y","string {[]} {[]}
 ","A contact detail for the individual","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.gender","Patient.gender","","","",0,1,"","","Y","code {[]} {[]}
-","The sex of the client","Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.","The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a ""hard"" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.","Needed for identification of the individual, in combination with (at least) name and birth date.","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-gender","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The sex of the client","Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.","The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a ""hard"" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.","Needed for identification of the individual, in combination with (at least) name and birth date.","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-gender","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.birthDate","Patient.birthDate","","","",0,1,"Y","","Y","date {[]} {[]}
 ","The date of birth of the client in the form dd-mm-yyy","The date of birth for the individual.","At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension ""patient-birthTime"" available that should be used where Time is required (such as in maternity/infant care systems).","Age of the individual drives many clinical processes.","","","","","","","",,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -171,11 +171,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "NgPatient","Patient.address.district","Patient.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The FHIR name is district, used as Nigeria LGA in this profile","Full detailed definition for the address district field as Local Government Area","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The FHIR name is district, used as Nigeria LGA in this profile","Full detailed definition for the address district field as Local Government Area","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.address.state","Patient.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The name of the state where the client resides in Nigeria","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The name of the state where the client resides in Nigeria","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.address.postalCode","Patient.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
@@ -196,42 +196,11 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "NgPatient","Patient.multipleBirth[x]","Patient.multipleBirth[x]","","","",0,1,"","","","boolean {[]} {[]}
 integer {[]} {[]}","Whether patient is part of a multiple birth","Indicates whether the patient is part of a multiple (boolean) or indicates the actual birth order (integer).","Where the valueInteger is provided, the number is the birth number in the sequence. E.g. The middle birth in triplets would be valueInteger=2 and the third born would have valueInteger=3 If a boolean value was provided for this triplets example, then all 3 patient records would have valueBoolean=true (the ordering is not indicated).","For disambiguation of multiple-birth children, especially relevant where the care provider doesn't meet the patient, such as labs.","","","","","","","",,,,,"",,,,"Patient.multipleBirth[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"NgPatient","Patient.photo","Patient.photo","","","",0,*,"Y","","","Attachment {[]} {[]}
+"NgPatient","Patient.photo","Patient.photo","","","",0,*,"","","","Attachment {[]} {[]}
 ","Image of the patient","Image of the patient.","Guidelines:
 * Use id photos, not clinical photos.
 * Limit dimensions to thumbnail.
 * Keep byte count low to ease resource updates.","Many EHR systems have the capability to capture an image of the patient. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Patient.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.id","Patient.photo.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"NgPatient","Patient.photo.extension","Patient.photo.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"NgPatient","Patient.photo.contentType","Patient.photo.contentType","","","",0,1,"","","Y","code {[]} {[]}
-","Type of image (e.g., image/jpeg)","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","The mime type of an attachment. Any valid mime type is allowed.","http://hl7.org/fhir/ValueSet/mimetypes|4.0.1","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.language","Patient.photo.language","","","",0,1,"","","Y","code {[]} {[]}
-","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.data","Patient.photo.data","","","",0,1,"","","","base64Binary {[]} {[]}
-","Base64 encoded image data","The actual data of the attachment - a sequence of bytes, base64 encoded.","The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON.","The data needs to able to be transmitted inline.","","","","","","","",,,,,"",,,,"Attachment.data",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.url","Patient.photo.url","","","",0,1,"","","Y","url {[]} {[]}
-","Public URL or internal endpoint to the patient's photo","A location where the data can be accessed.","If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data.","The data needs to be transmitted by reference.","","","","","<valueUrl xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/logo-small.png""/>","","",,,,,"",,,,"Attachment.url",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.size","Patient.photo.size","","","",0,1,"","","Y","unsignedInt {[]} {[]}
-","The size of the image in mega bytes MB","The number of bytes of data that make up this attachment (before base64 encoding, if that is done).","The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference.","Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all.","","","","","","","",,,,,"",,,,"Attachment.size",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.hash","Patient.photo.hash","","","",0,1,"","","Y","base64Binary {[]} {[]}
-","Hash of the data (sha-1, base64ed)","The calculated hash of the data using SHA-1. Represented using base64.","The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature.","Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version).","","","","","","","",,,,,"",,,,"Attachment.hash",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.title","Patient.photo.title","","","",0,1,"","","Y","string {[]} {[]}
-","The label of the image","A label or set of text to display in place of the data.","","Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Official Corporate Logo""/>","","",,,,,"",,,,"Attachment.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"NgPatient","Patient.photo.creation","Patient.photo.creation","","","",0,1,"","","Y","dateTime {[]} {[]}
-","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.contact","Patient.contact","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","A contact party (e.g. guardian, partner, friend) for the patient","A contact party (e.g. guardian, partner, friend) for the patient.","Contact covers all kinds of contact parties: family members, business contacts, guardians, caregivers. Not applicable to register pedigree and family ties beyond use of having contact.","Need to track people you can contact about the patient.","","","","","","","",,,,,"",,,,"Patient.contact",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -335,11 +304,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "NgPatient","Patient.contact.address.district","Patient.contact.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The LGA where the Client's primary Caregiver or Guardian lives","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The LGA where the Client's primary Caregiver or Guardian lives","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.contact.address.state","Patient.contact.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The State in Nigeria where the Client's primary Caregiver or Guardian lives","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The State in Nigeria where the Client's primary Caregiver or Guardian lives","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.contact.address.postalCode","Patient.contact.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
@@ -380,7 +349,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "NgPatient","Patient.communication.language","Patient.communication.language","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Preferred language which can be used to communicate with the patient about his or her health","The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. ""en"" for English, or ""en-US"" for American English versus ""en-EN"" for England English.","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.","Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.","","","","","","","",,"extensible","","https://dhin.org/2025Connectathon/ValueSet/nigeria-languages","",,,,"Patient.communication.language",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Preferred language which can be used to communicate with the patient about his or her health","The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. ""en"" for English, or ""en-US"" for American English versus ""en-EN"" for England English.","The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.","Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect.","","","","","","","",,"extensible","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-languages","",,,,"Patient.communication.language",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPatient","Patient.communication.preferred","Patient.communication.preferred","","","",0,1,"","","","boolean {[]} {[]}
 ","Language preference indicator","Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).","This language is specifically identified for communicating healthcare information.","People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.","","","","","","","",,,,,"",,,,"Patient.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -586,7 +555,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "NgPractitioner","Practitioner.qualification.period","Practitioner.qualification.period","","","",0,1,"","","","Period {[]} {[]}
 ","The time duration this qualification is valid","Period during which the qualification is valid.","","Qualifications are often for a limited period of time, and can be revoked.","","","","","","","",,,,,"",,,,"Practitioner.qualification.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"NgPractitioner","Practitioner.qualification.issuer","Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]}
+"NgPractitioner","Practitioner.qualification.issuer","Practitioner.qualification.issuer","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]}
 ","The regulating organization that issue the qualification","Organization that regulates and issues the qualification.","","","","","","","","","",,,,,"",,,,"Practitioner.qualification.issuer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "NgPractitioner","Practitioner.communication","Practitioner.communication","","","",0,*,"","","","CodeableConcept {[]} {[]}
@@ -825,7 +794,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hmo-to-insurer","Bundle.entry:claim.resource","Bundle.entry.resource","","Adjudication Request
-Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim]]} {[]}
+Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim]]} {[]}
 ","Claim, Pre-determination or Pre-authorization","A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement.","The Claim resource fulfills three information request requirements: Claim - a request for adjudication for reimbursement for products and/or services provided; Preauthorization - a request to authorize the future provision of products and/or services including an anticipated adjudication; and, Predetermination - a request for a non-bind adjudication of possible future products and/or services.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:claim.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -943,7 +912,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hmo-to-insurer","Bundle.entry:claimResponse.resource","Bundle.entry.resource","","Remittance Advice
-","",0,1,"","","","ClaimResponse {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse]]} {[]}
+","",0,1,"","","","ClaimResponse {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse]]} {[]}
 ","Response to a claim predetermination or preauthorization","This resource provides the adjudication details from the processing of a Claim resource.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:claimResponse.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1061,7 +1030,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hmo-to-insurer","Bundle.entry:explanationOfBenefit.resource","Bundle.entry.resource","","EOB
-","",0,1,"","","","ExplanationOfBenefit {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-explanationofbenefit]]} {[]}
+","",0,1,"","","","ExplanationOfBenefit {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-explanationofbenefit]]} {[]}
 ","Explanation of Benefit resource","This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:explanationOfBenefit.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1178,7 +1147,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hmo-to-insurer","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"ng-bundle-hmo-to-insurer","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1295,7 +1264,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hmo-to-insurer","Bundle.entry:task.resource","Bundle.entry.resource","","","",0,1,"","","","Task {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task]]} {[]}
+"ng-bundle-hmo-to-insurer","Bundle.entry:task.resource","Bundle.entry.resource","","","",0,1,"","","","Task {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task]]} {[]}
 ","A task to be performed","A task to be performed.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:task.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1413,7 +1382,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hmo-to-insurer","Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1530,7 +1499,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hmo-to-insurer","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage]]} {[]}
+"ng-bundle-hmo-to-insurer","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage]]} {[]}
 ","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hmo-to-insurer","Bundle.entry:coverage.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1858,7 +1827,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hospital-to-hmo","Bundle.entry:claim.resource","Bundle.entry.resource","","Adjudication Request
-Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim]]} {[]}
+Preauthorization RequestPredetermination Request","",0,1,"","","","Claim {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim]]} {[]}
 ","Claim, Pre-determination or Pre-authorization","A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement.","The Claim resource fulfills three information request requirements: Claim - a request for adjudication for reimbursement for products and/or services provided; Preauthorization - a request to authorize the future provision of products and/or services including an anticipated adjudication; and, Predetermination - a request for a non-bind adjudication of possible future products and/or services.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:claim.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -1976,7 +1945,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hospital-to-hmo","Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2093,7 +2062,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hospital-to-hmo","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage]]} {[]}
+"ng-bundle-hospital-to-hmo","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage]]} {[]}
 ","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:coverage.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2211,7 +2180,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hospital-to-hmo","Bundle.entry:encounter.resource","Bundle.entry.resource","","Visit
-","",0,1,"","","","Encounter {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter]]} {[]}
+","",0,1,"","","","Encounter {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter]]} {[]}
 ","An interaction during which services are provided to the patient","An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:encounter.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2328,7 +2297,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hospital-to-hmo","Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure]]} {[]}
+"ng-bundle-hospital-to-hmo","Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure]]} {[]}
 ","An action that is being or was performed on a patient","An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:procedure.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2446,7 +2415,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-hospital-to-hmo","Bundle.entry:observation.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation]]} {[]}
+MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:observation.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2563,7 +2532,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hospital-to-hmo","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"ng-bundle-hospital-to-hmo","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2680,7 +2649,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hospital-to-hmo","Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner]]} {[]}
+"ng-bundle-hospital-to-hmo","Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:practitioner.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2797,7 +2766,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-hospital-to-hmo","Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice]]} {[]}
+"ng-bundle-hospital-to-hmo","Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice]]} {[]}
 ","Invoice containing ChargeItems from an Account","Invoice containing collected ChargeItems from an Account with calculated individual and total price for Billing purpose.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-hospital-to-hmo","Bundle.entry:invoice.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3125,7 +3094,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-patient-to-hospital","Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3243,7 +3212,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-patient-to-hospital","Bundle.entry:encounter.resource","Bundle.entry.resource","","Visit
-","",0,1,"","","","Encounter {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter]]} {[]}
+","",0,1,"","","","Encounter {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter]]} {[]}
 ","An interaction during which services are provided to the patient","An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:encounter.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3360,7 +3329,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-hospital","Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner]]} {[]}
+"ng-bundle-patient-to-hospital","Bundle.entry:practitioner.resource","Bundle.entry.resource","","","",0,1,"","","","Practitioner {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner]]} {[]}
 ","A person with a  formal responsibility in the provisioning of healthcare or related services","A person who is directly or indirectly involved in the provisioning of healthcare.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:practitioner.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3477,7 +3446,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-hospital","Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure]]} {[]}
+"ng-bundle-patient-to-hospital","Bundle.entry:procedure.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure]]} {[]}
 ","An action that is being or was performed on a patient","An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:procedure.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3595,7 +3564,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-patient-to-hospital","Bundle.entry:observation.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation]]} {[]}
+MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation]]} {[]}
 ","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:observation.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3827,7 +3796,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-hospital","Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice]]} {[]}
+"ng-bundle-patient-to-hospital","Bundle.entry:invoice.resource","Bundle.entry.resource","","","",0,1,"","","","Invoice {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice]]} {[]}
 ","Invoice containing ChargeItems from an Account","Invoice containing collected ChargeItems from an Account with calculated individual and total price for Billing purpose.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:invoice.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -3943,7 +3912,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-hospital","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"ng-bundle-patient-to-hospital","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-hospital","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -4271,7 +4240,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-bundle-patient-to-insurer","Bundle.entry:patient.resource","Bundle.entry.resource","","SubjectOfCare Client Resident
-","",0,1,"","","","Patient {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]} {[]}
+","",0,1,"","","","Patient {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-insurer","Bundle.entry:patient.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -4388,7 +4357,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityRequest.resource","Bundle.entry.resource","","","",0,1,"","","","CoverageEligibilityRequest {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request]]} {[]}
+"ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityRequest.resource","Bundle.entry.resource","","","",0,1,"","","","CoverageEligibilityRequest {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request]]} {[]}
 ","CoverageEligibilityRequest resource","The CoverageEligibilityRequest provides patient and insurance coverage information to an insurer for them to respond, in the form of an CoverageEligibilityResponse, with information regarding whether the stated coverage is valid and in-force and optionally to provide the insurance details of the policy.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityRequest.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -4505,7 +4474,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-insurer","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage]]} {[]}
+"ng-bundle-patient-to-insurer","Bundle.entry:coverage.resource","Bundle.entry.resource","","","",0,1,"","","","Coverage {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage]]} {[]}
 ","Insurance or medical plan or a payment agreement","Financial instrument which may be used to reimburse or pay for health care products and services. Includes both insurance and self-payment.","The Coverage resource contains the insurance card level information, which is customary to provide on claims and other communications between providers and insurers.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-insurer","Bundle.entry:coverage.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -4622,7 +4591,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-insurer","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]} {[]}
+"ng-bundle-patient-to-insurer","Bundle.entry:organization.resource","Bundle.entry.resource","","","",0,1,"","","","Organization {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]} {[]}
 ","A grouping of people or organizations with a common purpose","A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-insurer","Bundle.entry:organization.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -4739,7 +4708,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityResponse.resource","Bundle.entry.resource","","","",0,1,"","","","CoverageEligibilityResponse {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response]]} {[]}
+"ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityResponse.resource","Bundle.entry.resource","","","",0,1,"","","","CoverageEligibilityResponse {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response]]} {[]}
 ","CoverageEligibilityResponse resource","This resource provides eligibility and plan details from the processing of an CoverageEligibilityRequest resource.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "ng-bundle-patient-to-insurer","Bundle.entry:coverageEligibilityResponse.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -6068,7 +6037,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ng-claim","Claim.use","Claim.use","","","",1,1,"Y","","Y","code {[]} {[]}
 ","what the claim is for (Required - claim | preauthorization | predetermination)","A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.","","This element is required to understand the nature of the request for adjudication.","","","","","","","",,"required","The purpose of the Claim: predetermination, preauthorization, claim.","http://hl7.org/fhir/ValueSet/claim-use|4.0.1","",,,,"Claim.use",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-claim","Claim.patient","Claim.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPatient]]}
+"ng-claim","Claim.patient","Claim.patient","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient]]}
 ","The recipient of the products and services","The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought.","","The patient must be supplied to the insurer so that confirmation of coverage and service history may be considered as part of the authorization and/or adjudiction.","","","","","","","",,,,,"",,,,"Claim.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-claim","Claim.billablePeriod","Claim.billablePeriod","","","",0,1,"","","Y","Period {[]} {[]}
@@ -6141,7 +6110,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ng-claim","Claim.payee.type","Claim.payee.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Category of recipient","Type of Party to be reimbursed: subscriber, provider, other.","","Need to know who should receive payment with the most common situations being the Provider (assignment of benefits) or the Subscriber.","","","","","","","",,"example","A code for the party to be reimbursed.","http://hl7.org/fhir/ValueSet/payeetype","",,,,"Claim.payee.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-claim","Claim.payee.party","Claim.payee.party","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner]]}
+"ng-claim","Claim.payee.party","Claim.payee.party","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner]]}
 ","Recipient reference","Reference to the individual or organization to whom any payment will be made.","Not required if the payee is 'subscriber' or 'provider'.","Need to provide demographics if the payee is not 'subscriber' nor 'provider'.","","","","","","","",,,,,"",,,,"Claim.payee.party",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-claim","Claim.referral","Claim.referral","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
@@ -6275,7 +6244,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]}","Specific clinical procedure","The code or reference to a Procedure resource which identifies the clinical intervention performed.","","This identifies the actual clinical procedure.","","","","","","","",,"example","Example ICD10 Procedure codes.","http://hl7.org/fhir/ValueSet/icd-10-procedures","","type:$this}
 ","",,"open","Claim.procedure.procedure[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-claim","Claim.procedure.procedure[x]:procedureReference","Claim.procedure.procedure[x]","procedureReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure]]}
+"ng-claim","Claim.procedure.procedure[x]:procedureReference","Claim.procedure.procedure[x]","procedureReference","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure]]}
 ","Specific clinical procedure","The code or reference to a Procedure resource which identifies the clinical intervention performed.","","This identifies the actual clinical procedure.","","","","","","","",,,,,"",,,,"Claim.procedure.procedure[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-claim","Claim.procedure.udi","Claim.procedure.udi","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
@@ -6314,7 +6283,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ng-claim","Claim.insurance.preAuthRef","Claim.insurance.preAuthRef","","","",0,*,"","","","string {[]} {[]}
 ","Prior authorization reference number","Reference numbers previously provided by the insurer to the provider to be quoted on subsequent claims containing services or products related to the prior authorization.","This value is an alphanumeric string that may be provided over the phone, via text, via paper, or within a ClaimResponse resource and is not a FHIR Identifier.","Providers must quote previously issued authorization reference numbers in order to obtain adjudication as previously advised on the Preauthorization.","","","","","","","",,,,,"",,,,"Claim.insurance.preAuthRef",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-claim","Claim.insurance.claimResponse","Claim.insurance.claimResponse","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-claimresponse]]}
+"ng-claim","Claim.insurance.claimResponse","Claim.insurance.claimResponse","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-claimresponse]]}
 ","Adjudication results","The result of the adjudication of the line items for the Coverage specified in this insurance.","Must not be specified when 'focal=true' for this insurance.","An insurer need the adjudication results from prior insurers to determine the outstanding balance remaining by item for the items in the curent claim.","","","","","","","",,,,,"",,,,"Claim.insurance.claimResponse",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-claim","Claim.accident","Claim.accident","","","",0,1,"","","","BackboneElement {[]} {[]}
@@ -8260,7 +8229,7 @@ This element is labeled as a modifier because it may be used to mark that the re
 
 When considering if multiple types are appropriate, you should evaluate if child organizations would be a more appropriate use of the concept, as different types likely are in different sub-areas of the organization. This is most likely to be used where type values have orthogonal values, such as a religious, academic and medical center.
 
-We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-facility-types","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+We expect that some jurisdictions will profile this optionality to be a single cardinality.","Need to be able to track the kind of organization that this is - different organization types have different uses.","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-facility-types","",,,,"Organization.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-imm-organization","Organization.name","Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","The name of the organization or health facility","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"org-1
@@ -8327,11 +8296,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ng-imm-organization","Organization.address.district","Organization.address.district","","County
 ","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address LGA","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-lgas","",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-imm-organization","Organization.address.state","Organization.address.state","","Province
 Territory","",0,1,"","","Y","string {[]} {[]}
-","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://dhin.org/2025Connectathon/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The organization contact address state","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,"required","","https://www.dhin-hie.org/IGs/ValueSet/nigeria-states","",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-imm-organization","Organization.address.postalCode","Organization.address.postalCode","","Zip
 ","",0,1,"","","Y","string {[]} {[]}
@@ -8346,7 +8315,7 @@ Territory","",0,1,"","","Y","string {[]} {[]}
   <end value=""2010-07-01""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ng-imm-organization","Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization]]}
+"ng-imm-organization","Organization.partOf","Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization]]}
 ","The Organization which this organization forms a part","The organization of which this organization forms a part.","","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ng-imm-organization","Organization.contact","Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}

@@ -3,14 +3,14 @@
   "id" : "2025connectathonClaims",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide 2025connectathonClaims</b></p><a name=\"2025connectathonClaims\"> </a><a name=\"hc2025connectathonClaims\"> </a><h2>DHIN2025connectathonclaims</h2><p>The official URL for this implementation guide is: </p><pre>https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims</pre><div><p>Implementation Guide for testing Claims</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide 2025connectathonClaims</b></p><a name=\"2025connectathonClaims\"> </a><a name=\"hc2025connectathonClaims\"> </a><h2>DHIN2025connectathonclaims</h2><p>The official URL for this implementation guide is: </p><pre>https://www.dhin-hie.org/IGs/ImplementationGuide/2025connectathonClaims</pre><div><p>Implementation Guide for testing Claims</p>\n</div></div>"
   },
-  "url" : "https://dhin.org/2025Connectathon/ImplementationGuide/2025connectathonClaims",
+  "url" : "https://www.dhin-hie.org/IGs/ImplementationGuide/2025connectathonClaims",
   "version" : "0.1.0",
   "name" : "DHIN2025connectathonclaims",
   "title" : "DHIN 2025 connectathon claims testing",
   "status" : "draft",
-  "date" : "2025-08-02T14:19:18+01:00",
+  "date" : "2025-09-10T08:54:29+01:00",
   "publisher" : "https://www.dhin-hie.org",
   "contact" : [{
     "name" : "https://www.dhin-hie.org",
@@ -60,7 +60,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0-ballot-tc"
+    "version" : "5.3.0-ballot-tc1"
   }],
   "definition" : {
     "extension" : [{
@@ -169,7 +169,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://dhin.org/2025Connectathon/history.html"
+        "valueString" : "https://www.dhin-hie.org/IGs/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -448,7 +448,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://dhin.org/2025Connectathon/history.html"
+        "valueString" : "https://www.dhin-hie.org/IGs/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -674,7 +674,7 @@
         "reference" : "Claim/claim-001"
       },
       "name" : "claim-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"
     },
     {
       "extension" : [{
@@ -685,7 +685,7 @@
         "reference" : "Claim/claim-002"
       },
       "name" : "claim-002",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim"
     },
     {
       "extension" : [{
@@ -696,7 +696,7 @@
         "reference" : "Coverage/coverage-001"
       },
       "name" : "coverage-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"
     },
     {
       "extension" : [{
@@ -707,7 +707,7 @@
         "reference" : "Coverage/coverage-002"
       },
       "name" : "coverage-002",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"
     },
     {
       "extension" : [{
@@ -718,7 +718,7 @@
         "reference" : "Coverage/coverage-004"
       },
       "name" : "coverage-004",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-coverage"
     },
     {
       "extension" : [{
@@ -729,7 +729,7 @@
         "reference" : "CoverageEligibilityRequest/eligibility-request-004"
       },
       "name" : "eligibility-request-004",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-request"
     },
     {
       "extension" : [{
@@ -740,7 +740,7 @@
         "reference" : "CoverageEligibilityResponse/eligibility-response-004"
       },
       "name" : "eligibility-response-004",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-response"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-eligibility-response"
     },
     {
       "extension" : [{
@@ -751,7 +751,7 @@
         "reference" : "Encounter/encounter-001"
       },
       "name" : "encounter-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"
     },
     {
       "extension" : [{
@@ -762,7 +762,7 @@
         "reference" : "Encounter/encounter-003"
       },
       "name" : "encounter-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-encounter"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-encounter"
     },
     {
       "extension" : [{
@@ -774,7 +774,7 @@
       },
       "name" : "Example: HMO to Insurer Claim Submission Bundle",
       "description" : "An example bundle from an HMO to an insurer containing submitted claims and associated resources.",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hmo-to-insurer"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hmo-to-insurer"
     },
     {
       "extension" : [{
@@ -786,7 +786,7 @@
       },
       "name" : "Example: Hospital to HMO Claim Bundle",
       "description" : "An example bundle submitted from a hospital to an HMO for reimbursement.",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-hospital-to-hmo"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-hospital-to-hmo"
     },
     {
       "extension" : [{
@@ -798,7 +798,7 @@
       },
       "name" : "Example: Patient to Hospital Interaction Bundle",
       "description" : "An example bundle representing a patient registration and clinical encounter at a hospital.",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-hospital"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-hospital"
     },
     {
       "extension" : [{
@@ -810,7 +810,7 @@
       },
       "name" : "Example: Patient to Insurer Eligibility Check Bundle",
       "description" : "An example bundle representing a patient-initiated eligibility request to an insurer.",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-bundle-patient-to-insurer"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-bundle-patient-to-insurer"
     },
     {
       "extension" : [{
@@ -821,7 +821,7 @@
         "reference" : "Invoice/invoice-001"
       },
       "name" : "invoice-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"
     },
     {
       "extension" : [{
@@ -832,7 +832,7 @@
         "reference" : "Invoice/invoice-003"
       },
       "name" : "invoice-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-invoice"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-invoice"
     },
     {
       "extension" : [{
@@ -1191,7 +1191,7 @@
         "reference" : "Observation/observation-001"
       },
       "name" : "observation-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"
     },
     {
       "extension" : [{
@@ -1202,7 +1202,7 @@
         "reference" : "Observation/observation-003"
       },
       "name" : "observation-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-observation"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-observation"
     },
     {
       "extension" : [{
@@ -1213,7 +1213,7 @@
         "reference" : "Organization/org-hmo"
       },
       "name" : "org-hmo",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1224,7 +1224,7 @@
         "reference" : "Organization/org-hmo-2"
       },
       "name" : "org-hmo-2",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1235,7 +1235,7 @@
         "reference" : "Organization/org-hospital"
       },
       "name" : "org-hospital",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1246,7 +1246,7 @@
         "reference" : "Organization/org-hospital-2"
       },
       "name" : "org-hospital-2",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1257,7 +1257,7 @@
         "reference" : "Organization/org-insurer-2"
       },
       "name" : "org-insurer-2",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1268,7 +1268,7 @@
         "reference" : "Organization/org-insurer-4"
       },
       "name" : "org-insurer-4",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-imm-organization"
     },
     {
       "extension" : [{
@@ -1279,7 +1279,7 @@
         "reference" : "Patient/patient-001"
       },
       "name" : "patient-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"
     },
     {
       "extension" : [{
@@ -1290,7 +1290,7 @@
         "reference" : "Patient/patient-002"
       },
       "name" : "patient-002",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"
     },
     {
       "extension" : [{
@@ -1301,7 +1301,7 @@
         "reference" : "Patient/patient-003"
       },
       "name" : "patient-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"
     },
     {
       "extension" : [{
@@ -1312,7 +1312,7 @@
         "reference" : "Patient/patient-004"
       },
       "name" : "patient-004",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPatient"
     },
     {
       "extension" : [{
@@ -1323,7 +1323,7 @@
         "reference" : "Practitioner/practitioner-001"
       },
       "name" : "practitioner-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"
     },
     {
       "extension" : [{
@@ -1334,7 +1334,7 @@
         "reference" : "Practitioner/practitioner-003"
       },
       "name" : "practitioner-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/NgPractitioner"
     },
     {
       "extension" : [{
@@ -1345,7 +1345,7 @@
         "reference" : "Procedure/procedure-001"
       },
       "name" : "procedure-001",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"
     },
     {
       "extension" : [{
@@ -1356,7 +1356,7 @@
         "reference" : "Procedure/procedure-003"
       },
       "name" : "procedure-003",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-procedure"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-procedure"
     },
     {
       "extension" : [{
@@ -1379,7 +1379,7 @@
       },
       "name" : "task-claim-review",
       "description" : "Please review this claim for adjudication",
-      "exampleCanonical" : "https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-task"
+      "exampleCanonical" : "https://www.dhin-hie.org/IGs/StructureDefinition/ng-claim-task"
     }],
     "page" : {
       "extension" : [{
