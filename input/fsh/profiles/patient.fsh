@@ -12,7 +12,7 @@ Description: "Nigeria Patient Profile"
 * identifier.value ^short = "The actual ID value (eg. NIN35635556)"
 * identifier.system 1..1 MS
 * identifier.system ^short = "The organization website that assign the ID being entered (eg. https://nimc.gov.ng)"
-* name 1..* MS
+* name 1..1 MS
 * name.given 1..* 
 * name.given ^short = "The other names of the client"
 * name.family 1..1
@@ -63,18 +63,7 @@ Description: "Nigeria Patient Profile"
 * communication 0..*
 * communication.language from NGLanguagesVS (extensible)
 * communication.language ^short = "Preferred language which can be used to communicate with the patient about his or her health"
-* photo 0..* MS
-* photo ^short = "Image of the patient"
-* photo.data 0..1
-* photo.data ^short = "Base64 encoded image data"
-* photo.title 0..1
-* photo.title ^short = "The label of the image"
-* photo.url 0..1
-* photo.url ^short = "Public URL or internal endpoint to the patient's photo"
-* photo.size 0..1
-* photo.size ^short = "The size of the image in mega bytes MB"
-* photo.contentType 0..1
-* photo.contentType ^short = "Type of image (e.g., image/jpeg)"
+
 
 
 
