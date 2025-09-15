@@ -38,7 +38,7 @@ This IG focuses on core FHIR interactions and simplified data workflows relevant
 #### Use cases covered in this guide
 The IG covers the following key use cases (which will continue to expand in subsequent iterations) by the Nigeria FHIR community:
 
-- Eligibility Verification: Querying patient insurance coverage prior to service delivery.
-- Claims Submission: Structured electronic claims sent from hospitals to HMOs or insurers.
-- Claims Review and Status: Reviewing submitted claims and tracking approval or rejection.
-- Payment Notification: Communicating remittance advice or payment confirmation between payer and provider.
+- Hospital Claim Submission: Hospitals send electronic claims to HMOs for services provided.
+- Claim Adjudication and Reporting: HMOs forward claims to insurers for review and reporting.
+- Patient Registration and Care Events: Patients register at hospitals, and their visits, referrals, and care are recorded.
+- Patient Coverage Inquiry: Patients check insurance eligibility or coverage with insurers. 
